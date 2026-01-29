@@ -1,0 +1,128 @@
+{
+  "/etc/shadow": {
+    "display_name": null,
+    "address": null
+  },
+  "Columbia, SC, USA": {
+    "display_name": "Columbia, Richland County, South Carolina, United States",
+    "address": {
+      "city": "Columbia",
+      "county": "Richland County",
+      "state": "South Carolina",
+      "ISO3166-2-lvl4": "US-SC",
+      "country": "United States",
+      "country_code": "us"
+    }
+  },
+  "Dublin, Ireland": {
+    "display_name": "Dublin, County Dublin, Leinster, Éire / Ireland",
+    "address": {
+      "city": "Dublin",
+      "county": "County Dublin",
+      "ISO3166-2-lvl6": "IE-D",
+      "region": "Leinster",
+      "ISO3166-2-lvl5": "IE-L",
+      "country": "Éire / Ireland",
+      "country_code": "ie"
+    }
+  },
+  "France": {
+    "display_name": "France",
+    "address": {
+      "country": "France",
+      "country_code": "fr"
+    }
+  },
+  "Guangzhou, China": {
+    "display_name": "广州市, 广东省, 中国",
+    "address": {
+      "city": "广州市",
+      "state": "广东省",
+      "ISO3166-2-lvl4": "CN-GD",
+      "country": "中国",
+      "country_code": "cn"
+    }
+  },
+  "Hamburg, Germany": {
+    "display_name": "Hamburg, Deutschland",
+    "address": {
+      "city": "Hamburg",
+      "ISO3166-2-lvl4": "DE-HH",
+      "country": "Deutschland",
+      "country_code": "de"
+    }
+  },
+  "Kansas City, MO": {
+    "display_name": "Kansas City, Jackson County, Missouri, United States",
+    "address": {
+      "city": "Kansas City",
+      "county": "Jackson County",
+      "state": "Missouri",
+      "ISO3166-2-lvl4": "US-MO",
+      "country": "United States",
+      "country_code": "us"
+    }
+  },
+  "Oakland,CA": {
+    "display_name": "Oakland, Alameda County, California, United States",
+    "address": {
+      "city": "Oakland",
+      "county": "Alameda County",
+      "state": "California",
+      "ISO3166-2-lvl4": "US-CA",
+      "country": "United States",
+      "country_code": "us"
+    }
+  },
+  "Paris": {
+    "display_name": "Paris, Île-de-France, France métropolitaine, France",
+    "address": {
+      "city": "Paris",
+      "ISO3166-2-lvl6": "FR-75C",
+      "state": "Île-de-France",
+      "ISO3166-2-lvl4": "FR-IDF",
+      "region": "France métropolitaine",
+      "country": "France",
+      "country_code": "fr"
+    }
+  },
+  "ShenZhen, GuangDong, China": {
+    "display_name": "深圳市, 广东省, 中国",
+    "address": {
+      "city": "深圳市",
+      "state": "广东省",
+      "ISO3166-2-lvl4": "CN-GD",
+      "country": "中国",
+      "country_code": "cn"
+    }
+  },
+  "Suresnes (France)": {
+    "display_name": "Suresnes, Nanterre, Hauts-de-Seine, Île-de-France, France métropolitaine, 92150, France",
+    "address": {
+      "town": "Suresnes",
+      "municipality": "Nanterre",
+      "county": "Hauts-de-Seine",
+      "ISO3166-2-lvl6": "FR-92",
+      "state": "Île-de-France",
+      "ISO3166-2-lvl4": "FR-IDF",
+      "region": "France métropolitaine",
+      "postcode": "92150",
+      "country": "France",
+      "country_code": "fr"
+    }
+  },
+  "USA": {
+    "display_name": "United States",
+    "address": {
+      "country": "United States",
+      "country_code": "us"
+    }
+  },
+  "china": {
+    "display_name": "中国",
+    "address": {
+      "country": "中国",
+      "country_code": "cn"
+    }
+  }
+}

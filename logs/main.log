@@ -1,0 +1,7 @@
+2026-01-28 21:19:12,286 - loggers.main_logger - INFO - Elapsed time for sbom_gen:  0:00:04.251173
+2026-01-28 21:19:12,296 - loggers.main_logger - INFO - Elapsed time for sbom_parser:  0:00:00.009508
+2026-01-28 21:19:12,297 - loggers.main_logger - INFO - Elapsed time for repo_url_finder:  0:00:00.000998
+2026-01-28 21:19:19,045 - loggers.main_logger - INFO - Elapsed time for github_metrics:  0:00:06.748000
+2026-01-28 21:21:28,594 - loggers.main_logger - INFO - Elapsed time for contributor_metrics:  0:02:09.549165
+2026-01-28 21:21:28,655 - loggers.main_logger - INFO - Elapsed time for geolocator:  0:00:00.061008
+2026-01-28 21:22:20,007 - loggers.main_logger - INFO - Elapsed time for main:  0:03:11.972671

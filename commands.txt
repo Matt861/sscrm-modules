@@ -1,0 +1,20 @@
+MAVEN SBOM GENERATION
+
+# Aggregate JSON SBOM to ./target/bom.json
+python sbom_generators/maven_sbom_gen.py --project-dir /path/to/project
+
+# Aggregate JSON SBOM to ./sbom/myapp.cdx.json
+python sbom_generators/maven_sbom_gen.py --project-dir . --output-dir ./sbom --output-name myapp.cdx --format json
+
+# Include test dependencies
+python sbom_generators/maven_sbom_gen.py --include-test-scope
+
+# Use Maven Wrapper
+python sbom_generators/maven_sbom_gen.py --mvn ./mvnw
+
+
+SBOM PARSER
+
+python tools/sbom_parser.py --input sbom.json --output output\components.json
+
+python tools/sbom_parser.py --input sbom.json --output output
