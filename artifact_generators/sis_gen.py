@@ -4,6 +4,7 @@ import copy
 from urllib.parse import urlparse
 
 from configuration import Configuration as Config
+from datetime import datetime, timezone
 import utils
 import csv
 from pathlib import Path
@@ -17,6 +18,39 @@ def get_trusted_org(github_url):
         if component_org.lower() == trusted_org.lower():
             return trusted_org
     return ''
+
+
+def days_from_date_to_now(date_str: str) -> int:
+    """
+    Takes a date like "2025-11-27T11:26:02Z" (UTC) and returns the number of days
+    from that date to *now* (UTC), rounded to the nearest int.
+
+    Positive => date is in the past (days since)
+    Negative => date is in the future (days until)
+    """
+    # Parse ISO-8601 with trailing 'Z' (UTC)
+    dt = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+
+    now = datetime.now(timezone.utc)
+    delta_days = (now - dt).total_seconds() / 86400.0  # seconds per day
+
+    return int(round(delta_days))
+
+
+def hours_from_date_to_now(date_str: str) -> int:
+    """
+    Takes a date like "2025-11-27T11:26:02Z" (UTC) and returns the number of hours
+    from that date to *now* (UTC), rounded to the nearest int.
+
+    Positive => date is in the past (hours since)
+    Negative => date is in the future (hours until)
+    """
+    dt = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+
+    now = datetime.now(timezone.utc)
+    delta_hours = (now - dt).total_seconds() / 3600.0  # seconds per hour
+
+    return int(round(delta_hours))
 
 
 def append_component_info(component, csv_row):
@@ -35,8 +69,8 @@ def append_repo_metrics(repo_data, csv_row):
     csv_row['Forks'] = repo_data.forks
     csv_row['Closed_Issues'] = repo_data.closed_issues_count
     csv_row['Releases'] = repo_data.releases_count
-    csv_row['Age_Days'] = repo_data.created_at
-    csv_row['Last_Update_Hours'] = repo_data.updated_at
+    csv_row['Age_Days'] = days_from_date_to_now(repo_data.created_at)
+    csv_row['Last_Update_Hours'] = hours_from_date_to_now(repo_data.updated_at)
     csv_row['Repo_URL'] = repo_data.repo_url
     csv_row['Trusted_Orgs'] = get_trusted_org(repo_data.repo_url)
     csv_row['SIA_Scan_ID'] = repo_data.retrieval_uuid
