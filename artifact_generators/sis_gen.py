@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import copy
+import re
+from typing import Optional
 from urllib.parse import urlparse
 
 from configuration import Configuration as Config
@@ -9,6 +11,8 @@ import utils
 import csv
 from pathlib import Path
 
+non_os_specific_packages = ["maven", "pypi", "npm"]
+executable_packages = ["raw"]
 
 def get_trusted_org(github_url):
     trusted_orgs_data = utils.load_json_file(Path(Config.root_dir, 'input/trusted_orgs.json'))
@@ -18,6 +22,65 @@ def get_trusted_org(github_url):
         if component_org.lower() == trusted_org.lower():
             return trusted_org
     return ''
+
+
+def get_os_identification():
+    if Config.package_manager.lower() in non_os_specific_packages:
+        return "N/A"
+    elif Config.os_identification:
+        return Config.os_identification
+    else:
+        return ""
+
+
+def is_package_executable():
+    if Config.package_manager.lower() in executable_packages:
+        return True
+    else:
+        return False
+
+
+def get_github_publisher_from_url(url: str) -> Optional[str]:
+    if not url or not isinstance(url, str):
+        return None
+
+    s = url.strip()
+
+    # Handle SSH form: git@github.com:OWNER/REPO(.git)
+    m = re.match(r"^(?:ssh://)?git@github\.com:(?P<owner>[^/]+)/(?P<repo>[^/]+?)(?:\.git)?/?$", s, re.IGNORECASE)
+    if m:
+        return m.group("owner")
+
+    # Add scheme if missing so urlparse works correctly
+    if "://" not in s:
+        s = "https://" + s
+
+    parsed = urlparse(s)
+
+    host = (parsed.netloc or "").lower()
+    path = (parsed.path or "").strip("/")
+
+    # Common GitHub hosts that still encode owner/repo in the path
+    # - github.com/OWNER/REPO
+    # - raw.githubusercontent.com/OWNER/REPO/...
+    if host in {"github.com", "www.github.com", "raw.githubusercontent.com"}:
+        parts = [p for p in path.split("/") if p]
+        if len(parts) >= 2:
+            owner = parts[0]
+            # Basic sanity: owner can't be "." or ".."
+            if owner not in {".", ".."}:
+                return owner
+
+    return ""
+
+
+def get_publisher(component):
+    if component.publisher:
+        return component.publisher
+    elif component.repo_url:
+        return get_github_publisher_from_url(component.repo_url)
+    else:
+        return ""
 
 
 def days_from_date_to_now(date_str: str) -> int:
@@ -57,8 +120,9 @@ def append_component_info(component, csv_row):
     csv_row['Package'] = component.name
     csv_row['Version'] = component.version
     csv_row['Group'] = component.group
+    csv_row['Is_Direct'] = component.is_direct
     csv_row['Description'] = component.description
-    csv_row['Publisher'] = component.publisher
+    csv_row['Publisher'] = get_publisher(component)
     csv_row['Is_Latest_Version'] = ""
     csv_row['Vulnerabilities'] = ""
     csv_row['Critical_or_High'] = ""
@@ -90,13 +154,18 @@ def append_repo_scores(repo_scores, csv_row):
 
 def append_sis_info(component, csv_row):
     csv_row['Prev_Approved_Versions'] = ""
-    csv_row['Is_Executable'] = ""
-    csv_row['Non_Standard_File'] = ""
+    csv_row['Is_Executable'] = str(is_package_executable())
+    csv_row['Non_Standard_File'] = str(Config.non_standard_file)
+    csv_row['OS_Identification'] = get_os_identification()
+    csv_row['Used_On_Deliverable'] = str(Config.is_deliverable_software)
+    csv_row['End_Use'] = Config.software_end_use
+    csv_row['Software_Type'] = Config.software_type
+
 
 
 def append_efoss_info(efoss_data, csv_row):
     #csv_row['License Status'] = efoss_data.get('approvalStatus', '')
-    csv_row['License Status'] = ''
+    csv_row['eFOSS_Status'] = ''
 
 
 def generate_sis_csv(sis_csv_path):

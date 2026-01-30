@@ -4,7 +4,10 @@
     "Group": "",
     "Publisher": "",
     "Repo_URL": "",
-    "License Status": "",
+    "Unclass_Total": "",
+    "Passes_SIA": "",
+    "eFOSS_Status": "",
+    "Is_Direct": "",
     "Description": "",
     "Mission_Justification": "",
     "Mission_Impact": "",
@@ -38,7 +41,5 @@
     "Maturity_Score": "",
     "Last_Update_Score": "",
     "Trusted_Org_Bonus": "",
-    "Trusted_Orgs": "",
-    "Unclass_Total": "",
-    "Passes_SIA": ""
+    "Trusted_Orgs": ""
 }

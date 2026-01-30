@@ -11,6 +11,11 @@ class Configuration:
     root_dir = get_project_root()
     project_name = None
     package_manager = None
+    os_identification = ""
+    is_deliverable_software = False
+    software_end_use = ""
+    software_type = ""
+    non_standard_file = False
 
     # PROJECT SETUP
     utils.load_env_vars(Path(root_dir, ".env"))

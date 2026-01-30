@@ -172,6 +172,92 @@ def _is_same_as_top_level(comp: dict[str, Any], top_level: dict[str, Any]) -> bo
     )
 
 
+# --- CycloneDX direct-dependency helpers ---
+
+def _dependency_ref(d: dict[str, Any]) -> Optional[str]:
+    # CycloneDX dependency objects commonly use "ref"; be tolerant of "bom-ref"/"bomRef"
+    return _safe_str(d.get("ref")) or _bom_ref(d)
+
+
+def _dependency_children(d: dict[str, Any]) -> list[str]:
+    kids = d.get("dependsOn")
+    if not isinstance(kids, list):
+        return []
+    out: list[str] = []
+    for k in kids:
+        s = _safe_str(k)
+        if s:
+            out.append(s)
+    return out
+
+
+def _compute_direct_dependency_refs(
+    data: dict[str, Any],
+    *,
+    top_level: dict[str, Any],
+) -> set[str]:
+    """
+    Return the set of bom-refs that are direct/top-level dependencies of the SBOM.
+
+    Primary strategy:
+      - Find metadata.component's bom-ref (top_ref)
+      - In data["dependencies"], find the entry whose ref == top_ref
+      - direct deps are that entry's dependsOn refs
+
+    Fallback strategies:
+      - If top_ref missing, try to derive it by matching metadata.component against components[]
+      - If still unknown, infer "root" refs (refs that are not depended-on by anyone) and:
+          - if exactly one root exists, treat its dependsOn as direct deps
+          - otherwise return empty set (ambiguous)
+    """
+    deps = data.get("dependencies")
+    if not isinstance(deps, list) or not deps:
+        return set()
+
+    # Build dep_map: ref -> dependsOn[]
+    dep_map: dict[str, list[str]] = {}
+    all_refs: set[str] = set()
+    all_children: set[str] = set()
+
+    for d in deps:
+        if not isinstance(d, dict):
+            continue
+        ref = _dependency_ref(d)
+        if not ref:
+            continue
+        kids = _dependency_children(d)
+        dep_map[ref] = kids
+        all_refs.add(ref)
+        all_children.update(kids)
+
+    # Try to get top_ref directly from metadata.component
+    top_ref = _bom_ref(top_level)
+
+    # If metadata.component has no bom-ref, try to find matching component in components[] and use its bom-ref
+    if not top_ref:
+        comps = data.get("components")
+        if isinstance(comps, list) and top_level:
+            for c in comps:
+                if not isinstance(c, dict):
+                    continue
+                if _is_same_as_top_level(c, top_level):
+                    top_ref = _bom_ref(c)
+                    if top_ref:
+                        break
+
+    # Primary: metadata.component ref -> dependsOn
+    if top_ref and top_ref in dep_map:
+        return set(dep_map.get(top_ref, []) or [])
+
+    # Fallback: infer roots (refs not depended on by any other)
+    roots = list(all_refs - all_children)
+    if len(roots) == 1:
+        return set(dep_map.get(roots[0], []) or [])
+
+    # Ambiguous or cannot determine
+    return set()
+
+
 def parse_sbom(sbom_path: Path) -> list[Component]:
     data = json.loads(sbom_path.read_text(encoding="utf-8"))
 
@@ -179,6 +265,9 @@ def parse_sbom(sbom_path: Path) -> list[Component]:
     top_level = data.get("metadata", {}).get("component")
     if not isinstance(top_level, dict):
         top_level = {}
+
+    # compute direct/top-level dependency refs from the SBOM dependency graph
+    direct_refs = _compute_direct_dependency_refs(data, top_level=top_level)
 
     components: list[Component] = []
 
@@ -195,6 +284,10 @@ def parse_sbom(sbom_path: Path) -> list[Component]:
             group = _component_group_like(c)
             name = _safe_str(c.get("name")) or ""
 
+            # used to decide direct vs transitive
+            comp_ref = _bom_ref(c)
+            is_direct = bool(comp_ref and comp_ref in direct_refs)
+
             components.append(
                 Component(
                     name=name,
@@ -204,6 +297,7 @@ def parse_sbom(sbom_path: Path) -> list[Component]:
                     description=_safe_str(c.get("description")),
                     licenses=extract_license_ids_or_names(c),
                     repo_url=find_repo_url(c),
+                    is_direct=is_direct,
                 )
             )
 

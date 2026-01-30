@@ -14,6 +14,7 @@ class Component:
     description: Optional[str]
     licenses: Optional[list[str]]
     repo_url: Optional[str]
+    is_direct: Optional[bool]
 
     repo_info: Optional[RepositoryInfo] = None
 

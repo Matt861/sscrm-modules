@@ -1,4 +1,4 @@
-from artifact_generators import sis_gen
+from artifact_generators import sis_gen, components_gen
 from artifact_generators.github_metrics_gen import write_repo_json_files
 from artifact_generators.repo_metrics_gen import write_repo_store_to_csv
 from configuration import Configuration as Config
@@ -19,10 +19,17 @@ main_timer.start("starting main timer")
 def main() -> None:
     Config.project_name = "crt-service-1.0.0"
     Config.package_manager = "maven"
+    Config.software_type = Config.package_manager
     Config.sbom_gen_input_dir = Path(Config.root_dir, "input/sbom_gen/crt/crt-service")
     Config.sbom_gen_input_file = "input/sbom_gen/crt/crt-service/pom.xml"
     Config.sbom_gen_output_dir = "output/sboms"
     Config.sbom_gen_output_file = "crt-service-1.0.0-sbom"
+
+    # ADD LOGIC TO SET PROPERTY "IS_SOFTWARE_DELIVERABLE" BASED ON USER INPUT (DELIVERABLE, TEST/DEV, BUILD/CLASSPATH)
+
+    # ADD LOGIC TO SET PROPERTY "SOFTWARE_END_USE" BASED ON USER INPUT (DELIVERABLE, TEST/DEV, BUILD/CLASSPATH)
+
+    # ADD LOGIC TO SET NON_STANDARD_FILE
 
     sbom_gen_timer = Timer()
     sbom_gen_timer.start("starting sbom_gen timer")
@@ -68,6 +75,7 @@ def main() -> None:
     print("Wrote", len(output_paths), "files")
 
     sis_gen.main()
+    components_gen.main()
 
     # github_repos = Config.github_repository_store.get_all()
     # if github_repos:
