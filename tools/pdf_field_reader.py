@@ -130,7 +130,7 @@ def dump_form_fields(pdf_path: str) -> List[Dict[str, Any]]:
 
 def main() -> int:
 
-    pdf_path = f"{Config.root_dir}/templates/gray_sis_template_with_values_2025.pdf"
+    pdf_path = f"{Config.root_dir}/templates/None-None-gray-sis.pdf"
     try:
         rows = dump_form_fields(pdf_path)
     except FileNotFoundError:
@@ -143,20 +143,23 @@ def main() -> int:
     if not rows:
         return 0
 
-    # Pretty print
-    print(f"Found {len(rows)} field(s):\n")
-    for r in rows:
-        print(f"- Name:  {r['name']}")
-        print(f"  Type:  {r['type']}")
-        print(f"  Value: {r['value']}")
-        if r.get("default_value"):
-            print(f"  Default: {r['default_value']}")
-        if r.get("options"):
-            print(f"  Options: {r['options']}")
-        if "button_value" in r or "appearance_state" in r:
-            print(f"  Button /V:  {r.get('button_value', '')}")
-            print(f"  Widget /AS: {r.get('appearance_state', '')}")
-        print()
+    output_file = Path(Config.root_dir, "output/gray_sis_fields_3.txt")
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+
+    with output_file.open("w", encoding="utf-8", newline="\n") as out:
+        print(f"Found {len(rows)} field(s):\n", file=out)
+        for r in rows:
+            print(f"- Name:  {r['name']}", file=out)
+            print(f"  Type:  {r['type']}", file=out)
+            print(f"  Value: {r['value']}", file=out)
+            if r.get("default_value"):
+                print(f"  Default: {r['default_value']}", file=out)
+            if r.get("options"):
+                print(f"  Options: {r['options']}", file=out)
+            if "button_value" in r or "appearance_state" in r:
+                print(f"  Button /V:  {r.get('button_value', '')}", file=out)
+                print(f"  Widget /AS: {r.get('appearance_state', '')}", file=out)
+            print(file=out)  # blank line
 
     return 0
 

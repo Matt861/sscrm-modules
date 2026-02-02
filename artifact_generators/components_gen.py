@@ -37,8 +37,8 @@ def generate_components_csv(components_csv_path):
 
 
 def main():
-    components_csv_name = f"{Config.project_name}-components.csv"
-    components_csv_path = Path(Config.root_dir, "output", components_csv_name)
+    Config.components_csv_file_name = f"{Config.project_name_and_version}-components.csv"
+    components_csv_path = Path(Config.root_dir, "output", Config.components_csv_file_name)
     generate_components_csv(components_csv_path)
 
 

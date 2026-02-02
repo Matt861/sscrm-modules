@@ -337,7 +337,7 @@ def main() -> int:
         help="Path to SBOM.json (CycloneDX).")
     ap.add_argument(
         "--output",
-        default=f"{Path(Config.root_dir, "output", Config.project_name)}.components.json",
+        default=f"{Path(Config.root_dir, "output", Config.project_name_and_version)}.components.json",
         help="Optional path to write extracted data as JSON (default: <input>.components.json).",
     )
     ap.add_argument(
@@ -380,7 +380,7 @@ def main() -> int:
     out_path.write_text(json.dumps([asdict(c) for c in Config.component_store.get_all_components()], indent=2), encoding="utf-8")
 
     # Write missing-repo subset
-    out_path = f"{Path(Config.root_dir, "output", Config.project_name)}.components.json"
+    out_path = f"{Path(Config.root_dir, "output", Config.project_name_and_version)}.components.json"
     missing_repo = [c for c in Config.component_store.get_all_components() if not (c.repo_url and c.repo_url.strip())]
     missing_path = sibling_missing_repo_path(Path(out_path).resolve())
     missing_path.write_text(json.dumps([asdict(c) for c in missing_repo], indent=2), encoding="utf-8")

@@ -205,8 +205,8 @@ def generate_sis_csv(sis_csv_path):
 
 
 def main():
-    sis_csv_name = f"{Config.project_name}-sis.csv"
-    sis_csv_path = Path(Config.root_dir, "output", sis_csv_name)
+    Config.sis_csv_file_name = f"{Config.project_name_and_version}-sis.csv"
+    sis_csv_path = Path(Config.root_dir, "output", Config.sis_csv_file_name)
     generate_sis_csv(sis_csv_path)
 
 

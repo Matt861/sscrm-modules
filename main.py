@@ -2,6 +2,7 @@ from artifact_generators import sis_gen, components_gen
 from artifact_generators.github_metrics_gen import write_repo_json_files
 from artifact_generators.repo_metrics_gen import write_repo_store_to_csv
 from configuration import Configuration as Config
+from models import enums
 from sbom_generators import sbom_gen
 from timer import Timer
 from loggers.main_logger import main_logger as logger
@@ -17,19 +18,38 @@ main_timer.start("starting main timer")
 
 
 def main() -> None:
-    Config.project_name = "crt-service-1.0.0"
+    Config.project_name = "crt-service"
+    Config.project_version = "1.0.0"
     Config.package_manager = "maven"
     Config.software_type = Config.package_manager
     Config.sbom_gen_input_dir = Path(Config.root_dir, "input/sbom_gen/crt/crt-service")
     Config.sbom_gen_input_file = "input/sbom_gen/crt/crt-service/pom.xml"
     Config.sbom_gen_output_dir = "output/sboms"
-    Config.sbom_gen_output_file = "crt-service-1.0.0-sbom"
+    Config.sbom_gen_output_file = f"{Config.project_name_and_version}-sbom"
+    Config.software_type = "DELIVERABLE"
 
     # ADD LOGIC TO SET PROPERTY "IS_SOFTWARE_DELIVERABLE" BASED ON USER INPUT (DELIVERABLE, TEST/DEV, BUILD/CLASSPATH)
+    member = enums.SoftwareType.__members__.get(Config.software_type.upper())
+    if member is not None:
+        if member.value is True:
+            Config.is_deliverable_radio_button = "/Will software be used to develop adeliverable prod_Yes_On"
+            Config.is_deliverable_checkbox = "/On"
+        elif member.value is False:
+            Config.is_deliverable_radio_button = "/Will software be used to develop adeliverable prod_No_On"
+
 
     # ADD LOGIC TO SET PROPERTY "SOFTWARE_END_USE" BASED ON USER INPUT (DELIVERABLE, TEST/DEV, BUILD/CLASSPATH)
 
     # ADD LOGIC TO SET NON_STANDARD_FILE
+
+    # ADD LOGIC TO SET IS_EXECUTABLE
+    member = enums.ExecutableSoftware.__members__.get(Config.package_manager.upper())
+    if member is not None:
+        if member.value is True:
+            Config.is_executable = "/_No_On"
+        elif member.value is False:
+            Config.is_executable = "/_Yes_On"
+
 
     sbom_gen_timer = Timer()
     sbom_gen_timer.start("starting sbom_gen timer")

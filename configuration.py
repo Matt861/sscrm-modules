@@ -10,12 +10,15 @@ class Configuration:
     # PROJECT PROPERTIES
     root_dir = get_project_root()
     project_name = None
+    project_version = None
+    project_name_and_version = f"{project_name}-{project_version}"
     package_manager = None
     os_identification = ""
-    is_deliverable_software = False
-    software_end_use = ""
-    software_type = ""
+    is_deliverable_software = None
+    software_end_use = None
+    software_type = None
     non_standard_file = False
+    is_executable = None
 
     # PROJECT SETUP
     utils.load_env_vars(Path(root_dir, ".env"))
@@ -61,4 +64,15 @@ class Configuration:
 
     # SBOM PARSER PROPERTIES
     component_store = None
+
+    # FILE NAMES
+    sis_csv_file_name = None
+    gray_sis_pdf_file_name = None
+    green_sis_csv_file_name = None
+    components_csv_file_name = None
+    vuln_file_name = None
+
+    # GRAY SIS VALUES
+    is_deliverable_checkbox = None
+    is_deliverable_radio_button = None
 

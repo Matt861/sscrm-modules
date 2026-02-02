@@ -32,6 +32,10 @@ Notes:
 """
 
 from __future__ import annotations
+
+import json
+from pathlib import Path
+
 from configuration import Configuration as Config
 import argparse
 import sys
@@ -44,6 +48,29 @@ from pypdf.constants import FieldDictionaryAttributes as FDA
 
 TRUTHY = {"true", "1", "yes", "y", "on", "checked"}
 FALSY = {"false", "0", "no", "n", "off", "unchecked"}
+
+
+def load_rename_sets(json_path: Path) -> List[Tuple[str, str]]:
+    """
+    Reads a JSON dict of { old_name: new_name } and returns a list of (old, new) pairs.
+    """
+    #p = Path(json_path)
+    data = json.loads(json_path.read_text(encoding="utf-8"))
+
+    if not isinstance(data, dict):
+        raise ValueError(f"Rename JSON must be an object/dict, got: {type(data).__name__}")
+
+    renames: List[Tuple[str, str]] = []
+    for old, new in data.items():
+        if not isinstance(old, str) or not isinstance(new, str):
+            raise ValueError("Rename JSON must map string->string.")
+        old_s = old.strip()
+        new_s = new.strip()
+        if not old_s or not new_s:
+            raise ValueError("Rename JSON contains an empty old/new field name.")
+        renames.append((old_s, new_s))
+
+    return renames
 
 
 def _as_str(v: Any) -> str:
@@ -407,8 +434,8 @@ def main() -> int:
     # args = ap.parse_args()
 
     # reader = PdfReader(args.input_pdf)
-    reader = PdfReader(f"{Config.root_dir}/templates/gray_sis_template_with_values_2025.pdf")
-    output_pdf = f"{Config.root_dir}/output/gray_sis_template_modified.pdf"
+    reader = PdfReader(f"{Config.root_dir}/templates/gray_sis_template_2025.pdf")
+    output_pdf = f"{Config.root_dir}/templates/gray_sis_template_modified.pdf"
     strict = True
     list_pdf_fields = False
 
@@ -426,13 +453,19 @@ def main() -> int:
     #     ("country", "United States"),            # dropdown/choice field
     # ]
 
-    renames = [
-        ("Individual Requesting Software-0", "Individual Requesting Software")
-    ]
+    # renames = [
+    #     ("Individual Requesting Software-0", "Individual Requesting Software")
+    # ]
 
-    sets = [
-        ("Individual Requesting Software", "Matthew Windham")
-    ]
+    gray_sis_field_rename_json_path = Path(Config.root_dir, "input/gray_sis_field_renames.json")
+    renames = load_rename_sets(gray_sis_field_rename_json_path)
+
+
+    # sets = [
+    #     ("Individual Requesting Software", "Matthew Windham")
+    # ]
+
+    sets = []
 
     if _is_xfa(reader):
         print("WARNING: This PDF appears to contain XFA (/XFA present).")
