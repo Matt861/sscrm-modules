@@ -11,14 +11,13 @@ class Configuration:
     root_dir = get_project_root()
     project_name = None
     project_version = None
-    project_name_and_version = f"{project_name}-{project_version}"
     package_manager = None
     os_identification = ""
     is_deliverable_software = None
-    software_end_use = None
-    software_type = None
+    software_end_use = ""
     non_standard_file = False
     is_executable = None
+    has_dependencies = False
 
     # PROJECT SETUP
     utils.load_env_vars(Path(root_dir, ".env"))
@@ -70,9 +69,12 @@ class Configuration:
     gray_sis_pdf_file_name = None
     green_sis_csv_file_name = None
     components_csv_file_name = None
+    no_repo_components_csv_file_name = None
     vuln_file_name = None
 
     # GRAY SIS VALUES
-    is_deliverable_checkbox = None
-    is_deliverable_radio_button = None
+    is_deliverable_checkbox = ""
+    is_deliverable_radio_button = ""
+    has_dependencies_radio_button = "/Are there any dependencies to othersoftware that a_No_On"
+
 

@@ -1,4 +1,4 @@
-from artifact_generators import sis_gen, components_gen
+from artifact_generators import sis_gen, components_gen, gray_sis_gen, no_repo_components_gen
 from artifact_generators.github_metrics_gen import write_repo_json_files
 from artifact_generators.repo_metrics_gen import write_repo_store_to_csv
 from configuration import Configuration as Config
@@ -25,30 +25,13 @@ def main() -> None:
     Config.sbom_gen_input_dir = Path(Config.root_dir, "input/sbom_gen/crt/crt-service")
     Config.sbom_gen_input_file = "input/sbom_gen/crt/crt-service/pom.xml"
     Config.sbom_gen_output_dir = "output/sboms"
-    Config.sbom_gen_output_file = f"{Config.project_name_and_version}-sbom"
-    Config.software_type = "DELIVERABLE"
-
-    # ADD LOGIC TO SET PROPERTY "IS_SOFTWARE_DELIVERABLE" BASED ON USER INPUT (DELIVERABLE, TEST/DEV, BUILD/CLASSPATH)
-    member = enums.SoftwareType.__members__.get(Config.software_type.upper())
-    if member is not None:
-        if member.value is True:
-            Config.is_deliverable_radio_button = "/Will software be used to develop adeliverable prod_Yes_On"
-            Config.is_deliverable_checkbox = "/On"
-        elif member.value is False:
-            Config.is_deliverable_radio_button = "/Will software be used to develop adeliverable prod_No_On"
-
+    Config.sbom_gen_output_file = f"{Config.project_name}-{Config.project_version}-sbom"
+    Config.software_end_use = "DELIVERABLE"
 
     # ADD LOGIC TO SET PROPERTY "SOFTWARE_END_USE" BASED ON USER INPUT (DELIVERABLE, TEST/DEV, BUILD/CLASSPATH)
 
     # ADD LOGIC TO SET NON_STANDARD_FILE
 
-    # ADD LOGIC TO SET IS_EXECUTABLE
-    member = enums.ExecutableSoftware.__members__.get(Config.package_manager.upper())
-    if member is not None:
-        if member.value is True:
-            Config.is_executable = "/_No_On"
-        elif member.value is False:
-            Config.is_executable = "/_Yes_On"
 
 
     sbom_gen_timer = Timer()
@@ -96,6 +79,8 @@ def main() -> None:
 
     sis_gen.main()
     components_gen.main()
+    no_repo_components_gen.main()
+    gray_sis_gen.main()
 
     # github_repos = Config.github_repository_store.get_all()
     # if github_repos:

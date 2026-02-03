@@ -130,7 +130,7 @@ def dump_form_fields(pdf_path: str) -> List[Dict[str, Any]]:
 
 def main() -> int:
 
-    pdf_path = f"{Config.root_dir}/templates/None-None-gray-sis.pdf"
+    pdf_path = f"{Config.root_dir}/templates/gray_sis_template_modified.pdf"
     try:
         rows = dump_form_fields(pdf_path)
     except FileNotFoundError:

@@ -58,7 +58,7 @@
   "Not Open Source": "Not-Open-Source-Checkbox",
   "No If No justify why it has not been through the e": "eFOSS-Process-No-Checkbox",
   "Yes": "eFOSS-Process-Yes-Checkbox",
-  "If Open Source has the softwarebeen through the Ir": "IronFOSS-Checkbox",
+  "If Open Source has the softwarebeen through the Ir": "IronFOSS-Radio-Buttons",
   "Completed json and csv files attached to SIS": "JSON-And-CSV-Attached-Checkbox",
   "Unclassified score": "Unclassified-Score-Text",
   "Will software be used to develop adeliverable prod": "Software-Used-For-Deliverable-Radio-Buttons",

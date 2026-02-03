@@ -304,25 +304,6 @@ def parse_sbom(sbom_path: Path) -> list[Component]:
     return components
 
 
-def resolve_output_path(input_path: Path, output_arg: Optional[str]) -> Path:
-    if not output_arg:
-        return input_path.with_suffix(".components.json")
-
-    out = Path(output_arg)
-
-    if out.exists() and out.is_dir():
-        out.mkdir(parents=True, exist_ok=True)
-        return out / f"{input_path.stem}.components.json"
-
-    s = output_arg.strip()
-    if s.endswith(("/", "\\")):
-        out.mkdir(parents=True, exist_ok=True)
-        return out / f"{input_path.stem}.components.json"
-
-    out.parent.mkdir(parents=True, exist_ok=True)
-    return out
-
-
 def sibling_missing_repo_path(full_components_path: Path) -> Path:
     stem = full_components_path.stem
     suffix = full_components_path.suffix
@@ -337,7 +318,7 @@ def main() -> int:
         help="Path to SBOM.json (CycloneDX).")
     ap.add_argument(
         "--output",
-        default=f"{Path(Config.root_dir, "output", Config.project_name_and_version)}.components.json",
+        default=f"{Path(Config.root_dir, "output", f"{Config.project_name}-{Config.project_version}")}.components.json",
         help="Optional path to write extracted data as JSON (default: <input>.components.json).",
     )
     ap.add_argument(
@@ -375,19 +356,7 @@ def main() -> int:
     Config.component_store = ComponentStore()
     Config.component_store.add_components(components)
 
-    # Write full components list
-    out_path = Path(args.output).resolve() if args.output else in_path.with_suffix(".components.json")
-    out_path.write_text(json.dumps([asdict(c) for c in Config.component_store.get_all_components()], indent=2), encoding="utf-8")
-
-    # Write missing-repo subset
-    out_path = f"{Path(Config.root_dir, "output", Config.project_name_and_version)}.components.json"
-    missing_repo = [c for c in Config.component_store.get_all_components() if not (c.repo_url and c.repo_url.strip())]
-    missing_path = sibling_missing_repo_path(Path(out_path).resolve())
-    missing_path.write_text(json.dumps([asdict(c) for c in missing_repo], indent=2), encoding="utf-8")
-
     print(f"Parsed {len(Config.component_store.get_all_components())} components")
-    print(f"Wrote full list:     {out_path}")
-    print(f"Wrote missing repo:  {missing_path} ({len(missing_repo)} components)")
 
     # Example lookups (comment out if you don't want these)
     # print(store.get_component_by_name("log4j"))
