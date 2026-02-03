@@ -133,6 +133,7 @@ def append_repo_metrics(repo_data, csv_row):
     csv_row['Forks'] = repo_data.forks
     csv_row['Closed_Issues'] = repo_data.closed_issues_count
     csv_row['Releases'] = repo_data.releases_count
+    csv_row['Tags'] = repo_data.tags_count
     csv_row['Age_Days'] = days_from_date_to_now(repo_data.created_at)
     csv_row['Last_Update_Hours'] = hours_from_date_to_now(repo_data.updated_at)
     csv_row['Repo_URL'] = repo_data.repo_url

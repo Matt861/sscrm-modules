@@ -3,14 +3,18 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from dataclasses import asdict
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Optional, Iterable
+from urllib.parse import urlparse, urlunparse
+
+import requests
 
 from configuration import Configuration as Config
 from models.component import Component, ComponentStore
-from utils import normalize_github_url
 
 
 # --- GitHub URL matching / normalization ---
@@ -19,10 +23,247 @@ from utils import normalize_github_url
 #   https://github.com/owner/repo
 #   http://github.com/owner/repo
 #   https://github.com/owner/repo.git
+#   https://gitbox.com/
 #   git@github.com:owner/repo.git
 #
 # Output format:
 #   https://github.com/owner/repo
+
+_GITBOX_HOSTS = {"gitbox.apache.org"}
+_GITHUB_HOSTS = {"github.com"}
+
+
+# def _normalize_github_repo_url(url: str) -> Optional[str]:
+#     """
+#     Normalize GitHub repo URLs to: https://github.com/<owner>/<repo>
+#     """
+#     if not url:
+#         return None
+#     url = _ensure_https(url.strip())
+#     p = urlparse(url)
+#     host = (p.netloc or "").lower()
+#     if host != "github.com":
+#         return None
+#
+#     parts = [x for x in p.path.split("/") if x]
+#     if len(parts) < 2:
+#         return None
+#
+#     owner, repo = parts[0], _strip_dot_git(parts[1])
+#     return f"https://github.com/{owner}/{repo}"
+
+
+def _strip_dot_git(s: str) -> str:
+    return s[:-4] if s.lower().endswith(".git") else s
+
+
+def _ensure_https_url(url: str) -> str:
+    """
+    Force https scheme for parseable URLs (http/https/git).
+    Leaves scp-like forms alone (git@github.com:owner/repo.git).
+    """
+    p = urlparse(url)
+    if p.scheme in ("http", "https", "git", ""):
+        scheme = "https" if p.scheme in ("http", "git", "") else p.scheme
+        p = p._replace(scheme=scheme)
+        return urlunparse(p)
+    return url
+
+
+def _strip_scm_prefix(url: str) -> str:
+    """
+    CycloneDX / Maven SCM strings often look like:
+      scm:git:git://github.com/org/repo.git
+      scm:git:git@github.com:org/repo.git
+    We remove leading scm:*:* prefixes.
+    """
+    s = url.strip()
+    while s.lower().startswith("scm:"):
+        parts = s.split(":", 2)
+        if len(parts) < 3:
+            break
+        s = parts[2].lstrip()
+    return s
+
+
+def _parse_github_scp_like(url: str) -> Optional[str]:
+    """
+    Handle scp-like GitHub URLs:
+      git@github.com:owner/repo.git
+      github.com:owner/repo.git
+    """
+    s = url.strip()
+
+    if s.lower().startswith("git@github.com:"):
+        tail = s[len("git@github.com:") :]
+        parts = [p for p in tail.split("/") if p]
+        if len(parts) >= 2:
+            owner, repo = parts[0], _strip_dot_git(parts[1])
+            return f"https://github.com/{owner}/{repo}"
+        return None
+
+    if s.lower().startswith("github.com:"):
+        tail = s[len("github.com:") :]
+        parts = [p for p in tail.split("/") if p]
+        if len(parts) >= 2:
+            owner, repo = parts[0], _strip_dot_git(parts[1])
+            return f"https://github.com/{owner}/{repo}"
+        return None
+
+    return None
+
+
+def _normalize_github_httpish(url: str) -> Optional[str]:
+    """
+    Normalize parseable GitHub URLs:
+      https://github.com/owner/repo
+      git://github.com/owner/repo.git
+      ssh://git@github.com/owner/repo.git
+    """
+    s = url.strip()
+    if not s:
+        return None
+
+    p = urlparse(s)
+    host = (p.hostname or "").lower()
+    if host != "github.com":
+        return None
+
+    parts = [x for x in (p.path or "").split("/") if x]
+    if len(parts) < 2:
+        return None
+
+    owner, repo = parts[0], _strip_dot_git(parts[1])
+    return f"https://github.com/{owner}/{repo}"
+
+
+def _looks_like_gitbox_or_gitwip(url: str) -> bool:
+    """
+    URLs that commonly redirect to GitHub mirrors:
+      - *gitbox* hosts
+      - git-wip-us.apache.org (older ASF infrastructure)
+    """
+    try:
+        s = _strip_scm_prefix(url)
+        p = urlparse(_ensure_https_url(s))
+        host = (p.hostname or p.netloc or "").lower()
+        return ("gitbox" in host) or ("git-wip-us.apache.org" in host)
+    except Exception:
+        return False
+
+
+def _maybe_rewrite_gitwip_query_to_github(url: str) -> Optional[str]:
+    """
+    Handle ASF git-wip style:
+      https://git-wip-us.apache.org/repos/asf?p=commons-math.git
+    Deterministic best-effort rewrite to:
+      https://github.com/apache/commons-math
+
+    Returns None if URL isn't git-wip style or doesn't include p=<repo>.
+    """
+    try:
+        s = _strip_scm_prefix(url.strip())
+        p = urlparse(_ensure_https_url(s))
+        host = (p.hostname or "").lower()
+        if host != "git-wip-us.apache.org":
+            return None
+
+        # Expect query param p=<repo>.git
+        q = p.query or ""
+        # very small parser to avoid importing parse_qs
+        for part in q.split("&"):
+            if part.startswith("p="):
+                repo = part[2:].strip()
+                repo = _strip_dot_git(repo)
+                if repo:
+                    return f"https://github.com/apache/{repo}"
+        return None
+    except Exception:
+        return None
+
+
+@lru_cache(maxsize=4096)
+def _resolve_final_url(url: str, *, timeout: int = 15) -> Optional[str]:
+    """
+    Follow redirects and return the final resolved URL.
+    Cached to avoid repeated network calls for the same input URL.
+    """
+    if not url:
+        return None
+
+    url = url.strip()
+    if not url:
+        return None
+
+    url = _ensure_https_url(url)
+
+    try:
+        r = requests.head(url, allow_redirects=True, timeout=timeout)
+        if r.status_code >= 400 or not r.url:
+            r = requests.get(url, allow_redirects=True, timeout=timeout)
+        final = (r.url or "").strip()
+        return final or None
+    except requests.RequestException:
+        return None
+
+
+def normalize_vcs_url_to_github(
+    url: str,
+    *,
+    follow_redirects_for_mirrors: bool = True,
+    timeout: int = 15,
+) -> Optional[str]:
+    """
+    Normalize various VCS URL formats to a GitHub repo URL.
+
+    Supported:
+      - git://github.com/owner/repo.git
+      - scm:git:git://github.com/owner/repo.git
+      - scm:git:git@github.com:owner/repo.git
+      - https://github.com/owner/repo
+      - ssh://git@github.com/owner/repo.git
+      - https://git-wip-us.apache.org/repos/asf?p=<repo>.git  (rewritten or redirect-resolved)
+
+    Rule: Non-GitHub final URLs return None (GitLab/Bitbucket/etc).
+    """
+    if not url or not str(url).strip():
+        return None
+
+    s = _strip_scm_prefix(str(url).strip())
+
+    # 0) Deterministic rewrite for git-wip-us.apache.org?p=<repo>.git
+    # (fast, no network, matches your example)
+    rew = _maybe_rewrite_gitwip_query_to_github(s)
+    if rew:
+        return rew
+
+    # 1) scp-like GitHub forms (git@github.com:owner/repo.git)
+    scp = _parse_github_scp_like(s)
+    if scp:
+        return scp
+
+    # 2) Parseable GitHub URLs (https/git/ssh)
+    gh = _normalize_github_httpish(s)
+    if gh:
+        return gh
+
+    # 3) Mirror-ish hosts: follow redirects and only accept GitHub final URL
+    if follow_redirects_for_mirrors and _looks_like_gitbox_or_gitwip(s):
+        final = _resolve_final_url(s, timeout=timeout)
+        if not final:
+            return None
+
+        final = _strip_scm_prefix(final)
+
+        scp2 = _parse_github_scp_like(final)
+        if scp2:
+            return scp2
+
+        gh2 = _normalize_github_httpish(final)
+        return gh2  # None if not GitHub
+
+    # 4) Everything else (gitlab/bitbucket/unknown) => None
+    return None
 
 
 # --- CycloneDX JSON helpers ---
@@ -138,12 +379,16 @@ def find_repo_url(component: dict[str, Any]) -> Optional[str]:
     vcs_urls, other_urls = extract_urls(component)
 
     for u in vcs_urls:
-        norm = normalize_github_url(u)
+        if u == "https://git-wip-us.apache.org/repos/asf?p=commons-math.git":
+            print('test')
+        norm = normalize_vcs_url_to_github(u, follow_redirects_for_mirrors=True)
         if norm:
             return norm
 
     for u in other_urls:
-        norm = normalize_github_url(u)
+        if u == "https://git-wip-us.apache.org/repos/asf?p=commons-math.git":
+            print('test')
+        norm = _normalize_github_httpish(u)
         if norm:
             return norm
 
