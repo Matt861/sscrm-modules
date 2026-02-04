@@ -96,7 +96,7 @@ def init_gray_field_dynamic_values():
           "Vulnerability-Assessment-No-Text": "",
           "Vulnerability-Assessment-Yes-Text": f"See attached {Config.vuln_file_name}",
           "Vulnerability-Justify-Risk-Determination-Text": "",
-          "Dependencies-Yes-Text": f"See attached {Config.sbom_gen_output_file}",
+          "Dependencies-Yes-Text": f"See attached {Config.sbom_output_file_path}",
           "Alternative-Solutions-Yes-Text": "",
           "Signature6": "",
           "Signature7": "",

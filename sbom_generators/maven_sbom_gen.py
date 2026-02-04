@@ -12,8 +12,6 @@ Docs:
 from __future__ import annotations
 from configuration import Configuration as Config
 from loggers.maven_sbom_gen_logger import maven_sbom_gen_logger as logger
-import argparse
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -46,21 +44,21 @@ def run(cmd: list[str], cwd: Path, log_file: Path) -> None:
         raise SystemExit(proc.returncode)
 
 
-def find_generated_files(fmt: str) -> list[Path]:
-    exts = []
-    if fmt == "json":
-        exts = ["json"]
-    elif fmt == "xml":
-        exts = ["xml"]
-    elif fmt == "all":
-        exts = ["json", "xml"]
-
-    results: list[Path] = []
-    for ext in exts:
-        p = Path(f"{Config.sbom_output_file_path}.{ext}")
-        if p.exists():
-            results.append(p)
-    return results
+# def find_generated_files(fmt: str) -> list[Path]:
+#     exts = []
+#     if fmt == "json":
+#         exts = ["json"]
+#     elif fmt == "xml":
+#         exts = ["xml"]
+#     elif fmt == "all":
+#         exts = ["json", "xml"]
+#
+#     results: list[Path] = []
+#     for ext in exts:
+#         p = Path(f"{Config.sbom_output_file_path}.{ext}")
+#         if p.exists():
+#             results.append(p)
+#     return results
 
 
 import os
@@ -115,139 +113,65 @@ def resolve_maven_executable(mvn_arg: str, project_dir: Path) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate a CycloneDX SBOM for a Maven project.")
-    parser.add_argument(
-        "--project-dir",
-        default=".",
-        help="Path to the Maven project root (directory containing pom.xml). Default: .",
-    )
-    parser.add_argument(
-        "--pom",
-        default=None,
-        help="Optional path to pom.xml (relative to project-dir or absolute). If omitted, uses project-dir/pom.xml.",
-    )
-    parser.add_argument(
-        "--goal",
-        choices=["makeAggregateBom", "makeBom"],
-        default="makeAggregateBom",
-        help="CycloneDX goal to run. Default: makeAggregateBom (recommended for multi-module).",
-    )
-    parser.add_argument(
-        "--plugin-version",
-        default="2.9.1",
-        help="CycloneDX Maven plugin version. Default: 2.9.1",
-    )
-    parser.add_argument(
-        "--format",
-        choices=["json", "xml", "all"],
-        default="json",
-        help="SBOM output format. Default: json",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default=None,
-        help="Output directory for the SBOM. Default: <project>/target",
-    )
-    parser.add_argument(
-        "--output-name",
-        default="bom",
-        help="Output filename WITHOUT extension. Default: bom",
-    )
-    parser.add_argument(
-        "--include-test-scope",
-        action="store_true",
-        help="Include test-scoped dependencies in the SBOM.",
-    )
-    parser.add_argument(
-        "--mvn",
-        default="mvn.cmd",
-        help="Maven executable (e.g., mvn or ./mvnw). Default: mvn",
-    )
-    parser.add_argument(
-        "--offline",
-        action="store_true",
-        help="Run Maven in offline mode (-o). Note: plugin may require online mode depending on your setup.",
-    )
-    parser.add_argument(
-        "--no-skip-tests-flag",
-        action="store_true",
-        help="By default, the script passes -DskipTests. Use this flag to NOT set -DskipTests.",
-    )
+    Config.sbom_output_file_name = f"{Config.project_name}-{Config.project_version}-sbom"
 
-    args = parser.parse_args()
-
-    if Config.sbom_input_dir:
-        args.project_dir = Config.sbom_input_dir
-    if Config.sbom_gen_input_file:
-        args.pom = Config.sbom_gen_input_file
-    if Config.sbom_gen_output_dir:
-        args.output_dir = Config.sbom_output_dir
-    if Config.sbom_gen_output_file:
-        args.output_name = Config.sbom_gen_output_file
-    if args.format:
-        Config.sbom_extension = f".{args.format}"
-
-    Config.sbom_output_file_path = Path(Config.sbom_output_dir, args.output_name)
-
-    #project_dir = Path(args.project_dir).resolve() if args.project_dir else (Path(Config.root_dir, "input/sbom_gen"))
-    project_dir = Path(args.project_dir).resolve()
-    if not project_dir.exists():
-        print(logger.error(f"ERROR: project-dir does not exist: {project_dir}"), file=sys.stderr)
+    if not Config.sbom_input_dir.exists():
+        print(logger.error(f"ERROR: sbom input directory does not exist: {Config.sbom_input_dir}"), file=sys.stderr)
         sys.exit()
 
-    #pom_path = Path(args.project_dir, args.pom).resolve() if args.pom else (Path(Config.root_dir, "input/sbom_gen/pom.xml"))
-    pom_path = Path(args.pom).resolve() if args.pom else (project_dir / "pom.xml")
+    pom_path = Path(Config.sbom_input_dir, Config.sbom_input_file)
     if not pom_path.exists():
         print(logger.error(f"ERROR: pom.xml not found: {pom_path}"), file=sys.stderr)
         sys.exit()
 
-    args.output_dir.mkdir(parents=True, exist_ok=True)
+    Config.project_output_dir.mkdir(parents=True, exist_ok=True)
 
     # Ensure Maven is available
-    if args.mvn != "./mvnw" and shutil.which(args.mvn) is None:
+    if Config.maven_command != "./mvnw" and shutil.which(Config.maven_command) is None:
         print(logger.error(
-            f"ERROR: Maven executable not found: {args.mvn}\n"
+            f"ERROR: Maven executable not found: {Config.maven_command}\n"
             f"Tip: use --mvn ./mvnw if your project includes Maven Wrapper."),
             file=sys.stderr,
         )
         sys.exit()
 
     # Build the Maven command
-    plugin = f"org.cyclonedx:cyclonedx-maven-plugin:{args.plugin_version}:{args.goal}"
+    plugin = f"org.cyclonedx:cyclonedx-maven-plugin:{Config.cyclonedx_maven_plugin_version}:{Config.maven_goal}"
 
-    mvn_exec = resolve_maven_executable(args.mvn, project_dir)
+    mvn_exec = resolve_maven_executable(Config.maven_command, Config.sbom_input_dir)
 
     cmd = [mvn_exec, "-f", str(pom_path), plugin]
-    if args.offline:
+    if Config.maven_offline_mode:
         cmd.append("-o")
 
     # Common flags
     cmd += [
-        f"-DoutputFormat={args.format}",
-        f"-DoutputName={args.output_name}",
-        f"-DoutputDirectory={args.output_dir}",
+        f"-DoutputFormat={Config.sbom_format}",
+        f"-DoutputName={Config.sbom_output_file_name}",
+        f"-DoutputDirectory={Config.project_output_dir}",
     ]
 
-    if args.include_test_scope:
+    if Config.maven_include_test_scope:
         cmd.append("-DincludeTestScope=true")
 
-    if not args.no_skip_tests_flag:
+    if Config.maven_skip_tests_flag:
         cmd.append("-DskipTests")
 
     # Run
-    run(cmd, cwd=project_dir, log_file=Path(Config.root_dir, "logs/maven_sbom_gen_subprocess.log"))
+    run(cmd, cwd=Config.sbom_input_dir, log_file=Path(Config.log_dir, Config.maven_sbom_gen_log_file_name))
+
+    Config.sbom_output_file_path = Path(Config.project_output_dir, f"{Config.sbom_output_file_name}.{Config.sbom_format}")
 
     # Confirm outputs
-    generated = find_generated_files(args.format)
-    if generated:
-        print("\nSBOM generated:")
-        for p in generated:
-            print(f"   - {p}")
+    if Config.sbom_output_file_path.exists():
+        print(f"SBOM generated: {Config.sbom_output_file_path}")
+        # for p in generated:
+        #     print(f"   - {p}")
     else:
         # Some builds/plugins may place files elsewhere depending on configuration.
         print(logger.error(
             "\nMaven finished, but expected SBOM file(s) not found in the configured output directory.\n"
-            f"Look under: {args.output_dir}\n"
+            f"Look under: {Config.project_output_dir}\n"
             "If this is a multi-module build, ensure you're running from the reactor root, or try --goal makeBom."),
             file=sys.stderr,
         )

@@ -1,4 +1,3 @@
-import json
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -313,10 +312,11 @@ def apply_changes(writer: PdfWriter, gray_sis_values: List[Tuple[str, str]], str
 
 def main() -> None:
     Config.gray_sis_pdf_file_name = f"{Config.project_name}-{Config.project_version}-gray-sis.pdf"
-    gray_sis_pdf_path = Path(Config.root_dir, "output", Config.gray_sis_pdf_file_name)
+    gray_sis_pdf_path = Path(Config.project_output_dir, Config.gray_sis_pdf_file_name)
     gray_sis_field_values = gray_sis_field_dynamic_values.init_gray_field_dynamic_values()
     pdf_values = load_gray_sis_values(gray_sis_field_values)
-    reader = PdfReader(f"{Config.root_dir}/templates/gray_sis_template_modified.pdf")
+    reader = PdfReader(f"{Path(Config.templates_dir, Config.gray_sis_template_name)}")
+
     strict = True
 
     if _is_xfa(reader):

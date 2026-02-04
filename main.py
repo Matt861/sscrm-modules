@@ -20,11 +20,8 @@ def main() -> None:
     Config.project_version = "1.0.0"
     Config.package_manager = "maven"
     Config.software_end_use = "DELIVERABLE"
-
-    Config.sbom_gen_input_dir = Path(Config.root_dir, "input/sbom_gen/crt/crt-service")
-    Config.sbom_gen_input_file = "input/sbom_gen/crt/crt-service/pom.xml"
-    Config.sbom_gen_output_dir = "output/sboms"
-    Config.sbom_gen_output_file = f"{Config.project_name}-{Config.project_version}-sbom"
+    Config.sbom_input_dir = Path(Config.input_dir, "sbom_gen/crt/crt-service")
+    Config.project_output_dir = Path(Config.output_dir, f"{Config.project_name}-{Config.project_version}")
 
 
 
@@ -32,7 +29,7 @@ def main() -> None:
     sbom_gen_timer.start("starting sbom_gen timer")
     sbom_gen.main()
     sbom_gen_timer.stop("stopping sbom_gen timer")
-    logger.info(sbom_gen_timer.elapsed("Elapsed time for sbom_gen: "))
+    print(logger.info(sbom_gen_timer.elapsed("Elapsed time for sbom_gen: ")))
 
     sbom_parser_timer = Timer()
     sbom_parser_timer.start("starting sbom_parser timer")

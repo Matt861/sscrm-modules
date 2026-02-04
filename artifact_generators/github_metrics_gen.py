@@ -105,7 +105,7 @@ def main() -> None:
       - contributors: list of ContributorSummary-like objects with:
           login, github_id, contributions, name, company, location, internal_address
     """
-    github_metrics_output_dir = Path(Config.github_metrics_dir, f"{Config.project_name}-{Config.project_version}")
+    github_metrics_output_dir = Path(Config.project_output_dir, Config.github_metrics_output_folder_name)
     github_metrics_output_dir.mkdir(parents=True, exist_ok=True)
     written: List[Path] = []
 

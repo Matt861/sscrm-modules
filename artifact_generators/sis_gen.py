@@ -116,7 +116,7 @@ def append_efoss_info(efoss_data, csv_row):
 
 def generate_sis_csv(sis_csv_path):
     try:
-        sis_row_template = utils.load_json_file(Path(Config.root_dir, 'templates/sis_row_template.json'))
+        sis_row_template = utils.load_json_file(Path(Config.templates_dir, Config.sis_row_template_name))
         fieldnames = sis_row_template.keys()
         rows = []
         with open(sis_csv_path, 'w', newline='', encoding="utf-8") as sis_csv:
@@ -152,7 +152,7 @@ def generate_sis_csv(sis_csv_path):
 
 def main():
     Config.sis_csv_file_name = f"{Config.project_name}-{Config.project_version}-sis.csv"
-    sis_csv_path = Path(Config.root_dir, "output", Config.sis_csv_file_name)
+    sis_csv_path = Path(Config.project_output_dir, Config.sis_csv_file_name)
     generate_sis_csv(sis_csv_path)
 
 

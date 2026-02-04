@@ -7,11 +7,21 @@ p = Path(__file__).resolve()
 
 
 class Configuration:
-    # PROJECT PROPERTIES
+    # DIRECTORIES
     root_dir = get_project_root()
-    project_name = None
-    project_version = None
-    package_manager = None
+    input_dir = Path(root_dir, "input")
+    output_dir = Path(root_dir, "output")
+    cache_dir = Path(root_dir, "cache")
+    log_dir = Path(root_dir, "logs")
+    templates_dir = Path(root_dir, "templates")
+    nominatim_cache_file_path = Path(cache_dir, "nominatim_cache.json")
+    sbom_input_dir = Path(input_dir, "sbom_gen")
+    project_output_dir = ""
+
+    # PROJECT PROPERTIES
+    project_name = ""
+    project_version = ""
+    package_manager = ""
     os_identification = ""
     is_deliverable_software = ""
     software_end_use = ""
@@ -49,6 +59,7 @@ class Configuration:
     github_perf_client = None
     gql_batch_size = 25
     github_api_base_url = "https://api.github.com"
+    github_metrics_output_folder_name = "github_metrics"
 
     # CONTRIBUTOR METRICS PROPERTIES
     contributor_store = None
@@ -60,15 +71,25 @@ class Configuration:
     nominatim_api_base_url = "https://nominatim.openstreetmap.org"
 
     # SBOM GEN PROPERTIES
-    sbom_gen_input_dir = None
-    sbom_gen_input_file = None
-    sbom_gen_output_dir = None
-    sbom_gen_output_file = None
-    sbom_extension = ".json"
+    sbom_format = "json" #Choices: json, xml, all
     sbom_output_file_path = ""
+    sbom_output_file_name = ""
+    maven_sbom_input_file = "pom.xml"
+    pypi_sbom_input_file = "requirements.txt"
+    npm_sbom_input_file = "package.json"
+    raw_sbom_input_file = "package.csv"
+    sbom_input_file = ""
+    cyclonedx_maven_plugin_version = "2.9.1"
+    maven_command = "mvn.cmd"
+    maven_skip_tests_flag = True
+    maven_include_test_scope = False
+    maven_offline_mode = False
+    maven_goal = "makeAggregateBom" #Choices: makeAggregateBom, makeBom
+
 
     # SBOM PARSER PROPERTIES
     component_store = None
+    sbom_parser_dedupe = True
 
     # FILE NAMES
     sis_csv_file_name = None
@@ -78,6 +99,12 @@ class Configuration:
     no_repo_components_csv_file_name = None
     vuln_file_name = None
     github_metrics_file_name = "github-metrics.csv"
+    sis_row_template_name = "sis_row_template.json"
+    green_sis_row_template_name = "green_sis_row_template.json"
+    gray_sis_template_name = "gray_sis_template_modified.pdf"
+    component_row_template_name = "component_row_template.json"
+    maven_sbom_gen_log_file_name = "maven_sbom_gen_subprocess.log"
+    green_sis_xlsx_template_name = "green-sis-template-2026.xlsx"
 
     # GRAY SIS PROPERTIES
     is_deliverable_checkbox = ""
@@ -86,16 +113,18 @@ class Configuration:
     has_dependencies_radio_button = "/Are there any dependencies to othersoftware that a_No_On"
 
     # GREEN SIS PROPERTIES
-    source_green_sis_xlsx_path = Path(root_dir, "templates/green-sis-template-2026.xlsx")
-    source_green_sis_xlsx_sheet_name = "SW Submissions"
-    green_sis_row_template = Path(root_dir, "templates/green_sis_row_template.json")
+    green_sis_xlsx_sheet_name = "SW Submissions"
 
-    # DIRECTORIES
-    input_dir = Path(root_dir, "input")
-    output_dir = Path(root_dir, "output")
-    cache_dir = Path(root_dir, "cache")
-    nominatim_cache_file_path = Path(cache_dir, "nominatim_cache.json")
-    github_metrics_dir = Path(root_dir, output_dir, "github_metrics")
-    sbom_output_dir = Path(root_dir, output_dir, "sboms")
-    sbom_input_dir = Path(root_dir, input_dir, "sbom_gen")
+    # DTRACK PROPERTIES
+    dtrack_base_url = ""
+    dtrack_api_key = ""
+    dtrack_project_uuid = ""
+    dtrack_project_name = ""
+    dtrack_project_version = ""
+    dtrack_project_auto_create = ""
+    dtrack_verify_tls = ""
+    dtrack_timeout_seconds = 0
+
+
+
 

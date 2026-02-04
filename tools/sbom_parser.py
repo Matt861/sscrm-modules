@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import argparse
 import json
-import re
 import sys
-from dataclasses import asdict
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Optional, Iterable
+from typing import Any, Optional
 from urllib.parse import urlparse, urlunparse
-
 import requests
-
 from configuration import Configuration as Config
 from models.component import Component, ComponentStore
 
@@ -555,38 +550,14 @@ def sibling_missing_repo_path(full_components_path: Path) -> Path:
     return full_components_path.with_name(f"{stem}.missing-repo{suffix}")
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description="Parse a CycloneDX SBOM.json and extract component fields.")
-    ap.add_argument(
-        "--input",
-        default=None,
-        help="Path to SBOM.json (CycloneDX).")
-    ap.add_argument(
-        "--output",
-        default=f"{Path(Config.root_dir, "output", f"{Config.project_name}-{Config.project_version}")}.components.json",
-        help="Optional path to write extracted data as JSON (default: <input>.components.json).",
-    )
-    ap.add_argument(
-        "--dedupe",
-        default=True,
-        action="store_true",
-        help="Dedupe identical (group,name,version) rows before writing.",
-    )
-    args = ap.parse_args()
+def main() -> None:
+    if not Config.sbom_output_file_path.exists():
+        print(f"ERROR: sbom file not found: {Config.sbom_output_file_path}")
+        sys.exit()
 
-    if Config.sbom_gen_output_dir and Config.sbom_gen_output_file:
-        args.input = f"{Path(Config.root_dir, Config.sbom_gen_output_dir, Config.sbom_gen_output_file)}{Config.sbom_extension}"
-    if not args.input:
-        sys.exit("No SBOM found for parsing.")
+    components = parse_sbom(Config.sbom_output_file_path)
 
-    in_path = Path(args.input).resolve()
-    if not in_path.exists():
-        print(f"ERROR: input file not found: {in_path}")
-        return 2
-
-    components = parse_sbom(in_path)
-
-    if args.dedupe:
+    if Config.sbom_parser_dedupe:
         seen: set[tuple[Optional[str], str, Optional[str]]] = set()
         deduped: list[Component] = []
         for c in components:
@@ -602,11 +573,6 @@ def main() -> int:
     Config.component_store.add_components(components)
 
     print(f"Parsed {len(Config.component_store.get_all_components())} components")
-
-    # Example lookups (comment out if you don't want these)
-    # print(store.get_component_by_name("log4j"))
-    # print(store.get_component_by_repo_url("git@github.com:owner/repo.git"))
-    # print(store.get_component_by_name_and_group("commons-lang3", "org.apache.commons"))
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@ def append_component_info(component, xlsx_row):
 
 def append_generic_info(xlsx_row):
     xlsx_row['Is this an Executable (yes/no)'] = Config.is_executable
-    xlsx_row['Are there any dependencies to other software that also must be installed? (yes/no, list dependencies)'] = f"{Config.has_dependencies}, See {Config.sbom_gen_output_file}"
+    xlsx_row['Are there any dependencies to other software that also must be installed? (yes/no, list dependencies)'] = f"{Config.has_dependencies}, See {Config.sbom_output_file_name}"
     xlsx_row['Does it create a non-standard file type? If Yes, can it be scanned by security software (i.e., Anti-Virus)? (yes/ no, if yes list file type, if no explain why not)'] = Config.non_standard_file
 
 
@@ -108,7 +108,7 @@ def build_rows_from_template(template: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 def generate_green_sis_xlsx(green_sis_xlsx_path: Path, sheet_name: str = "SW Submissions"):
     try:
-        xlsx_row_template = utils.load_json_file(Config.green_sis_row_template)
+        xlsx_row_template = utils.load_json_file(Path(Config.templates_dir, Config.green_sis_row_template_name))
         wb = load_workbook(green_sis_xlsx_path)
 
         if sheet_name not in wb.sheetnames:
@@ -140,9 +140,9 @@ def generate_green_sis_xlsx(green_sis_xlsx_path: Path, sheet_name: str = "SW Sub
 
 def main():
     Config.green_sis_xlsx_file_name = f"{Config.project_name}-{Config.project_version}-green-sis.xlsx"
-    green_sis_xlsx_path = Path(Config.root_dir, "output", Config.green_sis_xlsx_file_name)
-    clone_workbook(Config.source_green_sis_xlsx_path, green_sis_xlsx_path)
-    generate_green_sis_xlsx(green_sis_xlsx_path, Config.source_green_sis_xlsx_sheet_name)
+    green_sis_xlsx_path = Path(Config.project_output_dir, Config.green_sis_xlsx_file_name)
+    clone_workbook(Path(Config.templates_dir, Config.green_sis_xlsx_template_name), green_sis_xlsx_path)
+    generate_green_sis_xlsx(green_sis_xlsx_path, Config.green_sis_xlsx_sheet_name)
 
 
 

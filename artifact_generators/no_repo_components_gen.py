@@ -7,7 +7,7 @@ from configuration import Configuration as Config
 
 def generate_no_repo_components_csv(no_repo_components_csv_path):
     try:
-        component_row_template = utils.load_json_file(Path(Config.root_dir, 'templates/component_row_template.json'))
+        component_row_template = utils.load_json_file(Path(Config.templates_dir, Config.component_row_template_name))
         fieldnames = component_row_template.keys()
         rows = []
         with open(no_repo_components_csv_path, 'w', newline='', encoding="utf-8") as components_csv:
@@ -39,7 +39,7 @@ def generate_no_repo_components_csv(no_repo_components_csv_path):
 
 def main():
     Config.no_repo_components_csv_file_name = f"{Config.project_name}-{Config.project_version}-no-repo-components.csv"
-    no_repo_components_csv_path = Path(Config.root_dir, "output", Config.no_repo_components_csv_file_name)
+    no_repo_components_csv_path = Path(Config.project_output_dir, Config.no_repo_components_csv_file_name)
     generate_no_repo_components_csv(no_repo_components_csv_path)
 
 

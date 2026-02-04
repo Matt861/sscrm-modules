@@ -59,7 +59,7 @@ def main(*, encoding: str = "utf-8",) -> None:
     """
     Convenience wrapper for RepositoryStore.
     """
-    github_metrics_csv_file_path = Path(Config.root_dir, Config.output_dir, Config.github_metrics_file_name)
+    github_metrics_csv_file_path = Path(Config.project_output_dir, Config.github_metrics_file_name)
 
     write_repo_infos_to_csv(
         repos=Config.github_repository_store.get_all(),

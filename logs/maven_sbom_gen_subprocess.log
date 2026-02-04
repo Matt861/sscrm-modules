@@ -8,13 +8,13 @@
 [INFO] --- cyclonedx:2.9.1:makeAggregateBom (default-cli) @ crt-dependencies ---
 [INFO] CycloneDX: Resolving Dependencies
 [INFO] CycloneDX: Creating BOM version 1.6 with 200 component(s)
-[INFO] CycloneDX: Writing and validating BOM (JSON): C:\Users\mattw\PycharmProjects\sscrm-modules\output\sboms\crt-service-1.0.0-sbom.json
+[INFO] CycloneDX: Writing and validating BOM (JSON): C:\Users\mattw\PycharmProjects\sscrm-modules\output\crt-service-1.0.0\crt-service-1.0.0-sbom.json
 [WARNING] Unknown keyword meta:enum - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
 [WARNING] Unknown keyword deprecated - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
 [INFO]            attaching as crt-dependencies-1.0.0-SNAPSHOT-cyclonedx.json
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.348 s
-[INFO] Finished at: 2026-02-04T12:35:35-06:00
+[INFO] Total time:  3.604 s
+[INFO] Finished at: 2026-02-04T16:37:41-06:00
 [INFO] ------------------------------------------------------------------------

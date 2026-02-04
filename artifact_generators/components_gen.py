@@ -7,7 +7,7 @@ from configuration import Configuration as Config
 
 def generate_components_csv(components_csv_path):
     try:
-        component_row_template = utils.load_json_file(Path(Config.root_dir, 'templates/component_row_template.json'))
+        component_row_template = utils.load_json_file(Path(Config.templates_dir, Config.component_row_template_name))
         fieldnames = component_row_template.keys()
         rows = []
         with open(components_csv_path, 'w', newline='', encoding="utf-8") as components_csv:
@@ -38,7 +38,7 @@ def generate_components_csv(components_csv_path):
 
 def main():
     Config.components_csv_file_name = f"{Config.project_name}-{Config.project_version}-components.csv"
-    components_csv_path = Path(Config.root_dir, "output", Config.components_csv_file_name)
+    components_csv_path = Path(Config.project_output_dir, Config.components_csv_file_name)
     generate_components_csv(components_csv_path)
 
 
