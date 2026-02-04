@@ -11,8 +11,6 @@ import utils
 import csv
 from pathlib import Path
 
-non_os_specific_packages = ["maven", "pypi", "npm"]
-executable_packages = ["raw"]
 
 def get_trusted_org(github_url):
     trusted_orgs_data = utils.load_json_file(Path(Config.root_dir, 'input/trusted_orgs.json'))
@@ -25,19 +23,12 @@ def get_trusted_org(github_url):
 
 
 def get_os_identification():
-    if Config.package_manager.lower() in non_os_specific_packages:
+    if Config.package_manager.lower() in Config.non_os_specific_packages:
         return "N/A"
     elif Config.os_identification:
         return Config.os_identification
     else:
         return ""
-
-
-def is_package_executable():
-    if Config.package_manager.lower() in executable_packages:
-        return True
-    else:
-        return False
 
 
 def get_github_publisher_from_url(url: str) -> Optional[str]:
@@ -153,14 +144,14 @@ def append_repo_scores(repo_scores, csv_row):
     csv_row['Passes_SIA'] = repo_scores.passes_sia
 
 
-def append_sis_info(component, csv_row):
+def append_sis_info(csv_row):
     csv_row['Prev_Approved_Versions'] = ""
-    csv_row['Is_Executable'] = str(is_package_executable())
-    csv_row['Non_Standard_File'] = str(Config.non_standard_file)
+    csv_row['Is_Executable'] = Config.is_executable
+    csv_row['Non_Standard_File'] = Config.non_standard_file
     csv_row['OS_Identification'] = get_os_identification()
-    csv_row['Used_On_Deliverable'] = str(Config.is_deliverable_software)
+    csv_row['Used_On_Deliverable'] = Config.is_deliverable_software
     csv_row['End_Use'] = Config.software_end_use
-    csv_row['Software_Type'] = Config.software_type
+    csv_row['Software_Type'] = Config.package_manager
 
 
 
@@ -181,7 +172,7 @@ def generate_sis_csv(sis_csv_path):
                 csv_row = copy.deepcopy(sis_row_template)
                 repo_data = component.repo_info
                 #efoss_data = EfossApi.run("get_record", component)
-                append_sis_info(component, csv_row)
+                append_sis_info(csv_row)
                 append_component_info(component, csv_row)
                 if repo_data:
                     append_repo_metrics(repo_data, csv_row)
@@ -209,7 +200,6 @@ def main():
     Config.sis_csv_file_name = f"{Config.project_name}-{Config.project_version}-sis.csv"
     sis_csv_path = Path(Config.root_dir, "output", Config.sis_csv_file_name)
     generate_sis_csv(sis_csv_path)
-
 
 
 if __name__ == "__main__":

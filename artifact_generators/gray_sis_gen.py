@@ -6,9 +6,8 @@ from typing import List, Tuple, Dict, Any, Iterable, Optional
 
 from configuration import Configuration as Config
 from pypdf import PdfReader, PdfWriter
-from pypdf.generic import NameObject, TextStringObject, DictionaryObject, BooleanObject
+from pypdf.generic import NameObject, TextStringObject, DictionaryObject
 from input import gray_sis_field_dynamic_values
-from tools import gray_sis_value_setter
 
 TRUTHY = {"true", "1", "yes", "y", "on", "checked"}
 FALSY = {"false", "0", "no", "n", "off", "unchecked"}
@@ -321,9 +320,6 @@ def main() -> None:
     Config.gray_sis_pdf_file_name = f"{Config.project_name}-{Config.project_version}-gray-sis.pdf"
     gray_sis_pdf_path = Path(Config.root_dir, "output", Config.gray_sis_pdf_file_name)
     #gray_sis_field_rename_json_path = Path(Config.root_dir, "input/gray_sis_field_renames.json")
-    Config.package_manager = "maven"
-    Config.software_end_use = "DELIVERABLE"
-    gray_sis_value_setter.main()
     gray_sis_field_values = gray_sis_field_dynamic_values.init_gray_field_dynamic_values()
     pdf_values = load_gray_sis_values(gray_sis_field_values)
     #pdf_values = gray_sis_field_values

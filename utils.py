@@ -134,3 +134,46 @@ def normalize_github_url(raw: str) -> Optional[str]:
         return None
 
     return f"https://github.com/{owner}/{repo}"
+
+
+def get_github_publisher_from_url(url: str) -> Optional[str]:
+    if not url or not isinstance(url, str):
+        return None
+
+    s = url.strip()
+
+    # Handle SSH form: git@github.com:OWNER/REPO(.git)
+    m = re.match(r"^(?:ssh://)?git@github\.com:(?P<owner>[^/]+)/(?P<repo>[^/]+?)(?:\.git)?/?$", s, re.IGNORECASE)
+    if m:
+        return m.group("owner")
+
+    # Add scheme if missing so urlparse works correctly
+    if "://" not in s:
+        s = "https://" + s
+
+    parsed = urlparse(s)
+
+    host = (parsed.netloc or "").lower()
+    path = (parsed.path or "").strip("/")
+
+    # Common GitHub hosts that still encode owner/repo in the path
+    # - github.com/OWNER/REPO
+    # - raw.githubusercontent.com/OWNER/REPO/...
+    if host in {"github.com", "www.github.com", "raw.githubusercontent.com"}:
+        parts = [p for p in path.split("/") if p]
+        if len(parts) >= 2:
+            owner = parts[0]
+            # Basic sanity: owner can't be "." or ".."
+            if owner not in {".", ".."}:
+                return owner
+
+    return ""
+
+
+def get_publisher(component):
+    if component.publisher:
+        return component.publisher
+    elif component.repo_url:
+        return get_github_publisher_from_url(component.repo_url)
+    else:
+        return ""

@@ -1,4 +1,4 @@
-from artifact_generators import sis_gen, components_gen, gray_sis_gen, no_repo_components_gen
+from artifact_generators import sis_gen, components_gen, gray_sis_gen, no_repo_components_gen, green_sis_gen
 from artifact_generators.github_metrics_gen import write_repo_json_files
 from artifact_generators.repo_metrics_gen import write_repo_store_to_csv
 from configuration import Configuration as Config
@@ -9,7 +9,7 @@ from loggers.main_logger import main_logger as logger
 from pathlib import Path
 from repo_metrics import analysis, geolocator
 from repo_metrics.github import github_metrics, contributor_metrics
-from tools import sbom_parser, repo_url_finder
+from tools import sbom_parser, repo_url_finder, sis_value_setter
 
 p = Path(__file__).resolve()
 
@@ -77,9 +77,11 @@ def main() -> None:
     output_paths = write_repo_json_files(repos=Config.github_repository_store.get_all(), output_dir=Path(Config.root_dir, "output/githubmetrics"))
     print("Wrote", len(output_paths), "files")
 
+    sis_value_setter.main()
     sis_gen.main()
     components_gen.main()
     no_repo_components_gen.main()
+    green_sis_gen.main()
     gray_sis_gen.main()
 
     # github_repos = Config.github_repository_store.get_all()

@@ -46,7 +46,7 @@ def init_gray_field_dynamic_values():
           "High-Checkbox": "",
           "Moderate-Checkbox": "",
           "Low-Checkbox": "",
-          "Is-Executable-Radio-Buttons": f"{Config.is_executable}",
+          "Is-Executable-Radio-Buttons": f"{Config.is_executable_radio_button}",
           "System-Level-Checkbox": "",
           "Root-Admin-Checkbox": "",
           "Single-User-Checkbox": "",

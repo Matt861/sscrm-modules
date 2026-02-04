@@ -13,11 +13,13 @@ class Configuration:
     project_version = None
     package_manager = None
     os_identification = ""
-    is_deliverable_software = None
+    is_deliverable_software = ""
     software_end_use = ""
-    non_standard_file = False
-    is_executable = None
-    has_dependencies = False
+    non_standard_file = ""
+    is_executable = ""
+    has_dependencies = ""
+    non_os_specific_packages = ["maven", "pypi", "npm"]
+    executable_packages = ["raw"]
 
     # PROJECT SETUP
     utils.load_env_vars(Path(root_dir, ".env"))
@@ -67,14 +69,19 @@ class Configuration:
     # FILE NAMES
     sis_csv_file_name = None
     gray_sis_pdf_file_name = None
-    green_sis_csv_file_name = None
+    green_sis_xlsx_file_name = None
     components_csv_file_name = None
     no_repo_components_csv_file_name = None
     vuln_file_name = None
 
-    # GRAY SIS VALUES
+    # GRAY SIS PROPERTIES
     is_deliverable_checkbox = ""
     is_deliverable_radio_button = ""
+    is_executable_radio_button = ""
     has_dependencies_radio_button = "/Are there any dependencies to othersoftware that a_No_On"
 
+    # GREEN SIS PROPERTIES
+    source_green_sis_xlsx_path = Path(root_dir, "templates/green-sis-template2.xlsx")
+    source_green_sis_xlsx_sheet_name = "SW Submissions"
+    green_sis_row_template = Path(root_dir, "templates/green_sis_row_template.json")
 
