@@ -22,6 +22,74 @@ def load_env_vars(filepath=Path(".env").resolve()):
         print(f"Warning: {filepath} file not found.")
 
 
+def load_env_file(filepath=Path(".env").resolve(), override: bool = False) -> None:
+    """
+    Minimal .env loader with multi-line quoted values.
+
+    Supports:
+      - KEY=VALUE
+      - export KEY=VALUE
+      - comments (#...) on their own lines
+      - single/double-quoted values, including multi-line until closing quote
+    """
+    def strip_outer_quotes(v: str) -> str:
+        if len(v) >= 2 and v[0] == v[-1] and v[0] in ("'", '"'):
+            return v[1:-1]
+        return v
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip("\r\n")
+
+        # skip blanks / full-line comments
+        if not line.strip() or line.lstrip().startswith("#"):
+            i += 1
+            continue
+
+        line = line.strip()
+        if line.startswith("export "):
+            line = line[len("export "):].lstrip()
+
+        if "=" not in line:
+            i += 1
+            continue
+
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.lstrip()
+
+        # Multi-line quoted value: keep consuming until closing quote is found
+        if value.startswith(("'", '"')):
+            quote = value[0]
+            # If it doesn't end with the same quote, keep reading subsequent lines
+            if not (len(value) >= 2 and value.rstrip().endswith(quote)):
+                collected = [value]
+                i += 1
+                while i < len(lines):
+                    nxt = lines[i].rstrip("\r\n")
+                    collected.append(nxt)
+                    # closing quote at end of line
+                    if nxt.endswith(quote):
+                        break
+                    i += 1
+                value = "\n".join(collected)
+
+        value = strip_outer_quotes(value.strip())
+
+        if override or key not in os.environ:
+            os.environ[key] = value
+
+        i += 1
+
+
+def read_newline_list(var_name: str) -> list[str]:
+    raw = os.environ.get(var_name, "")
+    return [line.strip() for line in raw.splitlines() if line.strip()]
+
+
 def read_json_file(json_path: Union[str, Path], encoding: str = "utf-8") -> Any:
     """
     Read and parse a JSON file.

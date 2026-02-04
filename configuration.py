@@ -14,7 +14,6 @@ class Configuration:
     cache_dir = Path(root_dir, "cache")
     log_dir = Path(root_dir, "logs")
     templates_dir = Path(root_dir, "templates")
-    nominatim_cache_file_path = Path(cache_dir, "nominatim_cache.json")
     sbom_input_dir = Path(input_dir, "sbom_gen")
     project_output_dir = ""
 
@@ -33,27 +32,30 @@ class Configuration:
     executable_packages = ["raw"]
 
     # PROJECT SETUP
-    utils.load_env_vars(Path(root_dir, ".env"))
+    #utils.load_env_vars(Path(root_dir, ".env"))
+    utils.load_env_file(Path(root_dir, ".env"))
+    crt_sscrm_github_tokens = utils.read_newline_list("CRT_SSCRM_GITHUB_TOKENS")
 
     # GITHUB METRICS PROPERTIES
     proxies = {"http": "", "https": ""}
-    crt_sscrm_github_tokens = []
-    crt_sscrm_github_token_1 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_1")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_1)
-    crt_sscrm_github_token_2 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_2")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_2)
-    crt_sscrm_github_token_3 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_3")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_3)
-    crt_sscrm_github_token_4 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_4")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_4)
-    crt_sscrm_github_token_5 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_5")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_5)
-    crt_sscrm_github_token_6 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_6")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_6)
-    crt_sscrm_github_token_7 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_7")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_7)
-    crt_sscrm_github_token_8 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_8")
-    crt_sscrm_github_tokens.append(crt_sscrm_github_token_8)
+    # crt_sscrm_github_tokens = []
+    # crt_sscrm_github_token_1 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_1")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_1)
+    # crt_sscrm_github_token_2 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_2")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_2)
+    # crt_sscrm_github_token_3 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_3")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_3)
+    # crt_sscrm_github_token_4 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_4")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_4)
+    # crt_sscrm_github_token_5 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_5")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_5)
+    # crt_sscrm_github_token_6 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_6")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_6)
+    # crt_sscrm_github_token_7 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_7")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_7)
+    # crt_sscrm_github_token_8 = os.getenv("CRT_SSCRM_GITHUB_TOKEN_8")
+    # crt_sscrm_github_tokens.append(crt_sscrm_github_token_8)
+
     github_repository_store = None
     github_client = None
     github_perf_client = None
@@ -105,6 +107,7 @@ class Configuration:
     component_row_template_name = "component_row_template.json"
     maven_sbom_gen_log_file_name = "maven_sbom_gen_subprocess.log"
     green_sis_xlsx_template_name = "green-sis-template-2026.xlsx"
+    nominatim_cache_file_name = "nominatim_cache.json"
 
     # GRAY SIS PROPERTIES
     is_deliverable_checkbox = ""

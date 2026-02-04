@@ -123,7 +123,8 @@ def _internal_address_to_dict(ia: InternalAddress) -> Dict[str, Any]:
 
 def main():
     print('geolocator')
-    Config.nominatim_client = NominatimClient(user_agent="github-metrics", cache_path=Config.nominatim_cache_file_path,)
+    nominatim_cache_file_path = Path(Config.cache_dir, Config.nominatim_cache_file_name)
+    Config.nominatim_client = NominatimClient(user_agent="github-metrics", cache_path=nominatim_cache_file_path,)
     contributor_addresses = geocode_all_contributor_locations(repo_objects=Config.github_repository_store.get_all(),)
 
 
