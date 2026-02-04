@@ -4,8 +4,8 @@ import time
 from pathlib import Path
 from typing import Optional, Dict, Any
 import requests
-
-from models.repo import InternalAddress
+from configuration import Configuration as Config
+from models.nominatim import InternalAddress
 from repo_metrics.rate_limiter import RateLimiter
 
 
@@ -23,7 +23,7 @@ class NominatimClient:
     def __init__(
         self,
         *,
-        base_url: str = "https://nominatim.openstreetmap.org",
+        base_url: str = Config.nominatim_api_base_url,
         user_agent: str = "github-metrics",
         email: Optional[str] = None,
         min_interval_seconds: float = 1.05,

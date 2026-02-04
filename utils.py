@@ -2,6 +2,8 @@ import json
 import math
 import os
 import re
+import shutil
+import tarfile
 from pathlib import Path
 from typing import Union, Any, Optional
 from urllib.parse import urlparse
@@ -177,3 +179,63 @@ def get_publisher(component):
         return get_github_publisher_from_url(component.repo_url)
     else:
         return ""
+
+
+def _rmtree_force(path: Path) -> None:
+    """Robust folder deletion (helps with read-only files on Windows)."""
+    def onerror(func, p, exc_info):
+        try:
+            os.chmod(p, 0o700)
+            func(p)
+        except Exception:
+            raise
+
+    shutil.rmtree(path, onerror=onerror)
+
+
+def dir_to_tar_gz_flat(
+    folder: str | Path,
+    out_path: str | Path | None = None,
+    *,
+    delete_source: bool = True,
+) -> Path:
+    """
+    Create a .tar.gz from `folder`.
+
+    - The archive will contain the *contents* of `folder` at the root level (no nesting).
+    - If `delete_source` is True, the original folder is deleted after a successful archive.
+    """
+    folder = Path(folder).resolve()
+    if not folder.is_dir():
+        raise NotADirectoryError(f"Not a folder: {folder}")
+
+    # Default output: sibling "<folder_name>.tar.gz"
+    if out_path is None:
+        out_path = folder.with_name(folder.name + ".tar.gz")
+    out_path = Path(out_path).resolve()
+
+    # Safety: don't allow output archive inside the folder that will be deleted
+    try:
+        out_path.relative_to(folder)
+        raise ValueError(
+            f"Output archive path must not be inside the source folder (it would be deleted): {out_path}"
+        )
+    except ValueError:
+        # ValueError here means "not relative to" (i.e., it's safe). If we raised above, it will propagate.
+        pass
+
+    # Create tar.gz with folder contents at archive root
+    try:
+        with tarfile.open(out_path, mode="w:gz") as tar:
+            for child in folder.iterdir():
+                # arc_name makes paths inside the archive relative to the folder root
+                tar.add(child, arcname=child.name, recursive=True)
+    except Exception:
+        # If archiving fails, do NOT delete the source folder
+        raise
+
+    # Delete source folder after successful archive creation
+    if delete_source:
+        _rmtree_force(folder)
+
+    return out_path

@@ -79,7 +79,7 @@ def years_since_date_calculator(repo_date: str, *, now: Optional[datetime] = Non
     return _years_between(repo_dt)
 
 
-def calculate_repo_scores():
+def main():
     for repo_data in Config.github_repository_store.get_all():
         stars_score_final = round(constants.STARS_WEIGHT * stars_score(repo_data.stars))
         forks_score_final = round(constants.FORKS_WEIGHT * forks_score(repo_data.forks))
@@ -107,3 +107,7 @@ def calculate_repo_scores():
         )
 
         repo_data.repo_scores = repo_scores
+
+
+if __name__ == "__main__":
+    main()

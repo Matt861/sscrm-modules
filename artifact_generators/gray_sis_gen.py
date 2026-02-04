@@ -3,7 +3,6 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Tuple, Dict, Any, Iterable, Optional
-
 from configuration import Configuration as Config
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject, TextStringObject, DictionaryObject
@@ -312,17 +311,11 @@ def apply_changes(writer: PdfWriter, gray_sis_values: List[Tuple[str, str]], str
                 _set_text_or_choice(ent.field, value)
 
 
-def generate_gray_sis_pdf(gray_sis_pdf_path):
-    print('test')
-
-
 def main() -> None:
     Config.gray_sis_pdf_file_name = f"{Config.project_name}-{Config.project_version}-gray-sis.pdf"
     gray_sis_pdf_path = Path(Config.root_dir, "output", Config.gray_sis_pdf_file_name)
-    #gray_sis_field_rename_json_path = Path(Config.root_dir, "input/gray_sis_field_renames.json")
     gray_sis_field_values = gray_sis_field_dynamic_values.init_gray_field_dynamic_values()
     pdf_values = load_gray_sis_values(gray_sis_field_values)
-    #pdf_values = gray_sis_field_values
     reader = PdfReader(f"{Config.root_dir}/templates/gray_sis_template_modified.pdf")
     strict = True
 
@@ -346,11 +339,6 @@ def main() -> None:
     # Write output
     with open(gray_sis_pdf_path, "wb") as f:
         writer.write(f)
-
-    #generate_gray_sis_pdf(gray_sis_pdf_path)
-
-
-
 
 
 if __name__ == "__main__":

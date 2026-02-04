@@ -1,10 +1,7 @@
 from __future__ import annotations
 
 import copy
-import re
-from typing import Optional
 from urllib.parse import urlparse
-
 from configuration import Configuration as Config
 from datetime import datetime, timezone
 import utils
@@ -27,49 +24,6 @@ def get_os_identification():
         return "N/A"
     elif Config.os_identification:
         return Config.os_identification
-    else:
-        return ""
-
-
-def get_github_publisher_from_url(url: str) -> Optional[str]:
-    if not url or not isinstance(url, str):
-        return None
-
-    s = url.strip()
-
-    # Handle SSH form: git@github.com:OWNER/REPO(.git)
-    m = re.match(r"^(?:ssh://)?git@github\.com:(?P<owner>[^/]+)/(?P<repo>[^/]+?)(?:\.git)?/?$", s, re.IGNORECASE)
-    if m:
-        return m.group("owner")
-
-    # Add scheme if missing so urlparse works correctly
-    if "://" not in s:
-        s = "https://" + s
-
-    parsed = urlparse(s)
-
-    host = (parsed.netloc or "").lower()
-    path = (parsed.path or "").strip("/")
-
-    # Common GitHub hosts that still encode owner/repo in the path
-    # - github.com/OWNER/REPO
-    # - raw.githubusercontent.com/OWNER/REPO/...
-    if host in {"github.com", "www.github.com", "raw.githubusercontent.com"}:
-        parts = [p for p in path.split("/") if p]
-        if len(parts) >= 2:
-            owner = parts[0]
-            # Basic sanity: owner can't be "." or ".."
-            if owner not in {".", ".."}:
-                return owner
-
-    return ""
-
-
-def get_publisher(component):
-    if component.publisher:
-        return component.publisher
-    elif component.repo_url:
-        return get_github_publisher_from_url(component.repo_url)
     else:
         return ""
 
@@ -113,7 +67,7 @@ def append_component_info(component, csv_row):
     csv_row['Group'] = component.group
     csv_row['Is_Direct'] = component.is_direct
     csv_row['Description'] = component.description
-    csv_row['Publisher'] = get_publisher(component)
+    csv_row['Publisher'] = utils.get_publisher(component)
     csv_row['Is_Latest_Version'] = ""
     csv_row['Vulnerabilities'] = ""
     csv_row['Critical_or_High'] = ""

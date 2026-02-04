@@ -18,6 +18,7 @@ class Configuration:
     non_standard_file = ""
     is_executable = ""
     has_dependencies = ""
+    execution_control_level = ""
     non_os_specific_packages = ["maven", "pypi", "npm"]
     executable_packages = ["raw"]
 
@@ -47,6 +48,7 @@ class Configuration:
     github_client = None
     github_perf_client = None
     gql_batch_size = 25
+    github_api_base_url = "https://api.github.com"
 
     # CONTRIBUTOR METRICS PROPERTIES
     contributor_store = None
@@ -55,6 +57,7 @@ class Configuration:
 
     # GEOLOCATOR PROPERTIES
     nominatim_client = None
+    nominatim_api_base_url = "https://nominatim.openstreetmap.org"
 
     # SBOM GEN PROPERTIES
     sbom_gen_input_dir = None
@@ -62,6 +65,7 @@ class Configuration:
     sbom_gen_output_dir = None
     sbom_gen_output_file = None
     sbom_extension = ".json"
+    sbom_output_file_path = ""
 
     # SBOM PARSER PROPERTIES
     component_store = None
@@ -73,6 +77,7 @@ class Configuration:
     components_csv_file_name = None
     no_repo_components_csv_file_name = None
     vuln_file_name = None
+    github_metrics_file_name = "github-metrics.csv"
 
     # GRAY SIS PROPERTIES
     is_deliverable_checkbox = ""
@@ -81,7 +86,15 @@ class Configuration:
     has_dependencies_radio_button = "/Are there any dependencies to othersoftware that a_No_On"
 
     # GREEN SIS PROPERTIES
-    source_green_sis_xlsx_path = Path(root_dir, "templates/green-sis-template2.xlsx")
+    source_green_sis_xlsx_path = Path(root_dir, "templates/green-sis-template-2026.xlsx")
     source_green_sis_xlsx_sheet_name = "SW Submissions"
     green_sis_row_template = Path(root_dir, "templates/green_sis_row_template.json")
+
+    # DIRECTORIES
+    input_dir = Path(root_dir, "input")
+    output_dir = Path(root_dir, "output")
+    cache_dir = Path(root_dir, "cache")
+    nominatim_cache_file_path = Path(cache_dir, "nominatim_cache.json")
+    github_metrics_dir = Path(root_dir, output_dir, "github_metrics")
+    sbom_output_dir = Path(root_dir, output_dir, "sboms")
 

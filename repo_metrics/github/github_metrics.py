@@ -1,16 +1,12 @@
 from __future__ import annotations
 from configuration import Configuration as Config
-import sys
 import utils
 import re
 import uuid
-from pathlib import Path
 from datetime import datetime, timezone
 from typing import Iterable, List, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
 from models import component
-from models.component import Component
 from models.repo import RepositoryInfo, RepositoryStore
 from repo_metrics.github.github_perf_client import GitHubPerfClient
 from repo_metrics.graphql_queries import REPO_METRICS_GQL
@@ -61,9 +57,6 @@ def collect_one_repo(repo_url: str,) -> RepositoryInfo:
     if not repo:
         raise RuntimeError(logger.error(f"GraphQL returned no repository data for {owner}/{name}"))
 
-    # Contributors (REST; 1..N calls depending on max_contributors)
-    #contributors = gh.list_contributors(owner, name)
-
     retrieval_uuid = str(uuid.uuid4())
     retrieved_at = datetime.now(timezone.utc).isoformat()
 
@@ -78,7 +71,6 @@ def collect_one_repo(repo_url: str,) -> RepositoryInfo:
         closed_issues_count=int((repo.get("issues") or {}).get("totalCount", 0)),
         created_at=str(repo.get("createdAt", "")),
         updated_at=str(repo.get("updatedAt", "")),
-        #contributors=contributors,
         retrieval_uuid=retrieval_uuid,
         retrieved_at=retrieved_at,
     )
@@ -117,30 +109,17 @@ def collect_many_repos(repo_urls: Iterable[str], *, max_workers: int = 24,) -> L
             except Exception as e:
                 errors.append(f"{url}: {e}")
 
-    # If you prefer "fail-fast", raise if errors
     if errors:
         # Keep partial results and still surface failures
         msg = "Some repos failed:\n" + "\n".join(errors[:25])
         if len(errors) > 25:
             msg += f"\n... and {len(errors) - 25} more"
-        # You can change this to a print if you don't want exceptions.
         raise RuntimeError(logger.error(msg))
 
     return results
 
 
 def main():
-    # url_file = Path(Config.root_dir, "input/urls/github/github_urls_maven.json")
-    # #urls = ["https://github.com/netplex/json-smart-v2"]
-    # urls: List[str] = []
-    # if url_file:
-    #     json_data = utils.read_json_file(url_file)
-    #     for prop, value in utils.iter_properties(json_data):
-    #         urls.append(value)
-    #
-    # if not urls:
-    #     sys.exit((logger.error("No Github repository URLs provided.", file=sys.stderr)))
-
     components = Config.component_store.get_all_components()
 
     # Collect repo_urls, skipping None/blank, and dedupe while preserving order
@@ -157,4 +136,4 @@ def main():
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

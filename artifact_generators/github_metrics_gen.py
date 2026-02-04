@@ -1,12 +1,13 @@
 from __future__ import annotations
-
+from configuration import Configuration as Config
 import json
 import math
 import re
 from dataclasses import asdict, is_dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Iterable, List, Optional
+from typing import Any, List
+from utils import dir_to_tar_gz_flat
 
 
 def _iso_z(dt_str: str) -> str:
@@ -92,7 +93,7 @@ def _internal_address_to_json_dict(internal_address: Any, *, fallback_query: str
     return {}
 
 
-def write_repo_json_files(repos: Iterable[Any], *, output_dir: Path,) -> List[Path]:
+def main() -> None:
     """
     Creates 1 JSON file per repository object, named after the repository (e.g. json-smart-v2.json).
 
@@ -104,27 +105,28 @@ def write_repo_json_files(repos: Iterable[Any], *, output_dir: Path,) -> List[Pa
       - contributors: list of ContributorSummary-like objects with:
           login, github_id, contributions, name, company, location, internal_address
     """
-    output_dir.mkdir(parents=True, exist_ok=True)
+    github_metrics_output_dir = Path(Config.github_metrics_dir, f"{Config.project_name}-{Config.project_version}")
+    github_metrics_output_dir.mkdir(parents=True, exist_ok=True)
     written: List[Path] = []
 
     now_utc = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    for repo in repos:
+    for repo in Config.github_repository_store.get_all():
         owner = str(_get_attr(repo, "owner", "") or _get_attr(repo, "org", "") or "")
         name = str(_get_attr(repo, "name", "") or "")
         url = str(_get_attr(repo, "repo_url", "") or _get_attr(repo, "url", "") or "")
 
-        scanid = str(_get_attr(repo, "retrieval_uuid", "") or _get_attr(repo, "scanid", "") or "")
-        scandate = str(_get_attr(repo, "retrieved_at", "") or _get_attr(repo, "scandate", "") or "")
+        scan_id = str(_get_attr(repo, "retrieval_uuid", "") or _get_attr(repo, "scanid", "") or "")
+        scan_date = str(_get_attr(repo, "retrieved_at", "") or _get_attr(repo, "scandate", "") or "")
 
-        if not scandate:
-            scandate = now_utc
+        if not scan_date:
+            scan_date = now_utc
 
         created_at = str(_get_attr(repo, "created_at", "") or "")
         updated_at = str(_get_attr(repo, "updated_at", "") or "")
 
         age_days = 0.0
-        lastupdate_hours = 0.0
+        last_update_hours = 0.0
         try:
             if created_at:
                 cdt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
@@ -138,18 +140,27 @@ def write_repo_json_files(repos: Iterable[Any], *, output_dir: Path,) -> List[Pa
                 udt = datetime.fromisoformat(updated_at.replace("Z", "+00:00"))
                 if udt.tzinfo is None:
                     udt = udt.replace(tzinfo=timezone.utc)
-                lastupdate_hours = (datetime.now(timezone.utc) - udt.astimezone(timezone.utc)).total_seconds() / 3600.0
+                last_update_hours = (datetime.now(timezone.utc) - udt.astimezone(timezone.utc)).total_seconds() / 3600.0
         except Exception:
-            lastupdate_hours = 0.0
+            last_update_hours = 0.0
+
+        repo_scores = _get_attr(repo, "repo_scores", []) or []
+        prevalence_score = _coerce_int(_get_attr(repo_scores, "prevalence_score", 0), 0)
+        stars_score = _coerce_int(_get_attr(repo_scores, "stars_score", 0), 0)
+        forks_score = _coerce_int(_get_attr(repo_scores, "forks_score", 0), 0)
+        maturity_score = _coerce_int(_get_attr(repo_scores, "maturity_score", 0), 0)
+        last_update_score = _coerce_int(_get_attr(repo_scores, "last_updated_score", 0), 0)
+        trusted_org_bonus = _coerce_int(_get_attr(repo_scores, "trusted_org_bonus", 0), 0)
+        total_score = _coerce_int(_get_attr(repo_scores, "unclass_score", 0), 0)
 
         contributors_out: List[dict] = []
-        total_contribs = 0
+        total_contributors = 0
 
         contributors = _get_attr(repo, "contributors", []) or []
         for c in contributors:
             github_id = _coerce_int(_get_attr(c, "github_id", 0), 0)
             contribution = _coerce_int(_get_attr(c, "contributions", 0), 0)
-            total_contribs += contribution
+            total_contributors += contribution
 
             contributor_name = str(_get_attr(c, "name", "") or "")
             organization = str(_get_attr(c, "company", "") or "")
@@ -162,9 +173,9 @@ def write_repo_json_files(repos: Iterable[Any], *, output_dir: Path,) -> List[Pa
 
             contributors_out.append(
                 {
-                    "scanid": scanid,
-                    "scandate": _iso_z(scandate),
-                    "githubid": github_id,
+                    "scan_id": scan_id,
+                    "scan_date": _iso_z(scan_date),
+                    "github_id": github_id,
                     "name": contributor_name,
                     "organization": organization,
                     "location": location,
@@ -177,20 +188,32 @@ def write_repo_json_files(repos: Iterable[Any], *, output_dir: Path,) -> List[Pa
             "org": owner,
             "name": name,
             "url": url,
-            "scanid": scanid,
-            "scandate": _iso_z(scandate),
-            "contributors": contributors_out,
-            "contributiontotal": total_contribs,
+            "scan_id": scan_id,
+            "scan_date": _iso_z(scan_date),
             "stars": _coerce_int(_get_attr(repo, "stars", 0), 0),
             "forks": _coerce_int(_get_attr(repo, "forks", 0), 0),
-            "closedissues": _coerce_int(_get_attr(repo, "closed_issues_count", 0), 0),
+            "closed_issues": _coerce_int(_get_attr(repo, "closed_issues_count", 0), 0),
             "releases": _coerce_int(_get_attr(repo, "releases_count", 0), 0),
-            "agedays": _coerce_float(age_days, 0.0),
-            "lastupdatehours": _coerce_float(lastupdate_hours, 0.0),
+            "age_days": _coerce_float(age_days, 0.0),
+            "last_update_hours": _coerce_float(last_update_hours, 0.0),
+            "prevalence_score": prevalence_score,
+            "stars_score": stars_score,
+            "forks_score": forks_score,
+            "maturity_score": maturity_score,
+            "last_update_score": last_update_score,
+            "trusted_org_bonus": trusted_org_bonus,
+            "total_score": total_score,
+            "contributors": contributors_out,
+            "contribution_total": total_contributors,
         }
 
-        out_path = output_dir / f"{_safe_filename(name)}.json"
+        out_path = github_metrics_output_dir / f"{_safe_filename(name)}.json"
         out_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
         written.append(out_path)
 
-    return written
+    dir_to_tar_gz_flat(github_metrics_output_dir)
+    print(f"Successfully generated: {len(written)} github metric jsons.")
+
+
+if __name__ == "__main__":
+    main()

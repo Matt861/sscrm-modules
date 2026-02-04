@@ -3,7 +3,8 @@ from pathlib import Path
 from configuration import Configuration as Config
 from dataclasses import asdict
 from typing import Dict, Any, Iterable, Optional
-from models.repo import InternalAddress, LatLon
+
+from models.nominatim import InternalAddress, LatLon
 from repo_metrics.nominatim_client import NominatimClient
 
 
@@ -21,8 +22,8 @@ def _compile_internal_address(query: str, nominatim_item: Dict[str, Any]) -> Int
     suburb = str(addr.get("suburb", "") or "")
     postcode = str(addr.get("postcode", "") or "")
     state = str(addr.get("state", "") or "")
-    statecode = str(addr.get("state_code", "") or addr.get("statecode", "") or "")
-    statedistrict = str(addr.get("state_district", "") or "")
+    state_code = str(addr.get("state_code", "") or addr.get("state_code", "") or "")
+    state_district = str(addr.get("state_district", "") or "")
     county = str(addr.get("county", "") or "")
     country = str(addr.get("country", "") or "")
     country_code = str(addr.get("country_code", "") or "").upper()
@@ -53,8 +54,8 @@ def _compile_internal_address(query: str, nominatim_item: Dict[str, Any]) -> Int
         suburb=suburb,
         postcode=postcode,
         state=state,
-        statecode=statecode,
-        statedistrict=statedistrict,
+        state_code=state_code,
+        state_district=state_district,
         county=county,
         country=country,
         country_code=country_code,
@@ -105,8 +106,6 @@ def geocode_all_contributor_locations(repo_objects: Iterable[Any],) -> Dict[str,
         contributor = Config.contributor_store.get_by_login(login)
         contributor.internal_address = ia
 
-
-
     return out
 
 
@@ -118,14 +117,15 @@ def _internal_address_to_dict(ia: InternalAddress) -> Dict[str, Any]:
     else:
         # already dict with keys lat/lon from asdict()
         pass
+
     return d
 
 
 def main():
     print('geolocator')
-    Config.nominatim_client = NominatimClient(user_agent="github-metrics", cache_path=Path("./nominatim_cache.json"),)
+    Config.nominatim_client = NominatimClient(user_agent="github-metrics", cache_path=Config.nominatim_cache_file_path,)
     contributor_addresses = geocode_all_contributor_locations(repo_objects=Config.github_repository_store.get_all(),)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

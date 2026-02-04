@@ -96,11 +96,12 @@ def build_rows_from_template(template: Dict[str, Any]) -> List[Dict[str, Any]]:
     rows: List[Dict[str, Any]] = []
 
     for component in Config.component_store.get_all_components():
-        xlsx_row = copy.deepcopy(template)
-        append_component_info(component, xlsx_row)
-        append_generic_info(xlsx_row)
-        append_efoss_info(xlsx_row)
-        rows.append(xlsx_row)
+        if component.is_direct:
+            xlsx_row = copy.deepcopy(template)
+            append_component_info(component, xlsx_row)
+            append_generic_info(xlsx_row)
+            append_efoss_info(xlsx_row)
+            rows.append(xlsx_row)
 
     return rows
 

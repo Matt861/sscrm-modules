@@ -2,9 +2,7 @@
 # GitHub client (REST + GraphQL) using TokenPool
 # ----------------------------
 import threading
-
 import requests
-
 from configuration import Configuration as Config
 import time
 from typing import List, Optional, Dict
@@ -16,19 +14,19 @@ from loggers.github_client_logger import github_client_logger as logger
 
 class GitHubPerfClient:
     def __init__(self) -> None:
-        self.base = "https://api.github.com"
+        self.base = Config.github_api_base_url
         self.pool = TokenPool()
 
         # Cache /users/{login} lookups (thread-safe)
         self._user_profile_cache: Dict[str, dict] = {}
         self._user_profile_lock = threading.Lock()
 
-        # NEW: Cache contributors per repository so repeated queries reuse data
+        # Cache contributors per repository so repeated queries reuse data
         # Key includes repo identity + knobs that change the output shape.
         self._contributors_cache: Dict[tuple, List[ContributorInfo]] = {}
         self._contributors_cache_lock = threading.Lock()
 
-        # NEW: "single-flight" tracking so concurrent requests don't refetch same repo
+        # "single-flight" tracking so concurrent requests don't refetch same repo
         self._contributors_inflight: Dict[tuple, threading.Event] = {}
 
     def rest_get_json(self, path: str, *, params: Optional[dict] = None) -> dict:
@@ -55,6 +53,7 @@ class GitHubPerfClient:
                 resp = resp2
 
         if resp.status_code >= 400:
+            logger.error(f"GitHub REST error {resp.status_code} for {path}: {resp.text[:300]}")
             raise RuntimeError(f"GitHub REST error {resp.status_code} for {path}: {resp.text[:300]}")
         return resp.json()
 
@@ -85,13 +84,14 @@ class GitHubPerfClient:
                 tok, resp = tok2, resp2
 
         if resp.status_code >= 400:
+            logger.error(f"GitHub GraphQL HTTP {resp.status_code}: {resp.text[:300]}")
             raise RuntimeError(f"GitHub GraphQL HTTP {resp.status_code}: {resp.text[:300]}")
 
         payload = resp.json()
 
         # GraphQL 200 + errors
         if payload.get("errors"):
-            print("[GQL ERROR]", payload["errors"])
+            logger.error(print("[GQL ERROR]", payload["errors"]))
             msg = str(payload["errors"][0].get("message", "")).lower()
             if "rate limit" in msg or "abuse" in msg:
                 # cooldown this token a bit and retry once
@@ -102,13 +102,16 @@ class GitHubPerfClient:
                 tok2, sess2 = self.pool.pick_for_graphql()
                 resp2 = sess2.post(url, json=body, timeout=30)
                 if resp2.status_code >= 400:
+                    logger.error(f"GitHub GraphQL HTTP {resp2.status_code}: {resp2.text[:300]}")
                     raise RuntimeError(f"GitHub GraphQL HTTP {resp2.status_code}: {resp2.text[:300]}")
                 payload2 = resp2.json()
                 if payload2.get("errors"):
+                    logger.error(f"GitHub GraphQL errors: {payload2['errors']}")
                     raise RuntimeError(f"GitHub GraphQL errors: {payload2['errors']}")
                 payload = payload2
                 tok = tok2
             else:
+                logger.error(f"GitHub GraphQL errors: {payload['errors']}")
                 raise RuntimeError(f"GitHub GraphQL errors: {payload['errors']}")
 
         data = payload.get("data", {}) or {}
@@ -371,7 +374,7 @@ class GitHubPerfClient:
                         try:
                             batch_profiles = self._fetch_user_profiles_gql(batch)
                         except (requests.exceptions.RequestException, RuntimeError, ValueError) as e:
-                            print(f"[WARN] _fetch_user_profiles_gql failed for batch size={len(batch)}: {e}")
+                            logger.info(f"[WARN] _fetch_user_profiles_gql failed for batch size={len(batch)}: {e}")
                             batch_profiles = {}
 
                         # If GraphQL returned nothing (still possible), fallback to REST /users/{login}
@@ -382,7 +385,7 @@ class GitHubPerfClient:
                                     # If you already have get_user_profile_cached(login) using REST, reuse it here
                                     prof = self.get_user_profile_cached(login)
                                 except (requests.exceptions.RequestException, RuntimeError, ValueError) as e:
-                                    print(f"[WARN] get_user_profile_cached failed for batch size={len(batch)}: {e}")
+                                    logger.info(f"[WARN] get_user_profile_cached failed for batch size={len(batch)}: {e}")
                                     prof = {}
                                 batch_profiles[login.lower()] = prof
 

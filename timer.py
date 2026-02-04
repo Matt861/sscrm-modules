@@ -20,4 +20,4 @@ class Timer:
         if self.end_time is None:
             return "Timer has not been stopped."
         elapsed_time = self.end_time - self.start_time
-        return f"{elapsed_message} {elapsed_time}"
+        print(f"{elapsed_message} {elapsed_time}")

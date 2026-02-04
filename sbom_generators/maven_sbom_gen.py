@@ -46,7 +46,7 @@ def run(cmd: list[str], cwd: Path, log_file: Path) -> None:
         raise SystemExit(proc.returncode)
 
 
-def find_generated_files(out_dir: Path, out_name: str, fmt: str) -> list[Path]:
+def find_generated_files(fmt: str) -> list[Path]:
     exts = []
     if fmt == "json":
         exts = ["json"]
@@ -57,7 +57,7 @@ def find_generated_files(out_dir: Path, out_name: str, fmt: str) -> list[Path]:
 
     results: list[Path] = []
     for ext in exts:
-        p = out_dir / f"{out_name}.{ext}"
+        p = Path(f"{Config.sbom_output_file_path}.{ext}")
         if p.exists():
             results.append(p)
     return results
@@ -175,21 +175,19 @@ def main() -> None:
     )
 
     args = parser.parse_args()
-    #args.project_dir = 'C:\\Users\\mattw\\IdeaProjects\\java-maven-compatibility-tester2\\JDK25\\crt-test'
-    args.project_dir = Path(Config.root_dir, "input/sbom_gen/crt/crt-service")
-    #args.pom = "pom.xml"
-    #args.output_name = "crt-test-1.0.0-sbom"
 
     if Config.sbom_gen_input_dir:
         args.project_dir = Config.sbom_gen_input_dir
     if Config.sbom_gen_input_file:
         args.pom = Config.sbom_gen_input_file
     if Config.sbom_gen_output_dir:
-        args.output_dir = Config.sbom_gen_output_dir
+        args.output_dir = Config.sbom_output_dir
     if Config.sbom_gen_output_file:
         args.output_name = Config.sbom_gen_output_file
     if args.format:
         Config.sbom_extension = f".{args.format}"
+
+    Config.sbom_output_file_path = Path(Config.sbom_output_dir, args.output_name)
 
     #project_dir = Path(args.project_dir).resolve() if args.project_dir else (Path(Config.root_dir, "input/sbom_gen"))
     project_dir = Path(args.project_dir).resolve()
@@ -203,9 +201,7 @@ def main() -> None:
         print(logger.error(f"ERROR: pom.xml not found: {pom_path}"), file=sys.stderr)
         sys.exit()
 
-    # Determine output directory
-    out_dir = Path(args.output_dir).resolve() if args.output_dir else (Path(Config.root_dir, "output/sboms"))
-    out_dir.mkdir(parents=True, exist_ok=True)
+    args.output_dir.mkdir(parents=True, exist_ok=True)
 
     # Ensure Maven is available
     if args.mvn != "./mvnw" and shutil.which(args.mvn) is None:
@@ -229,7 +225,7 @@ def main() -> None:
     cmd += [
         f"-DoutputFormat={args.format}",
         f"-DoutputName={args.output_name}",
-        f"-DoutputDirectory={out_dir}",
+        f"-DoutputDirectory={args.output_dir}",
     ]
 
     if args.include_test_scope:
@@ -242,7 +238,7 @@ def main() -> None:
     run(cmd, cwd=project_dir, log_file=Path(Config.root_dir, "logs/maven_sbom_gen_subprocess.log"))
 
     # Confirm outputs
-    generated = find_generated_files(out_dir, args.output_name, args.format)
+    generated = find_generated_files(args.format)
     if generated:
         print("\nSBOM generated:")
         for p in generated:
@@ -251,7 +247,7 @@ def main() -> None:
         # Some builds/plugins may place files elsewhere depending on configuration.
         print(logger.error(
             "\nMaven finished, but expected SBOM file(s) not found in the configured output directory.\n"
-            f"Look under: {out_dir}\n"
+            f"Look under: {args.output_dir}\n"
             "If this is a multi-module build, ensure you're running from the reactor root, or try --goal makeBom."),
             file=sys.stderr,
         )

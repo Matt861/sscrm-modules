@@ -1,6 +1,5 @@
 from configuration import Configuration as Config
-from typing import List, Optional
-from models.repo import ContributorInfo, ContributorStore
+from models.contributor import ContributorStore
 
 
 def get_repo_contributors(github_repo):
@@ -19,4 +18,4 @@ def main():
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

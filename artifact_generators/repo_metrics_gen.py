@@ -3,8 +3,8 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 from typing import Iterable, List, Union
-
-from models.repo import RepositoryInfo, RepositoryStore
+from configuration import Configuration as Config
+from models.repo import RepositoryInfo
 
 
 CSV_FIELDS: List[str] = [
@@ -33,9 +33,8 @@ def write_repo_infos_to_csv(
     repos: Iterable[RepositoryInfo],
     csv_path: Union[str, Path],
     *,
-    overwrite: bool = True,
     encoding: str = "utf-8",
-) -> Path:
+) -> None:
     """
     Write RepositoryInfo items to a CSV file.
 
@@ -47,31 +46,27 @@ def write_repo_infos_to_csv(
     out_path = Path(csv_path).expanduser().resolve()
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    if out_path.exists() and not overwrite:
-        raise FileExistsError(f"CSV already exists: {out_path}")
-
     with out_path.open("w", newline="", encoding=encoding) as f:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         writer.writeheader()
         for repo in repos:
             writer.writerow(_repo_to_row(repo))
 
-    return out_path
+    print(f"Successfully generated file: {out_path}")
 
 
-def write_repo_store_to_csv(
-    store: RepositoryStore,
-    csv_path: Union[str, Path],
-    *,
-    overwrite: bool = True,
-    encoding: str = "utf-8",
-) -> Path:
+def main(*, encoding: str = "utf-8",) -> None:
     """
     Convenience wrapper for RepositoryStore.
     """
-    return write_repo_infos_to_csv(
-        repos=store.get_all(),
-        csv_path=csv_path,
-        overwrite=overwrite,
+    github_metrics_csv_file_path = Path(Config.root_dir, Config.output_dir, Config.github_metrics_file_name)
+
+    write_repo_infos_to_csv(
+        repos=Config.github_repository_store.get_all(),
+        csv_path=github_metrics_csv_file_path,
         encoding=encoding,
     )
+
+
+if __name__ == "__main__":
+    main()

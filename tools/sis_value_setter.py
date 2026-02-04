@@ -35,6 +35,7 @@ def main() -> None:
         Config.non_standard_file = "No"
         Config.is_executable = "No"
         Config.is_executable_radio_button = "/_No_On"
+        Config.execution_control_level = "N/A"
 
 
 

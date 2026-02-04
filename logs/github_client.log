@@ -1,0 +1,120 @@
+2026-02-04 12:35:52,117 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:35:52,117 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-04 12:35:52,355 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:35:52,355 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-04 12:35:52,577 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:35:52,577 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-04 12:36:27,064 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:27,064 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u8'], 'locations': [{'line': 69, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-observability-automation[bot]'."}, {'type': 'NOT_FOUND', 'path': ['u10'], 'locations': [{'line': 85, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-renovate-prod[bot]'."}]
+2026-02-04 12:36:27,294 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:27,294 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u8'], 'locations': [{'line': 69, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-observability-automation[bot]'."}, {'type': 'NOT_FOUND', 'path': ['u10'], 'locations': [{'line': 85, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-renovate-prod[bot]'."}]
+2026-02-04 12:36:27,680 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:27,680 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-observability-automation[bot]'."}, {'type': 'NOT_FOUND', 'path': ['u4'], 'locations': [{'line': 37, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-renovate-prod[bot]'."}]
+2026-02-04 12:36:27,812 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:27,812 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-observability-automation[bot]'."}]
+2026-02-04 12:36:28,032 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:28,032 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-observability-automation[bot]'."}]
+2026-02-04 12:36:28,280 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:28,280 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-observability-automation[bot]'."}]
+2026-02-04 12:36:28,399 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:28,399 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-renovate-prod[bot]'."}]
+2026-02-04 12:36:28,644 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:28,644 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-renovate-prod[bot]'."}]
+2026-02-04 12:36:28,748 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:28,749 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-renovate-prod[bot]'."}]
+2026-02-04 12:36:29,739 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:29,739 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u9'], 'locations': [{'line': 77, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-backstage-prod[bot]'."}, {'type': 'NOT_FOUND', 'path': ['u17'], 'locations': [{'line': 141, 'column': 21}], 'message': "Could not resolve to a User with the login of 'Copilot'."}]
+2026-02-04 12:36:29,949 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:29,949 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u9'], 'locations': [{'line': 77, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-backstage-prod[bot]'."}]
+2026-02-04 12:36:30,257 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:30,257 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u3'], 'locations': [{'line': 29, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-backstage-prod[bot]'."}]
+2026-02-04 12:36:30,547 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:30,547 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-backstage-prod[bot]'."}]
+2026-02-04 12:36:30,644 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:30,644 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'elastic-backstage-prod[bot]'."}]
+2026-02-04 12:36:31,037 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:31,037 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u5'], 'locations': [{'line': 45, 'column': 21}], 'message': "Could not resolve to a User with the login of 'Copilot'."}]
+2026-02-04 12:36:31,197 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:31,197 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u5'], 'locations': [{'line': 45, 'column': 21}], 'message': "Could not resolve to a User with the login of 'Copilot'."}]
+2026-02-04 12:36:31,486 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:31,486 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'Copilot'."}]
+2026-02-04 12:36:31,696 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:31,696 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'Copilot'."}]
+2026-02-04 12:36:31,955 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:31,955 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'Copilot'."}]
+2026-02-04 12:36:32,916 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:32,916 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'renovate[bot]'."}]
+2026-02-04 12:36:33,119 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:33,119 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'renovate[bot]'."}]
+2026-02-04 12:36:33,304 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:33,304 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'renovate[bot]'."}]
+2026-02-04 12:36:33,457 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:33,458 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'renovate[bot]'."}]
+2026-02-04 12:36:33,568 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:33,568 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'renovate[bot]'."}]
+2026-02-04 12:36:50,920 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:50,920 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u4'], 'locations': [{'line': 37, 'column': 21}], 'message': "Could not resolve to a User with the login of 'microsoft-github-policy-service[bot]'."}]
+2026-02-04 12:36:51,145 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:51,145 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u4'], 'locations': [{'line': 37, 'column': 21}], 'message': "Could not resolve to a User with the login of 'microsoft-github-policy-service[bot]'."}]
+2026-02-04 12:36:51,303 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:51,303 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u4'], 'locations': [{'line': 37, 'column': 21}], 'message': "Could not resolve to a User with the login of 'microsoft-github-policy-service[bot]'."}]
+2026-02-04 12:36:51,608 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:51,608 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'microsoft-github-policy-service[bot]'."}]
+2026-02-04 12:36:51,837 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:51,837 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'microsoft-github-policy-service[bot]'."}]
+2026-02-04 12:36:51,933 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:36:51,933 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'microsoft-github-policy-service[bot]'."}]
+2026-02-04 12:37:17,317 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:17,317 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'smallrye-ci-releases[bot]'."}]
+2026-02-04 12:37:17,527 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:17,528 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'smallrye-ci-releases[bot]'."}]
+2026-02-04 12:37:17,701 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:17,701 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'smallrye-ci-releases[bot]'."}]
+2026-02-04 12:37:17,851 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:17,851 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'smallrye-ci-releases[bot]'."}]
+2026-02-04 12:37:18,086 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:18,086 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'smallrye-ci-releases[bot]'."}]
+2026-02-04 12:37:18,327 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:18,327 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'smallrye-ci-releases[bot]'."}]
+2026-02-04 12:37:24,047 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:24,047 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u3'], 'locations': [{'line': 29, 'column': 21}], 'message': "Could not resolve to a User with the login of 'github-actions[bot]'."}]
+2026-02-04 12:37:24,306 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:24,306 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u3'], 'locations': [{'line': 29, 'column': 21}], 'message': "Could not resolve to a User with the login of 'github-actions[bot]'."}]
+2026-02-04 12:37:24,467 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:24,467 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u3'], 'locations': [{'line': 29, 'column': 21}], 'message': "Could not resolve to a User with the login of 'github-actions[bot]'."}]
+2026-02-04 12:37:24,783 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:24,784 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'github-actions[bot]'."}]
+2026-02-04 12:37:24,908 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:24,908 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'github-actions[bot]'."}]
+2026-02-04 12:37:43,149 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:43,149 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u9'], 'locations': [{'line': 77, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot-preview[bot]'."}]
+2026-02-04 12:37:43,378 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:43,378 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u9'], 'locations': [{'line': 77, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot-preview[bot]'."}]
+2026-02-04 12:37:43,718 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:43,718 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u3'], 'locations': [{'line': 29, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot-preview[bot]'."}]
+2026-02-04 12:37:43,982 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:43,982 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot-preview[bot]'."}]
+2026-02-04 12:37:44,086 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:44,087 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot-preview[bot]'."}]
+2026-02-04 12:37:57,947 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:57,947 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'sonatypeoss[bot]'."}]
+2026-02-04 12:37:58,132 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:58,132 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'sonatypeoss[bot]'."}]
+2026-02-04 12:37:58,282 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:58,282 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'sonatypeoss[bot]'."}]
+2026-02-04 12:37:58,406 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:58,406 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'sonatypeoss[bot]'."}]
+2026-02-04 12:37:58,506 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:58,506 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'sonatypeoss[bot]'."}]
+2026-02-04 12:37:59,517 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:59,517 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u24'], 'locations': [{'line': 197, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mend-for-github-com[bot]'."}]
+2026-02-04 12:37:59,934 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:37:59,934 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u12'], 'locations': [{'line': 101, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mend-for-github-com[bot]'."}]
+2026-02-04 12:38:00,272 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:38:00,272 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u6'], 'locations': [{'line': 53, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mend-for-github-com[bot]'."}]
+2026-02-04 12:38:00,536 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:38:00,536 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u3'], 'locations': [{'line': 29, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mend-for-github-com[bot]'."}]
+2026-02-04 12:38:00,796 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:38:00,796 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mend-for-github-com[bot]'."}]
+2026-02-04 12:38:01,011 - loggers.github_client_logger - ERROR - None
+2026-02-04 12:38:01,011 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mend-for-github-com[bot]'."}]
