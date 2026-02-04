@@ -176,8 +176,8 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    if Config.sbom_gen_input_dir:
-        args.project_dir = Config.sbom_gen_input_dir
+    if Config.sbom_input_dir:
+        args.project_dir = Config.sbom_input_dir
     if Config.sbom_gen_input_file:
         args.pom = Config.sbom_gen_input_file
     if Config.sbom_gen_output_dir:

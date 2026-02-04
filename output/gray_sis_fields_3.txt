@@ -1,0 +1,528 @@
+Found 97 field(s):
+
+- Name:  Individual-Requesting-Software-Text
+  Type:  text
+  Value: 
+
+- Name:  Date-YYYYMMDD-Text
+  Type:  text
+  Value: 
+
+- Name:  IPT-Text
+  Type:  text
+  Value: 
+
+- Name:  Server-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Client-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Windows-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Linux-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  UNIX-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Other-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  IS-Deployment-Text
+  Type:  text
+  Value: 
+
+- Name:  Administrative-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Analysis-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Deliverable-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  DevelopmentTest-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Simulations-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Unclassified-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Secret-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  SecretSAR-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Product-Title-Text
+  Type:  text
+  Value: 
+
+- Name:  Product-Version-Text
+  Type:  text
+  Value: 
+
+- Name:  Vendor-Creator-Text
+  Type:  text
+  Value: 
+
+- Name:  Vendors-Website-Text
+  Type:  text
+  Value: 
+
+- Name:  Mission-Driven-Justification-Text
+  Type:  text
+  Value: 
+
+- Name:  Mission-Impact-If-Not-Approved-Text
+  Type:  text
+  Value: 
+
+- Name:  Upgrade-Downgrade-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  If-No-Versions-Approved-Why-Is-It-Required-Text
+  Type:  text
+  Value: 
+
+- Name:  If-Operating-System-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  United-States-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Foreign-List-Country
+  Type:  text
+  Value: 
+
+- Name:  Foreign-List-Country-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  If-Vendor-Country-Unknown-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  COTS/GOTS-Solution-Available-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  Vulnerability-Assessment-No-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Vulnerability-Assessment-Yes-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  High-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Moderate-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Low-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Is-Executable-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  System-Level-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Root-Admin-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Single-User-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Authenticated-User-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Are-There-Dependencies-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  Create-Non-standard-File-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  Can-Be-Scanned-By-Security-Software-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  Has-Software-Been-Modified-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  Software-Modified-Vendor-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Software-Modified-In-House-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Software-Modified-Third-Party-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Procurement-In-House-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Procurement-GOTS-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Procurement-COTS-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Procurement-Freeware-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Procurement-Foreign-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Procurement-Open-Source-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Alternative-Solutions-Available-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  Not-Open-Source-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  eFOSS-Process-No-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  eFOSS-Process-Yes-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  IronFOSS-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  JSON-And-CSV-Attached-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Unclassified-Score-Text
+  Type:  text
+  Value: 
+
+- Name:  Software-Used-For-Deliverable-Radio-Buttons
+  Type:  button (checkbox/radio/push)
+  Value: /Off
+  Button /V:  /Off
+  Widget /AS: 
+
+- Name:  Collaborative-Computing-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Distributive-Processing-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Dongle-Required-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Office/Productivity-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Operational-Tactical-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Programming/Coding-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Security-Relevant-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Intended-Use-Other-Describe-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Office-Space-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Lab-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  SDD-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  DT-Flight-Test-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  LRIP-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Production-Support-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  End-Use-Other-Describe-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  I-Am-Cleared-And-Possess-Account
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Requested-Software-Will-Adversely-Impact
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  ISSO-Reviewer-Text
+  Type:  text
+  Value: 
+
+- Name:  Approved-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Denied-Checkbox
+  Type:  button (checkbox/radio/push)
+  Value: 
+  Button /V:  
+  Widget /AS: 
+
+- Name:  Vendor-Country-Unknown-Text
+  Type:  text
+  Value: 
+
+- Name:  Vulnerability-Assessment-No-Text
+  Type:  text
+  Value: 
+
+- Name:  Vulnerability-Assessment-Yes-Text
+  Type:  text
+  Value: 
+
+- Name:  Vulnerability-Justify-Risk-Determination-Text
+  Type:  text
+  Value: 
+
+- Name:  Dependencies-Yes-Text
+  Type:  text
+  Value: 
+
+- Name:  Alternative-Solutions-Yes-Text
+  Type:  text
+  Value: 
+
+- Name:  Signature6
+  Type:  signature
+  Value: 
+
+- Name:  Signature7
+  Type:  signature
+  Value: 
+
+- Name:  Justify-COTS/GOTS-Not-Used-Text
+  Type:  text
+  Value: 
+
+- Name:  Upgrade-Downgrade-Yes-Text
+  Type:  text
+  Value: 
+
+- Name:  Intended-Use-Other-Describe-Text
+  Type:  text
+  Value: 
+
+- Name:  End-Use-Other-Describe-Text
+  Type:  text
+  Value: 
+
+- Name:  eFOSS-Process-No-Text
+  Type:  text
+  Value: 
+
+- Name:  Software-Modified-Yes-Text
+  Type:  text
+  Value: 
+

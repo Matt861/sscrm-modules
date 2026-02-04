@@ -97,4 +97,5 @@ class Configuration:
     nominatim_cache_file_path = Path(cache_dir, "nominatim_cache.json")
     github_metrics_dir = Path(root_dir, output_dir, "github_metrics")
     sbom_output_dir = Path(root_dir, output_dir, "sboms")
+    sbom_input_dir = Path(root_dir, input_dir, "sbom_gen")
 
