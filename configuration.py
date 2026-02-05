@@ -94,12 +94,12 @@ class Configuration:
     sbom_parser_dedupe = True
 
     # FILE NAMES
-    sis_csv_file_name = None
-    gray_sis_pdf_file_name = None
-    green_sis_xlsx_file_name = None
-    components_csv_file_name = None
-    no_repo_components_csv_file_name = None
-    vuln_file_name = None
+    sis_csv_file_name = ""
+    gray_sis_pdf_file_name = ""
+    green_sis_xlsx_file_name = ""
+    components_csv_file_name = ""
+    no_repo_components_csv_file_name = ""
+    vuln_file_name = ""
     github_metrics_file_name = "github-metrics.csv"
     sis_row_template_name = "sis_row_template.json"
     green_sis_row_template_name = "green_sis_row_template.json"
@@ -119,14 +119,29 @@ class Configuration:
     green_sis_xlsx_sheet_name = "SW Submissions"
 
     # DTRACK PROPERTIES
+    dtrack_client = None
+    dtrack_project = None
+    dtrack_vulnerabilities = []
+    dtrack_components = []
     dtrack_base_url = ""
     dtrack_api_key = ""
     dtrack_project_uuid = ""
     dtrack_project_name = ""
     dtrack_project_version = ""
-    dtrack_project_auto_create = ""
+    dtrack_project_auto_create = True
+    dtrack_classifier = "Library"
     dtrack_verify_tls = ""
-    dtrack_timeout_seconds = 0
+    dtrack_ca_bundle = ""
+    dtrack_insecure = False
+    dtrack_poll_interval = 3.0
+    dtrack_max_wait = 600
+    dtrack_timeout = 60
+    dtrack_max_retries = 3
+    dtrack_token = None
+    #dtrack_timeout_seconds = 0
+    dtrack_parent_project_uuid = ""
+    dtrack_parent_project_name = ""
+    dtrack_parent_project_version = ""
 
 
 

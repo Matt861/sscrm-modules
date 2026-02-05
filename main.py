@@ -1,6 +1,8 @@
 from artifact_generators import sis_gen, components_gen, gray_sis_gen, no_repo_components_gen, green_sis_gen, \
     repo_metrics_gen, github_metrics_gen
 from configuration import Configuration as Config
+from dtrack import dtrack_post_api, dtrack_get_api
+from dtrack.dtrack_client import DependencyTrackClient
 from sbom_generators import sbom_gen
 from timer import Timer
 from loggers.main_logger import main_logger as logger
@@ -66,6 +68,10 @@ def main() -> None:
     analysis.main()
     repo_scores_timer.stop("stopping repo scores timer")
     logger.info(repo_scores_timer.elapsed("Elapsed time for repo scores: "))
+
+    Config.dtrack_client = DependencyTrackClient()
+    dtrack_post_api.main()
+    dtrack_get_api.main()
 
     file_gen_timer = Timer()
     file_gen_timer.start("starting file gen timer")
