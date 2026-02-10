@@ -69,9 +69,9 @@ def main() -> None:
     repo_scores_timer.stop("stopping repo scores timer")
     logger.info(repo_scores_timer.elapsed("Elapsed time for repo scores: "))
 
-    Config.dtrack_client = DependencyTrackClient()
-    dtrack_post_api.main()
-    dtrack_get_api.main()
+    #Config.dtrack_client = DependencyTrackClient()
+    #dtrack_post_api.main()
+    #dtrack_get_api.main()
 
     file_gen_timer = Timer()
     file_gen_timer.start("starting file gen timer")

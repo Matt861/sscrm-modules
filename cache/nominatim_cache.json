@@ -63679,5 +63679,37 @@
       "7.5117461",
       "10.4956269"
     ]
+  },
+  "chicagoland": {
+    "place_id": 408495357,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 12895334915,
+    "lat": "41.8755506",
+    "lon": "-87.6244372",
+    "category": "place",
+    "type": "region",
+    "place_rank": 18,
+    "importance": 0.1600851537346456,
+    "addresstype": "region",
+    "name": "Chicagoland",
+    "display_name": "Chicagoland, Chicago, South Chicago Township, Cook County, Illinois, 60604, United States",
+    "address": {
+      "region": "Chicagoland",
+      "city": "Chicago",
+      "municipality": "South Chicago Township",
+      "county": "Cook County",
+      "state": "Illinois",
+      "ISO3166-2-lvl4": "US-IL",
+      "postcode": "60604",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "40.8755506",
+      "42.8755506",
+      "-88.6244372",
+      "-86.6244372"
+    ]
   }
 }

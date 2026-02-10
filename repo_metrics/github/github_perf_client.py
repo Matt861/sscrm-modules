@@ -8,14 +8,16 @@ import time
 from typing import List, Optional, Dict
 
 from models.repo import ContributorInfo
+from repo_metrics.github.repo_metrics_cache import RepoMetricsCache
 from repo_metrics.github.token_pool import TokenPool
 from loggers.github_client_logger import github_client_logger as logger
 
 
 class GitHubPerfClient:
-    def __init__(self) -> None:
+    def __init__(self, repo_cache: Optional[RepoMetricsCache] = None) -> None:
         self.base = Config.github_api_base_url
         self.pool = TokenPool()
+        self._repo_cache = repo_cache
 
         # Cache /users/{login} lookups (thread-safe)
         self._user_profile_cache: Dict[str, dict] = {}
@@ -280,6 +282,15 @@ class GitHubPerfClient:
         owner_norm = owner.strip().lower()
         repo_norm = repo.strip().lower()
 
+        # Try repo JSON cache first (cheap, no network)
+        if getattr(self, "_repo_cache", None) is not None:
+            try:
+                cached_repo = self._repo_cache.read(owner_norm, repo_norm)
+                if cached_repo and cached_repo.contributors:
+                    return cached_repo.contributors
+            except Exception:
+                pass
+
         # Cache key must include knobs that change output content.
         cache_key = (
             owner_norm,
@@ -419,6 +430,13 @@ class GitHubPerfClient:
                         location=_norm_str(prof.get("location")),
                     )
                 )
+
+            # Write contributors into the existing per-repo metrics cache JSON (without resetting metrics TTL)
+            if getattr(self, "_repo_cache", None) is not None:
+                try:
+                    self._repo_cache.update_contributors(owner, repo, results)
+                except Exception as e:
+                    logger.info(f"[WARN] update_contributors cache write failed for {owner}/{repo}: {e}")
 
             return results
 

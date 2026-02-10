@@ -1,4 +1,7 @@
 from __future__ import annotations
+
+from pathlib import Path
+
 from configuration import Configuration as Config
 import utils
 import re
@@ -9,6 +12,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from models import component
 from models.repo import RepositoryInfo, RepositoryStore
 from repo_metrics.github.github_perf_client import GitHubPerfClient
+from repo_metrics.github.repo_metrics_cache import RepoMetricsCache
 from repo_metrics.graphql_queries import REPO_METRICS_GQL
 from loggers.github_metrics_logger import github_metrics_logger as logger
 
@@ -48,8 +52,12 @@ def parse_github_repo_url(url: str) -> Tuple[str, str, str]:
 # ----------------------------
 # Collection
 # ----------------------------
-def collect_one_repo(repo_url: str,) -> RepositoryInfo:
+def collect_one_repo(repo_url: str, cache,) -> RepositoryInfo:
     norm_url, owner, name = parse_github_repo_url(repo_url)
+
+    cached = cache.read(owner, name)
+    if cached is not None:
+        return cached
 
     # GraphQL for counts + dates (1 call)
     data = Config.github_perf_client.graphql(REPO_METRICS_GQL, {"owner": owner, "name": name})
@@ -58,9 +66,9 @@ def collect_one_repo(repo_url: str,) -> RepositoryInfo:
         raise RuntimeError(logger.error(f"GraphQL returned no repository data for {owner}/{name}"))
 
     retrieval_uuid = str(uuid.uuid4())
-    retrieved_at = datetime.now(timezone.utc).isoformat()
+    retrieved_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    return RepositoryInfo(
+    repo_info = RepositoryInfo(
         repo_url=norm_url,
         owner=owner,
         name=name,
@@ -75,8 +83,12 @@ def collect_one_repo(repo_url: str,) -> RepositoryInfo:
         retrieved_at=retrieved_at,
     )
 
+    cache.write(repo_info)
+    return repo_info
 
-def collect_many_repos(repo_urls: Iterable[str], *, max_workers: int = 24,) -> List[RepositoryInfo]:
+
+
+def collect_many_repos(repo_urls: Iterable[str], cache, *, max_workers: int = 24,) -> List[RepositoryInfo]:
     """
     High-throughput collector for 100s of repos.
 
@@ -92,7 +104,7 @@ def collect_many_repos(repo_urls: Iterable[str], *, max_workers: int = 24,) -> L
 
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
         fut_map = {
-            ex.submit(collect_one_repo, url): url
+            ex.submit(collect_one_repo, url, cache): url
             for url in urls
         }
         for fut in as_completed(fut_map):
@@ -121,6 +133,7 @@ def collect_many_repos(repo_urls: Iterable[str], *, max_workers: int = 24,) -> L
 
 def main():
     components = Config.component_store.get_all_components()
+    cache = RepoMetricsCache(cache_dir=Path(Config.root_dir, "cache/github_metrics"), ttl_days=10)
 
     # Collect repo_urls, skipping None/blank, and dedupe while preserving order
     unique_repo_urls = list(dict.fromkeys(
@@ -129,8 +142,8 @@ def main():
         if c.repo_url and c.repo_url.strip()
     ))
 
-    Config.github_perf_client = GitHubPerfClient()
-    metrics = collect_many_repos(unique_repo_urls, max_workers=24,)
+    Config.github_perf_client = GitHubPerfClient(repo_cache=cache)
+    metrics = collect_many_repos(unique_repo_urls, cache, max_workers=24,)
     for m in metrics:
         print(m.repo_url, m.releases_count, m.tags_count, m.stars, m.forks, m.closed_issues_count, len(m.contributors))
 

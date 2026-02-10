@@ -151,18 +151,18 @@ def main() -> None:
         raise SystemExit("ERROR: Dependency-Track API key missing.")
 
     try:
-        Config.dtrack_project = Config.dtrack_client.get_project(Config.project_name, Config.project_version)
+        Config.dtrack_project = get_project(Config.project_name, Config.project_version)
         print("Project:")
         print(Config.dtrack_project)
 
         project_uuid = Config.dtrack_project.get("uuid")
         if project_uuid:
-            Config.dtrack_vulnerabilities = Config.dtrack_client.get_project_vulnerabilities(project_uuid)
+            Config.dtrack_vulnerabilities = get_project_vulnerabilities(project_uuid)
             print(f"\nVulnerabilities (count={len(Config.dtrack_vulnerabilities)}):")
             for v in Config.dtrack_vulnerabilities:
                 print(f"- {v.get('vulnId') or v.get('id')}: {v.get('title') or v.get('description', '')}")
 
-            Config.dtrack_components = Config.dtrack_client.get_project_components(project_uuid)
+            Config.dtrack_components = get_project_components(project_uuid)
             print(f"\nComponents (count={len(Config.dtrack_components)}):")
             for c in Config.dtrack_components:
                 name = c.get("name")
