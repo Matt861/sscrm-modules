@@ -31,6 +31,7 @@ class Configuration:
     execution_control_level = ""
     non_os_specific_packages = ["maven", "pypi", "npm"]
     executable_packages = ["raw"]
+    cert_file = ""
 
     # PROJECT SETUP
     #utils.load_env_vars(Path(root_dir, ".env"))
