@@ -20,6 +20,7 @@ class Configuration:
     # PROJECT PROPERTIES
     project_name = ""
     project_version = ""
+    project_group = "com.lmco.crt"
     package_manager = ""
     os_identification = ""
     is_deliverable_software = ""
@@ -62,6 +63,7 @@ class Configuration:
     gql_batch_size = 25
     github_api_base_url = "https://api.github.com"
     github_metrics_output_folder_name = "github_metrics"
+    requests_timeout = 15
 
     # CONTRIBUTOR METRICS PROPERTIES
     contributor_store = None
@@ -80,6 +82,7 @@ class Configuration:
     pypi_sbom_input_file = "requirements.txt"
     npm_sbom_input_file = "package.json"
     raw_sbom_input_file = "package.csv"
+    go_sbom_input_file = "go.mod"
     sbom_input_file = ""
     cyclonedx_maven_plugin_version = "2.9.1"
     maven_command = "mvn.cmd"
@@ -142,6 +145,22 @@ class Configuration:
     dtrack_parent_project_uuid = ""
     dtrack_parent_project_name = ""
     dtrack_parent_project_version = ""
+
+
+    # PYPI SBOM GEN
+    requirements_txt_file_name = "requirements.txt"
+    requirements_txt_file_path = ""
+
+    # GO SBOM GEN
+    go_mod_file_path = ""
+
+    # NPM SBOM GEN
+    package_json_file_name = "package.json"
+    package_lock_json_file_name = "package-lock.json"
+    npmrc_file_name = ".npmrc"
+    package_json_file_path = ""
+    package_lock_json_file_path = ""
+    npmrc_file_path = ""
 
 
 

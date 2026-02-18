@@ -18,12 +18,13 @@ main_timer.start("starting main timer")
 
 
 def main() -> None:
-    Config.project_name = "crt-service"
+    Config.project_name = "npm-test"
     Config.project_version = "1.0.0"
-    Config.package_manager = "maven"
+    Config.package_manager = "npm"
     Config.software_end_use = "DELIVERABLE"
-    Config.sbom_input_dir = Path(Config.input_dir, "sbom_gen/crt/crt-service")
+    #Config.sbom_input_dir = Path(Config.input_dir, "sbom_gen/crt/crt-service")
     Config.project_output_dir = Path(Config.output_dir, f"{Config.project_name}-{Config.project_version}")
+    Config.project_output_dir.mkdir(parents=True, exist_ok=True)
 
 
 

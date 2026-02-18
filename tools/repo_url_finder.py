@@ -35,17 +35,19 @@ def main() -> None:
     repo_urls_json_name = f"github_urls_{Config.package_manager}.json"
     repo_urls_json_path = Path(Config.root_dir, "input/urls/github", repo_urls_json_name)
 
-    try:
-        repo_urls_json_data = utils.load_json_file(repo_urls_json_path)
-    except Exception as e:
-        print(logger.error(f"Error loading JSON file: {e}", file=sys.stderr))
-        sys.exit()
 
-    for component in Config.component_store.get_all_components():
-        if not component.repo_url:
-            repo_url = find_first_value_by_key(repo_urls_json_data, component.name)
-            if repo_url:
-                component.repo_url = repo_url
+    if repo_urls_json_path.exists():
+        try:
+            repo_urls_json_data = utils.load_json_file(repo_urls_json_path)
+        except Exception as e:
+            print(logger.error(f"Error loading JSON file: {e}", file=sys.stderr))
+            sys.exit()
+
+        for component in Config.component_store.get_all_components():
+            if not component.repo_url:
+                repo_url = find_first_value_by_key(repo_urls_json_data, component.name)
+                if repo_url:
+                    component.repo_url = repo_url
 
 
 if __name__ == "__main__":

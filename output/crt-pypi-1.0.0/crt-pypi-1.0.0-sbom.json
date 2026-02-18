@@ -1,0 +1,872 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:c28ee3ce-8490-459f-a20f-2e4d05fa9c96",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-02-14T18:14:27Z",
+    "component": {
+      "type": "library",
+      "name": "pypi-requirements",
+      "group": "pypi",
+      "version": "1.0.0",
+      "bom-ref": "pkg:pypi/pypi-requirements@1.0.0",
+      "purl": "pkg:pypi/pypi-requirements@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "click",
+      "version": "8.3.1",
+      "purl": "pkg:pypi/click@8.3.1",
+      "bom-ref": "pkg:pypi/click@8.3.1",
+      "description": "Composable command line interface toolkit",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://click.palletsprojects.com/page/changes/"
+        },
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        },
+        {
+          "type": "documentation",
+          "url": "https://click.palletsprojects.com/"
+        },
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/donate"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets/click/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "bom-ref": "pkg:pypi/colorama@0.4.6",
+      "description": "Cross-platform colored terminal text.",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/tartley/colorama"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "grpcio",
+      "version": "1.76.0",
+      "purl": "pkg:pypi/grpcio@1.76.0",
+      "bom-ref": "pkg:pypi/grpcio@1.76.0",
+      "description": "HTTP/2-based RPC framework",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://grpc.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/grpc/grpc"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/grpc/grpc/issues"
+        },
+        {
+          "type": "documentation",
+          "url": "https://grpc.github.io/grpc/python"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "grpcio-tools",
+      "version": "1.76.0",
+      "purl": "pkg:pypi/grpcio-tools@1.76.0",
+      "bom-ref": "pkg:pypi/grpcio-tools@1.76.0",
+      "description": "Protobuf code generator for gRPC",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://grpc.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/grpc/grpc/tree/master/tools/distrib/python/grpcio_tools"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/grpc/grpc/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "natsort",
+      "version": "8.4.0",
+      "purl": "pkg:pypi/natsort@8.4.0",
+      "bom-ref": "pkg:pypi/natsort@8.4.0",
+      "description": "Simple yet flexible natural sorting in Python.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/SethMMorton/natsort"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "numpy",
+      "version": "2.4.2",
+      "purl": "pkg:pypi/numpy@2.4.2",
+      "bom-ref": "pkg:pypi/numpy@2.4.2",
+      "description": "Fundamental package for array computing in Python",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://numpy.org"
+        },
+        {
+          "type": "documentation",
+          "url": "https://numpy.org/doc/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/numpy/numpy"
+        },
+        {
+          "type": "website",
+          "url": "https://pypi.org/project/numpy/#files"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/numpy/numpy/issues"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://numpy.org/doc/stable/release"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "overrides",
+      "version": "7.7.0",
+      "purl": "pkg:pypi/overrides@7.7.0",
+      "bom-ref": "pkg:pypi/overrides@7.7.0",
+      "description": "A decorator to automatically detect mismatch when overriding a method.",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License, Version 2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/mkorpela/overrides"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pandas",
+      "version": "3.0.0",
+      "purl": "pkg:pypi/pandas@3.0.0",
+      "bom-ref": "pkg:pypi/pandas@3.0.0",
+      "description": "Powerful data structures for data analysis, time series, and statistics",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pandas.pydata.org"
+        },
+        {
+          "type": "documentation",
+          "url": "https://pandas.pydata.org/docs/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pandas-dev/pandas"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pip",
+      "version": "25.0.1",
+      "purl": "pkg:pypi/pip@25.0.1",
+      "bom-ref": "pkg:pypi/pip@25.0.1",
+      "description": "The PyPA recommended tool for installing Python packages.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pip.pypa.io/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://pip.pypa.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pypa/pip"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://pip.pypa.io/en/stable/news/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "protobuf",
+      "version": "6.33.2",
+      "purl": "pkg:pypi/protobuf@6.33.2",
+      "bom-ref": "pkg:pypi/protobuf@6.33.2",
+      "description": "",
+      "licenses": [
+        {
+          "license": {
+            "name": "3-Clause BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://developers.google.com/protocol-buffers/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "psutil",
+      "version": "7.2.2",
+      "purl": "pkg:pypi/psutil@7.2.2",
+      "bom-ref": "pkg:pypi/psutil@7.2.2",
+      "description": "Cross-platform lib for process and system monitoring.",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/giampaolo/psutil"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "description": "Extensions to the standard Python datetime module",
+      "licenses": [
+        {
+          "license": {
+            "name": "Dual License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/dateutil/dateutil"
+        },
+        {
+          "type": "documentation",
+          "url": "https://dateutil.readthedocs.io/en/stable/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/dateutil/dateutil"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "bom-ref": "pkg:pypi/pyyaml@6.0.3",
+      "description": "YAML parser and emitter for Python",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pyyaml.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/yaml/pyyaml/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/yaml/pyyaml/actions"
+        },
+        {
+          "type": "documentation",
+          "url": "https://pyyaml.org/wiki/PyYAMLDocumentation"
+        },
+        {
+          "type": "website",
+          "url": "http://lists.sourceforge.net/lists/listinfo/yaml-core"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/yaml/pyyaml"
+        },
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/PyYAML/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "robotframework",
+      "version": "7.4.1",
+      "purl": "pkg:pypi/robotframework@7.4.1",
+      "bom-ref": "pkg:pypi/robotframework@7.4.1",
+      "description": "Generic automation framework for acceptance testing and robotic process automation (RPA)",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://robotframework.org"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/robotframework/robotframework"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/robotframework/robotframework/issues"
+        },
+        {
+          "type": "documentation",
+          "url": "https://robotframework.org/robotframework"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/robotframework/robotframework/blob/master/doc/releasenotes/rf-7.4.1.rst"
+        },
+        {
+          "type": "website",
+          "url": "http://slack.robotframework.org"
+        },
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/robotframework"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "robotframework-assertion-engine",
+      "version": "3.5.0",
+      "purl": "pkg:pypi/robotframework-assertion-engine@3.5.0",
+      "bom-ref": "pkg:pypi/robotframework-assertion-engine@3.5.0",
+      "description": "Generic way to create meaningful and easy to use assertions for the Robot Framework libraries.",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/MarketSquare/AssertionEngine"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/MarketSquare/AssertionEngine/issues"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/MarketSquare/AssertionEngine/releases"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "robotframework-browser",
+      "version": "19.12.3",
+      "purl": "pkg:pypi/robotframework-browser@19.12.3",
+      "bom-ref": "pkg:pypi/robotframework-browser@19.12.3",
+      "description": "Robot Framework Browser library powered by Playwright. Aiming for speed, reliability and visibility.",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://robotframework-browser.org/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://marketsquare.github.io/robotframework-browser/Browser.html"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/MarketSquare/robotframework-browser"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/MarketSquare/robotframework-browser/issues"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/MarketSquare/robotframework-browser/tree/main/docs/releasenotes"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "robotframework-browser-batteries",
+      "version": "19.12.3",
+      "purl": "pkg:pypi/robotframework-browser-batteries@19.12.3",
+      "bom-ref": "pkg:pypi/robotframework-browser-batteries@19.12.3",
+      "description": "Robot Framework Browser batteries package which contains all necessary NodeJS side components for using the Browser library.",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://robotframework-browser.org/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://marketsquare.github.io/robotframework-browser/Browser.html"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/MarketSquare/robotframework-browser"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/MarketSquare/robotframework-browser/issues"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/MarketSquare/robotframework-browser/tree/main/docs/releasenotes"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "robotframework-pythonlibcore",
+      "version": "4.5.0",
+      "purl": "pkg:pypi/robotframework-pythonlibcore@4.5.0",
+      "bom-ref": "pkg:pypi/robotframework-pythonlibcore@4.5.0",
+      "description": "Tools to ease creating larger test libraries for Robot Framework using Python.",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/robotframework/PythonLibCore"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "seedir",
+      "version": "0.5.1",
+      "purl": "pkg:pypi/seedir@0.5.1",
+      "bom-ref": "pkg:pypi/seedir@0.5.1",
+      "description": "Package for creating, editing, and reading folder tree diagrams.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/earnestt1234/seedir"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/earnestt1234/seedir"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "setuptools",
+      "version": "82.0.0",
+      "purl": "pkg:pypi/setuptools@82.0.0",
+      "bom-ref": "pkg:pypi/setuptools@82.0.0",
+      "description": "Easily download, build, install, upgrade, and uninstall Python packages",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/pypa/setuptools"
+        },
+        {
+          "type": "documentation",
+          "url": "https://setuptools.pypa.io/"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://setuptools.pypa.io/en/stable/history.html"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "description": "Python 2 and 3 compatibility utilities",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/benjaminp/six"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "typing_extensions",
+      "version": "4.15.0",
+      "purl": "pkg:pypi/typing-extensions@4.15.0",
+      "bom-ref": "pkg:pypi/typing-extensions@4.15.0",
+      "description": "Backported and Experimental Type Hints for Python 3.9+",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/python/typing_extensions/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/typing_extensions/blob/main/CHANGELOG.md"
+        },
+        {
+          "type": "documentation",
+          "url": "https://typing-extensions.readthedocs.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/typing_extensions"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/typing/discussions"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "tzdata",
+      "version": "2025.3",
+      "purl": "pkg:pypi/tzdata@2025.3",
+      "bom-ref": "pkg:pypi/tzdata@2025.3",
+      "description": "Provider of IANA time zone data",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/python/tzdata"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/tzdata/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/tzdata"
+        },
+        {
+          "type": "documentation",
+          "url": "https://tzdata.readthedocs.io"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "wrapt",
+      "version": "2.1.1",
+      "purl": "pkg:pypi/wrapt@2.1.1",
+      "bom-ref": "pkg:pypi/wrapt@2.1.1",
+      "description": "Module for decorators, wrappers and monkey patching.",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/GrahamDumpleton/wrapt"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/GrahamDumpleton/wrapt/issues/"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://wrapt.readthedocs.io/en/latest/changes.html"
+        },
+        {
+          "type": "documentation",
+          "url": "https://wrapt.readthedocs.io/"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/pypi-requirements@1.0.0",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.4.2",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/robotframework-browser-batteries@19.12.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/click@8.3.1",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/colorama@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/grpcio@1.76.0",
+      "dependsOn": [
+        "pkg:pypi/typing-extensions@4.15.0",
+        "pkg:pypi/grpcio-tools@1.76.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/grpcio-tools@1.76.0",
+      "dependsOn": [
+        "pkg:pypi/protobuf@6.33.2",
+        "pkg:pypi/grpcio@1.76.0",
+        "pkg:pypi/setuptools@82.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/natsort@8.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/numpy@2.4.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/overrides@7.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pandas@3.0.0",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.4.2",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/tzdata@2025.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pip@25.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/protobuf@6.33.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/psutil@7.2.2",
+      "dependsOn": [
+        "pkg:pypi/setuptools@82.0.0",
+        "pkg:pypi/colorama@0.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": [
+        "pkg:pypi/six@1.17.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pyyaml@6.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/robotframework@7.4.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/robotframework-assertion-engine@3.5.0",
+      "dependsOn": [
+        "pkg:pypi/robotframework@7.4.1",
+        "pkg:pypi/robotframework-pythonlibcore@4.5.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/robotframework-browser@19.12.3",
+      "dependsOn": [
+        "pkg:pypi/grpcio@1.76.0",
+        "pkg:pypi/grpcio-tools@1.76.0",
+        "pkg:pypi/protobuf@6.33.2",
+        "pkg:pypi/robotframework@7.4.1",
+        "pkg:pypi/robotframework-pythonlibcore@4.5.0",
+        "pkg:pypi/robotframework-assertion-engine@3.5.0",
+        "pkg:pypi/wrapt@2.1.1",
+        "pkg:pypi/overrides@7.7.0",
+        "pkg:pypi/click@8.3.1",
+        "pkg:pypi/seedir@0.5.1",
+        "pkg:pypi/psutil@7.2.2",
+        "pkg:pypi/pyyaml@6.0.3",
+        "pkg:pypi/robotframework-browser-batteries@19.12.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/robotframework-browser-batteries@19.12.3",
+      "dependsOn": [
+        "pkg:pypi/robotframework-browser@19.12.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/robotframework-pythonlibcore@4.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/seedir@0.5.1",
+      "dependsOn": [
+        "pkg:pypi/natsort@8.4.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/setuptools@82.0.0",
+      "dependsOn": [
+        "pkg:pypi/pip@25.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2025.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/wrapt@2.1.1",
+      "dependsOn": [
+        "pkg:pypi/setuptools@82.0.0"
+      ]
+    }
+  ]
+}

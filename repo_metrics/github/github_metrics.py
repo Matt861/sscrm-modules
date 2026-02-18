@@ -52,7 +52,7 @@ def parse_github_repo_url(url: str) -> Tuple[str, str, str]:
 # ----------------------------
 # Collection
 # ----------------------------
-def collect_one_repo(repo_url: str, cache,) -> RepositoryInfo:
+def collect_one_repo(repo_url: str, cache: RepoMetricsCache,) -> RepositoryInfo:
     norm_url, owner, name = parse_github_repo_url(repo_url)
 
     cached = cache.read(owner, name)
@@ -126,7 +126,8 @@ def collect_many_repos(repo_urls: Iterable[str], cache, *, max_workers: int = 24
         msg = "Some repos failed:\n" + "\n".join(errors[:25])
         if len(errors) > 25:
             msg += f"\n... and {len(errors) - 25} more"
-        raise RuntimeError(logger.error(msg))
+        print(logger.error(msg))
+        #raise RuntimeError(logger.error(msg))
 
     return results
 

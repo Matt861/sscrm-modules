@@ -1,0 +1,2332 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:d5e35933-f1a2-43b4-8af3-8c388928b83a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-02-14T19:45:09Z",
+    "component": {
+      "type": "library",
+      "name": "pypi-requirements",
+      "group": "pypi",
+      "version": "1.0.0",
+      "bom-ref": "pkg:pypi/pypi-requirements@1.0.0",
+      "purl": "pkg:pypi/pypi-requirements@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "altair",
+      "version": "6.0.0",
+      "purl": "pkg:pypi/altair@6.0.0",
+      "bom-ref": "pkg:pypi/altair@6.0.0",
+      "description": "Vega-Altair: A declarative statistical visualization library for Python.",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://altair-viz.github.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/vega/altair"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "attrs",
+      "version": "25.4.0",
+      "purl": "pkg:pypi/attrs@25.4.0",
+      "bom-ref": "pkg:pypi/attrs@25.4.0",
+      "description": "Classes Without Boilerplate",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://www.attrs.org/"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://www.attrs.org/en/stable/changelog.html"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-attrs/attrs"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sponsors/hynek"
+        },
+        {
+          "type": "website",
+          "url": "https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "blinker",
+      "version": "1.9.0",
+      "purl": "pkg:pypi/blinker@1.9.0",
+      "bom-ref": "pkg:pypi/blinker@1.9.0",
+      "description": "Fast, simple object-to-object and broadcast signaling",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        },
+        {
+          "type": "documentation",
+          "url": "https://blinker.readthedocs.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets-eco/blinker/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "cachetools",
+      "version": "7.0.1",
+      "purl": "pkg:pypi/cachetools@7.0.1",
+      "bom-ref": "pkg:pypi/cachetools@7.0.1",
+      "description": "Extensible memoizing collections and decorators",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/tkem/cachetools/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "certifi",
+      "version": "2026.1.4",
+      "purl": "pkg:pypi/certifi@2026.1.4",
+      "bom-ref": "pkg:pypi/certifi@2026.1.4",
+      "description": "Python package for providing Mozilla's CA Bundle.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MPL-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/certifi/python-certifi"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/certifi/python-certifi"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "charset-normalizer",
+      "version": "3.4.4",
+      "purl": "pkg:pypi/charset-normalizer@3.4.4",
+      "bom-ref": "pkg:pypi/charset-normalizer@3.4.4",
+      "description": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "release-notes",
+          "url": "https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md"
+        },
+        {
+          "type": "documentation",
+          "url": "https://charset-normalizer.readthedocs.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jawah/charset_normalizer"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jawah/charset_normalizer/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "click",
+      "version": "8.0.4",
+      "purl": "pkg:pypi/click@8.0.4",
+      "bom-ref": "pkg:pypi/click@8.0.4",
+      "description": "Composable command line interface toolkit",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/p/click/"
+        },
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/donate"
+        },
+        {
+          "type": "documentation",
+          "url": "https://click.palletsprojects.com/"
+        },
+        {
+          "type": "website",
+          "url": "https://click.palletsprojects.com/changes/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets/click/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pallets/click/issues/"
+        },
+        {
+          "type": "website",
+          "url": "https://twitter.com/PalletsTeam"
+        },
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "bom-ref": "pkg:pypi/colorama@0.4.6",
+      "description": "Cross-platform colored terminal text.",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/tartley/colorama"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "contourpy",
+      "version": "1.3.3",
+      "purl": "pkg:pypi/contourpy@1.3.3",
+      "bom-ref": "pkg:pypi/contourpy@1.3.3",
+      "description": "Python library for calculating contours of 2D quadrilateral grids",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/contourpy/contourpy"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://contourpy.readthedocs.io/en/latest/changelog.html"
+        },
+        {
+          "type": "documentation",
+          "url": "https://contourpy.readthedocs.io"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "cycler",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/cycler@0.12.1",
+      "bom-ref": "pkg:pypi/cycler@0.12.1",
+      "description": "Composable style cycles",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://matplotlib.org/cycler/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/matplotlib/cycler"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "dash",
+      "version": "4.0.0",
+      "purl": "pkg:pypi/dash@4.0.0",
+      "bom-ref": "pkg:pypi/dash@4.0.0",
+      "description": "A Python framework for building reactive web-apps. Developed by Plotly.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://plotly.com/dash"
+        },
+        {
+          "type": "documentation",
+          "url": "https://dash.plotly.com"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/plotly/dash"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/plotly/dash/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "Flask",
+      "version": "2.2.5",
+      "purl": "pkg:pypi/flask@2.2.5",
+      "bom-ref": "pkg:pypi/flask@2.2.5",
+      "description": "A simple framework for building complex web applications.",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/p/flask"
+        },
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/donate"
+        },
+        {
+          "type": "documentation",
+          "url": "https://flask.palletsprojects.com/"
+        },
+        {
+          "type": "website",
+          "url": "https://flask.palletsprojects.com/changes/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets/flask/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pallets/flask/issues/"
+        },
+        {
+          "type": "website",
+          "url": "https://twitter.com/PalletsTeam"
+        },
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "fonttools",
+      "version": "4.61.1",
+      "purl": "pkg:pypi/fonttools@4.61.1",
+      "bom-ref": "pkg:pypi/fonttools@4.61.1",
+      "description": "Tools to manipulate font files",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://github.com/fonttools/fonttools"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "gitdb",
+      "version": "4.0.12",
+      "purl": "pkg:pypi/gitdb@4.0.12",
+      "bom-ref": "pkg:pypi/gitdb@4.0.12",
+      "description": "Git Object Database",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/gitpython-developers/gitdb"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "GitPython",
+      "version": "3.1.46",
+      "purl": "pkg:pypi/gitpython@3.1.46",
+      "bom-ref": "pkg:pypi/gitpython@3.1.46",
+      "description": "GitPython is a Python library used to interact with Git repositories",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/gitpython-developers/GitPython"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "idna",
+      "version": "3.11",
+      "purl": "pkg:pypi/idna@3.11",
+      "bom-ref": "pkg:pypi/idna@3.11",
+      "description": "Internationalized Domain Names in Applications (IDNA)",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "release-notes",
+          "url": "https://github.com/kjd/idna/blob/master/HISTORY.rst"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/kjd/idna/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/kjd/idna"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "importlib_metadata",
+      "version": "8.7.1",
+      "purl": "pkg:pypi/importlib-metadata@8.7.1",
+      "bom-ref": "pkg:pypi/importlib-metadata@8.7.1",
+      "description": "Read metadata from Python packages",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/importlib_metadata"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "itsdangerous",
+      "version": "2.2.0",
+      "purl": "pkg:pypi/itsdangerous@2.2.0",
+      "bom-ref": "pkg:pypi/itsdangerous@2.2.0",
+      "description": "Safely pass data to untrusted environments and back.",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://itsdangerous.palletsprojects.com/changes/"
+        },
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        },
+        {
+          "type": "documentation",
+          "url": "https://itsdangerous.palletsprojects.com/"
+        },
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/donate"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets/itsdangerous/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "purl": "pkg:pypi/jinja2@3.1.6",
+      "bom-ref": "pkg:pypi/jinja2@3.1.6",
+      "description": "A very fast and expressive template engine.",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://jinja.palletsprojects.com/changes/"
+        },
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        },
+        {
+          "type": "documentation",
+          "url": "https://jinja.palletsprojects.com/"
+        },
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/donate"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets/jinja/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "joblib",
+      "version": "1.5.3",
+      "purl": "pkg:pypi/joblib@1.5.3",
+      "bom-ref": "pkg:pypi/joblib@1.5.3",
+      "description": "Lightweight pipelining with Python functions",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://joblib.readthedocs.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/joblib/joblib"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "purl": "pkg:pypi/jsonschema@4.26.0",
+      "bom-ref": "pkg:pypi/jsonschema@4.26.0",
+      "description": "An implementation of JSON Schema validation for Python",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-jsonschema/jsonschema"
+        },
+        {
+          "type": "documentation",
+          "url": "https://python-jsonschema.readthedocs.io/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/python-jsonschema/jsonschema/issues/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sponsors/Julian"
+        },
+        {
+          "type": "website",
+          "url": "https://tidelift.com/subscription/pkg/pypi-jsonschema?utm_source=pypi-jsonschema&utm_medium=referral&utm_campaign=pypi-link"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/python-jsonschema/jsonschema/blob/main/CHANGELOG.rst"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "purl": "pkg:pypi/jsonschema-specifications@2025.9.1",
+      "bom-ref": "pkg:pypi/jsonschema-specifications@2025.9.1",
+      "description": "The JSON Schema meta-schemas and vocabularies, exposed as a Registry",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://jsonschema-specifications.readthedocs.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-jsonschema/jsonschema-specifications"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/python-jsonschema/jsonschema-specifications/issues/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sponsors/Julian"
+        },
+        {
+          "type": "website",
+          "url": "https://tidelift.com/subscription/pkg/pypi-jsonschema-specifications?utm_source=pypi-jsonschema-specifications&utm_medium=referral&utm_campaign=pypi-link"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "kiwisolver",
+      "version": "1.4.9",
+      "purl": "pkg:pypi/kiwisolver@1.4.9",
+      "bom-ref": "pkg:pypi/kiwisolver@1.4.9",
+      "description": "A fast implementation of the Cassowary constraint solver",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/nucleic/kiwi"
+        },
+        {
+          "type": "documentation",
+          "url": "https://kiwisolver.readthedocs.io/en/latest/"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/nucleic/kiwi/blob/main/releasenotes.rst"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/markupsafe@3.0.3",
+      "bom-ref": "pkg:pypi/markupsafe@3.0.3",
+      "description": "Safely add untrusted strings to HTML/XML markup.",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/donate"
+        },
+        {
+          "type": "documentation",
+          "url": "https://markupsafe.palletsprojects.com/"
+        },
+        {
+          "type": "website",
+          "url": "https://markupsafe.palletsprojects.com/page/changes/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets/markupsafe/"
+        },
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "matplotlib",
+      "version": "3.9.4",
+      "purl": "pkg:pypi/matplotlib@3.9.4",
+      "bom-ref": "pkg:pypi/matplotlib@3.9.4",
+      "description": "Python plotting package",
+      "licenses": [
+        {
+          "license": {
+            "name": "Python Software Foundation License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://matplotlib.org"
+        },
+        {
+          "type": "website",
+          "url": "https://matplotlib.org/stable/install/index.html"
+        },
+        {
+          "type": "documentation",
+          "url": "https://matplotlib.org"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/matplotlib/matplotlib"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/matplotlib/matplotlib/issues"
+        },
+        {
+          "type": "website",
+          "url": "https://discourse.matplotlib.org/"
+        },
+        {
+          "type": "website",
+          "url": "https://numfocus.org/donate-to-matplotlib"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "narwhals",
+      "version": "2.16.0",
+      "purl": "pkg:pypi/narwhals@2.16.0",
+      "bom-ref": "pkg:pypi/narwhals@2.16.0",
+      "description": "Extremely lightweight compatibility layer between dataframe libraries",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/narwhals-dev/narwhals"
+        },
+        {
+          "type": "documentation",
+          "url": "https://narwhals-dev.github.io/narwhals/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/narwhals-dev/narwhals/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "nest-asyncio",
+      "version": "1.6.0",
+      "purl": "pkg:pypi/nest-asyncio@1.6.0",
+      "bom-ref": "pkg:pypi/nest-asyncio@1.6.0",
+      "description": "Patch asyncio to allow nested event loops",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/erdewit/nest_asyncio"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "numpy",
+      "version": "2.2.6",
+      "purl": "pkg:pypi/numpy@2.2.6",
+      "bom-ref": "pkg:pypi/numpy@2.2.6",
+      "description": "Fundamental package for array computing in Python",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://numpy.org"
+        },
+        {
+          "type": "documentation",
+          "url": "https://numpy.org/doc/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/numpy/numpy"
+        },
+        {
+          "type": "website",
+          "url": "https://pypi.org/project/numpy/#files"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/numpy/numpy/issues"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://numpy.org/doc/stable/release"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "packaging",
+      "version": "26.0",
+      "purl": "pkg:pypi/packaging@26.0",
+      "bom-ref": "pkg:pypi/packaging@26.0",
+      "description": "Core utilities for Python packages",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://packaging.pypa.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pypa/packaging"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pandas",
+      "version": "3.0.0",
+      "purl": "pkg:pypi/pandas@3.0.0",
+      "bom-ref": "pkg:pypi/pandas@3.0.0",
+      "description": "Powerful data structures for data analysis, time series, and statistics",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pandas.pydata.org"
+        },
+        {
+          "type": "documentation",
+          "url": "https://pandas.pydata.org/docs/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pandas-dev/pandas"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pillow",
+      "version": "12.1.1",
+      "purl": "pkg:pypi/pillow@12.1.1",
+      "bom-ref": "pkg:pypi/pillow@12.1.1",
+      "description": "Python Imaging Library (fork)",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "release-notes",
+          "url": "https://github.com/python-pillow/Pillow/releases"
+        },
+        {
+          "type": "documentation",
+          "url": "https://pillow.readthedocs.io"
+        },
+        {
+          "type": "website",
+          "url": "https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi"
+        },
+        {
+          "type": "website",
+          "url": "https://python-pillow.github.io"
+        },
+        {
+          "type": "website",
+          "url": "https://fosstodon.org/@pillow"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://pillow.readthedocs.io/en/stable/releasenotes/index.html"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-pillow/Pillow"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pip",
+      "version": "25.0.1",
+      "purl": "pkg:pypi/pip@25.0.1",
+      "bom-ref": "pkg:pypi/pip@25.0.1",
+      "description": "The PyPA recommended tool for installing Python packages.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pip.pypa.io/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://pip.pypa.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pypa/pip"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://pip.pypa.io/en/stable/news/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "plotly",
+      "version": "6.5.2",
+      "purl": "pkg:pypi/plotly@6.5.2",
+      "bom-ref": "pkg:pypi/plotly@6.5.2",
+      "description": "An open-source interactive data visualization library for Python",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://plotly.com/python/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://plotly.com/python/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/plotly/plotly.py"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/plotly/plotly.py/blob/main/CHANGELOG.md"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "polars",
+      "version": "1.9.0",
+      "purl": "pkg:pypi/polars@1.9.0",
+      "bom-ref": "pkg:pypi/polars@1.9.0",
+      "description": "Blazingly fast DataFrame library",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.pola.rs/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://docs.pola.rs/api/python/stable/reference/index.html"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pola-rs/polars"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/pola-rs/polars/releases"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "protobuf",
+      "version": "3.20.3",
+      "purl": "pkg:pypi/protobuf@3.20.3",
+      "bom-ref": "pkg:pypi/protobuf@3.20.3",
+      "description": "Protocol Buffers",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://developers.google.com/protocol-buffers/"
+        },
+        {
+          "type": "distribution",
+          "url": "https://github.com/protocolbuffers/protobuf/releases"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pyarrow",
+      "version": "23.0.0",
+      "purl": "pkg:pypi/pyarrow@23.0.0",
+      "bom-ref": "pkg:pypi/pyarrow@23.0.0",
+      "description": "Python library for Apache Arrow",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://arrow.apache.org/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://arrow.apache.org/docs/python"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/apache/arrow"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/apache/arrow/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pydeck",
+      "version": "0.9.1",
+      "purl": "pkg:pypi/pydeck@0.9.1",
+      "bom-ref": "pkg:pypi/pydeck@0.9.1",
+      "description": "Widget for deck.gl maps",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/visgl/deck.gl/tree/master/bindings/pydeck"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "Pympler",
+      "version": "1.1",
+      "purl": "pkg:pypi/pympler@1.1",
+      "bom-ref": "pkg:pypi/pympler@1.1",
+      "description": "A development tool to measure, monitor and analyze the memory behavior of Python objects.",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License, Version 2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/pympler/pympler"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pyparsing",
+      "version": "3.3.2",
+      "purl": "pkg:pypi/pyparsing@3.3.2",
+      "bom-ref": "pkg:pypi/pyparsing@3.3.2",
+      "description": "pyparsing - Classes and methods to define and execute parsing grammars",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://pyparsing-docs.readthedocs.io/en/latest/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pyparsing/pyparsing/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pyparsing/pyparsing.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "description": "Extensions to the standard Python datetime module",
+      "licenses": [
+        {
+          "license": {
+            "name": "Dual License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/dateutil/dateutil"
+        },
+        {
+          "type": "documentation",
+          "url": "https://dateutil.readthedocs.io/en/stable/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/dateutil/dateutil"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "pywin32",
+      "version": "311",
+      "purl": "pkg:pypi/pywin32@311",
+      "bom-ref": "pkg:pypi/pywin32@311",
+      "description": "Python for Window Extensions",
+      "licenses": [
+        {
+          "license": {
+            "name": "PSF"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/mhammond/pywin32"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/mhammond/pywin32/blob/main/CHANGES.txt"
+        },
+        {
+          "type": "documentation",
+          "url": "https://mhammond.github.io/pywin32/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mhammond/pywin32/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/mhammond/pywin32/discussions"
+        },
+        {
+          "type": "website",
+          "url": "https://mail.python.org/mailman/listinfo/python-win32"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "referencing",
+      "version": "0.37.0",
+      "purl": "pkg:pypi/referencing@0.37.0",
+      "bom-ref": "pkg:pypi/referencing@0.37.0",
+      "description": "JSON Referencing + Python",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://referencing.readthedocs.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-jsonschema/referencing"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/python-jsonschema/referencing/issues/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sponsors/Julian"
+        },
+        {
+          "type": "website",
+          "url": "https://tidelift.com/subscription/pkg/pypi-referencing?utm_source=pypi-referencing&utm_medium=referral&utm_campaign=pypi-link"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://referencing.readthedocs.io/en/stable/changes/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "requests",
+      "version": "2.32.5",
+      "purl": "pkg:pypi/requests@2.32.5",
+      "bom-ref": "pkg:pypi/requests@2.32.5",
+      "description": "Python HTTP for Humans.",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://requests.readthedocs.io"
+        },
+        {
+          "type": "documentation",
+          "url": "https://requests.readthedocs.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/psf/requests"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "retrying",
+      "version": "1.4.2",
+      "purl": "pkg:pypi/retrying@1.4.2",
+      "bom-ref": "pkg:pypi/retrying@1.4.2",
+      "description": "Retrying",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/groodt/retrying"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "rpds-py",
+      "version": "0.30.0",
+      "purl": "pkg:pypi/rpds-py@0.30.0",
+      "bom-ref": "pkg:pypi/rpds-py@0.30.0",
+      "description": "Python bindings to Rust's persistent data structures (rpds)",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://rpds.readthedocs.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/crate-py/rpds"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/crate-py/rpds/issues/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sponsors/Julian"
+        },
+        {
+          "type": "website",
+          "url": "https://tidelift.com/subscription/pkg/pypi-rpds-py?utm_source=pypi-rpds-py&utm_medium=referral&utm_campaign=pypi-link"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/orium/rpds"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "scikit-learn",
+      "version": "1.8.0",
+      "purl": "pkg:pypi/scikit-learn@1.8.0",
+      "bom-ref": "pkg:pypi/scikit-learn@1.8.0",
+      "description": "A set of python modules for machine learning and data mining",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://scikit-learn.org"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/scikit-learn/scikit-learn"
+        },
+        {
+          "type": "website",
+          "url": "https://pypi.org/project/scikit-learn/#files"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/scikit-learn/scikit-learn/issues"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://scikit-learn.org/stable/whats_new"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "scipy",
+      "version": "1.13.1",
+      "purl": "pkg:pypi/scipy@1.13.1",
+      "bom-ref": "pkg:pypi/scipy@1.13.1",
+      "description": "Fundamental algorithms for scientific computing in Python",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://scipy.org/"
+        },
+        {
+          "type": "documentation",
+          "url": "https://docs.scipy.org/doc/scipy/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/scipy/scipy"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/scipy/scipy/releases"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/scipy/scipy/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "semver",
+      "version": "3.0.4",
+      "purl": "pkg:pypi/semver@3.0.4",
+      "bom-ref": "pkg:pypi/semver@3.0.4",
+      "description": "Python helper for Semantic Versioning (https://semver.org)",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-semver/python-semver"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://python-semver.readthedocs.io/en/latest/changelog.html"
+        },
+        {
+          "type": "documentation",
+          "url": "https://python-semver.rtfd.io"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/python-semver/python-semver/releases"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/python-semver/python-semver/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "setuptools",
+      "version": "82.0.0",
+      "purl": "pkg:pypi/setuptools@82.0.0",
+      "bom-ref": "pkg:pypi/setuptools@82.0.0",
+      "description": "Easily download, build, install, upgrade, and uninstall Python packages",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/pypa/setuptools"
+        },
+        {
+          "type": "documentation",
+          "url": "https://setuptools.pypa.io/"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://setuptools.pypa.io/en/stable/history.html"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "description": "Python 2 and 3 compatibility utilities",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/benjaminp/six"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "smmap",
+      "version": "5.0.2",
+      "purl": "pkg:pypi/smmap@5.0.2",
+      "bom-ref": "pkg:pypi/smmap@5.0.2",
+      "description": "A pure Python implementation of a sliding window memory map manager",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/gitpython-developers/smmap"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "streamlit",
+      "version": "1.9.2",
+      "purl": "pkg:pypi/streamlit@1.9.2",
+      "bom-ref": "pkg:pypi/streamlit@1.9.2",
+      "description": "The fastest way to build data apps in Python",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://streamlit.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/streamlit/streamlit"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "purl": "pkg:pypi/threadpoolctl@3.6.0",
+      "bom-ref": "pkg:pypi/threadpoolctl@3.6.0",
+      "description": "threadpoolctl",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/joblib/threadpoolctl"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "toml",
+      "version": "0.10.2",
+      "purl": "pkg:pypi/toml@0.10.2",
+      "bom-ref": "pkg:pypi/toml@0.10.2",
+      "description": "Python Library for Tom's Obvious, Minimal Language",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/uiri/toml"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "tornado",
+      "version": "6.5.4",
+      "purl": "pkg:pypi/tornado@6.5.4",
+      "bom-ref": "pkg:pypi/tornado@6.5.4",
+      "description": "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://www.tornadoweb.org/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/tornadoweb/tornado"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "typing_extensions",
+      "version": "4.15.0",
+      "purl": "pkg:pypi/typing-extensions@4.15.0",
+      "bom-ref": "pkg:pypi/typing-extensions@4.15.0",
+      "description": "Backported and Experimental Type Hints for Python 3.9+",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/python/typing_extensions/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/typing_extensions/blob/main/CHANGELOG.md"
+        },
+        {
+          "type": "documentation",
+          "url": "https://typing-extensions.readthedocs.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/typing_extensions"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/typing/discussions"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "tzdata",
+      "version": "2025.3",
+      "purl": "pkg:pypi/tzdata@2025.3",
+      "bom-ref": "pkg:pypi/tzdata@2025.3",
+      "description": "Provider of IANA time zone data",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/python/tzdata"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/tzdata/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python/tzdata"
+        },
+        {
+          "type": "documentation",
+          "url": "https://tzdata.readthedocs.io"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "tzlocal",
+      "version": "5.3.1",
+      "purl": "pkg:pypi/tzlocal@5.3.1",
+      "bom-ref": "pkg:pypi/tzlocal@5.3.1",
+      "description": "tzinfo object for the local timezone",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/regebro/tzlocal"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/regebro/tzlocal/blob/master/CHANGES.txt"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/regebro/tzlocal/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "urllib3",
+      "version": "2.6.3",
+      "purl": "pkg:pypi/urllib3@2.6.3",
+      "bom-ref": "pkg:pypi/urllib3@2.6.3",
+      "description": "HTTP library with thread-safe connection pooling, file post, and more.",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "release-notes",
+          "url": "https://github.com/urllib3/urllib3/blob/main/CHANGES.rst"
+        },
+        {
+          "type": "documentation",
+          "url": "https://urllib3.readthedocs.io"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/urllib3/urllib3"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/urllib3/urllib3/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "validators",
+      "version": "0.35.0",
+      "purl": "pkg:pypi/validators@0.35.0",
+      "bom-ref": "pkg:pypi/validators@0.35.0",
+      "description": "Python Data Validation for Humans™",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://python-validators.github.io/validators"
+        },
+        {
+          "type": "documentation",
+          "url": "https://yozachar.github.io/pyvalidators"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-validators/validators"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/python-validators/validators/blob/master/CHANGES.md"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "watchdog",
+      "version": "6.0.0",
+      "purl": "pkg:pypi/watchdog@6.0.0",
+      "bom-ref": "pkg:pypi/watchdog@6.0.0",
+      "description": "Filesystem events monitoring",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/gorakhargosh/watchdog"
+        },
+        {
+          "type": "documentation",
+          "url": "https://python-watchdog.readthedocs.io/en/stable/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/gorakhargosh/watchdog/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/gorakhargosh/watchdog/issues"
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/gorakhargosh/watchdog/blob/master/changelog.rst"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "Werkzeug",
+      "version": "3.1.5",
+      "purl": "pkg:pypi/werkzeug@3.1.5",
+      "bom-ref": "pkg:pypi/werkzeug@3.1.5",
+      "description": "The comprehensive WSGI web application library.",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://werkzeug.palletsprojects.com/page/changes/"
+        },
+        {
+          "type": "website",
+          "url": "https://discord.gg/pallets"
+        },
+        {
+          "type": "documentation",
+          "url": "https://werkzeug.palletsprojects.com/"
+        },
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/donate"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pallets/werkzeug/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "group": "pypi",
+      "name": "zipp",
+      "version": "3.23.0",
+      "purl": "pkg:pypi/zipp@3.23.0",
+      "bom-ref": "pkg:pypi/zipp@3.23.0",
+      "description": "Backport of pathlib-compatible object wrapper for zip files",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/jaraco/zipp"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/pypi-requirements@1.0.0",
+      "dependsOn": [
+        "pkg:pypi/dash@4.0.0",
+        "pkg:pypi/matplotlib@3.9.4",
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/plotly@6.5.2",
+        "pkg:pypi/polars@1.9.0",
+        "pkg:pypi/scikit-learn@1.8.0",
+        "pkg:pypi/scipy@1.13.1",
+        "pkg:pypi/streamlit@1.9.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/altair@6.0.0",
+      "dependsOn": [
+        "pkg:pypi/jinja2@3.1.6",
+        "pkg:pypi/jsonschema@4.26.0",
+        "pkg:pypi/narwhals@2.16.0",
+        "pkg:pypi/packaging@26.0",
+        "pkg:pypi/typing-extensions@4.15.0",
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/pyarrow@23.0.0",
+        "pkg:pypi/polars@1.9.0",
+        "pkg:pypi/pillow@12.1.1",
+        "pkg:pypi/scipy@1.13.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/attrs@25.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/blinker@1.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cachetools@7.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/certifi@2026.1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/charset-normalizer@3.4.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/click@8.0.4",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/importlib-metadata@8.7.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/colorama@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/contourpy@1.3.3",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/contourpy@1.3.3",
+        "pkg:pypi/matplotlib@3.9.4",
+        "pkg:pypi/pillow@12.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/cycler@0.12.1",
+      "dependsOn": [
+        "pkg:pypi/matplotlib@3.9.4"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/dash@4.0.0",
+      "dependsOn": [
+        "pkg:pypi/flask@2.2.5",
+        "pkg:pypi/werkzeug@3.1.5",
+        "pkg:pypi/plotly@6.5.2",
+        "pkg:pypi/importlib-metadata@8.7.1",
+        "pkg:pypi/typing-extensions@4.15.0",
+        "pkg:pypi/requests@2.32.5",
+        "pkg:pypi/retrying@1.4.2",
+        "pkg:pypi/nest-asyncio@1.6.0",
+        "pkg:pypi/setuptools@82.0.0",
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/pyarrow@23.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/flask@2.2.5",
+      "dependsOn": [
+        "pkg:pypi/werkzeug@3.1.5",
+        "pkg:pypi/jinja2@3.1.6",
+        "pkg:pypi/itsdangerous@2.2.0",
+        "pkg:pypi/click@8.0.4",
+        "pkg:pypi/importlib-metadata@8.7.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/fonttools@4.61.1",
+      "dependsOn": [
+        "pkg:pypi/scipy@1.13.1",
+        "pkg:pypi/matplotlib@3.9.4"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/gitdb@4.0.12",
+      "dependsOn": [
+        "pkg:pypi/smmap@5.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/gitpython@3.1.46",
+      "dependsOn": [
+        "pkg:pypi/gitdb@4.0.12",
+        "pkg:pypi/typing-extensions@4.15.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/idna@3.11",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/importlib-metadata@8.7.1",
+      "dependsOn": [
+        "pkg:pypi/zipp@3.23.0",
+        "pkg:pypi/packaging@26.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/itsdangerous@2.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/jinja2@3.1.6",
+      "dependsOn": [
+        "pkg:pypi/markupsafe@3.0.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/joblib@1.5.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/jsonschema@4.26.0",
+      "dependsOn": [
+        "pkg:pypi/attrs@25.4.0",
+        "pkg:pypi/jsonschema-specifications@2025.9.1",
+        "pkg:pypi/referencing@0.37.0",
+        "pkg:pypi/rpds-py@0.30.0",
+        "pkg:pypi/idna@3.11"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/jsonschema-specifications@2025.9.1",
+      "dependsOn": [
+        "pkg:pypi/referencing@0.37.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/kiwisolver@1.4.9",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/markupsafe@3.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/matplotlib@3.9.4",
+      "dependsOn": [
+        "pkg:pypi/contourpy@1.3.3",
+        "pkg:pypi/cycler@0.12.1",
+        "pkg:pypi/fonttools@4.61.1",
+        "pkg:pypi/kiwisolver@1.4.9",
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/packaging@26.0",
+        "pkg:pypi/pillow@12.1.1",
+        "pkg:pypi/pyparsing@3.3.2",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/setuptools@82.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/narwhals@2.16.0",
+      "dependsOn": [
+        "pkg:pypi/packaging@26.0",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/polars@1.9.0",
+        "pkg:pypi/pyarrow@23.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/nest-asyncio@1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/numpy@2.2.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/packaging@26.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pandas@3.0.0",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/tzdata@2025.3",
+        "pkg:pypi/pyarrow@23.0.0",
+        "pkg:pypi/scipy@1.13.1",
+        "pkg:pypi/matplotlib@3.9.4",
+        "pkg:pypi/jinja2@3.1.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pillow@12.1.1",
+      "dependsOn": [
+        "pkg:pypi/pyarrow@23.0.0",
+        "pkg:pypi/packaging@26.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pip@25.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/plotly@6.5.2",
+      "dependsOn": [
+        "pkg:pypi/narwhals@2.16.0",
+        "pkg:pypi/packaging@26.0",
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/requests@2.32.5",
+        "pkg:pypi/plotly@6.5.2",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/pillow@12.1.1",
+        "pkg:pypi/polars@1.9.0",
+        "pkg:pypi/pyarrow@23.0.0",
+        "pkg:pypi/scipy@1.13.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/polars@1.9.0",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/polars@1.9.0",
+        "pkg:pypi/pyarrow@23.0.0",
+        "pkg:pypi/nest-asyncio@1.6.0",
+        "pkg:pypi/matplotlib@3.9.4",
+        "pkg:pypi/altair@6.0.0",
+        "pkg:pypi/tzdata@2025.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/protobuf@3.20.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyarrow@23.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pydeck@0.9.1",
+      "dependsOn": [
+        "pkg:pypi/jinja2@3.1.6",
+        "pkg:pypi/numpy@2.2.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pympler@1.1",
+      "dependsOn": [
+        "pkg:pypi/pywin32@311"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pyparsing@3.3.2",
+      "dependsOn": [
+        "pkg:pypi/jinja2@3.1.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": [
+        "pkg:pypi/six@1.17.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pywin32@311",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/referencing@0.37.0",
+      "dependsOn": [
+        "pkg:pypi/attrs@25.4.0",
+        "pkg:pypi/rpds-py@0.30.0",
+        "pkg:pypi/typing-extensions@4.15.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/requests@2.32.5",
+      "dependsOn": [
+        "pkg:pypi/charset-normalizer@3.4.4",
+        "pkg:pypi/idna@3.11",
+        "pkg:pypi/urllib3@2.6.3",
+        "pkg:pypi/certifi@2026.1.4"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/retrying@1.4.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/rpds-py@0.30.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/scikit-learn@1.8.0",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/scipy@1.13.1",
+        "pkg:pypi/joblib@1.5.3",
+        "pkg:pypi/threadpoolctl@3.6.0",
+        "pkg:pypi/matplotlib@3.9.4",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/pillow@12.1.1",
+        "pkg:pypi/plotly@6.5.2",
+        "pkg:pypi/polars@1.9.0",
+        "pkg:pypi/pyarrow@23.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/scipy@1.13.1",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/threadpoolctl@3.6.0",
+        "pkg:pypi/matplotlib@3.9.4",
+        "pkg:pypi/typing-extensions@4.15.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/semver@3.0.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/setuptools@82.0.0",
+      "dependsOn": [
+        "pkg:pypi/pip@25.0.1",
+        "pkg:pypi/packaging@26.0",
+        "pkg:pypi/importlib-metadata@8.7.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/smmap@5.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/streamlit@1.9.2",
+      "dependsOn": [
+        "pkg:pypi/altair@6.0.0",
+        "pkg:pypi/attrs@25.4.0",
+        "pkg:pypi/blinker@1.9.0",
+        "pkg:pypi/cachetools@7.0.1",
+        "pkg:pypi/click@8.0.4",
+        "pkg:pypi/importlib-metadata@8.7.1",
+        "pkg:pypi/numpy@2.2.6",
+        "pkg:pypi/packaging@26.0",
+        "pkg:pypi/pandas@3.0.0",
+        "pkg:pypi/pillow@12.1.1",
+        "pkg:pypi/protobuf@3.20.3",
+        "pkg:pypi/pyarrow@23.0.0",
+        "pkg:pypi/pydeck@0.9.1",
+        "pkg:pypi/pympler@1.1",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/requests@2.32.5",
+        "pkg:pypi/toml@0.10.2",
+        "pkg:pypi/tornado@6.5.4",
+        "pkg:pypi/tzlocal@5.3.1",
+        "pkg:pypi/validators@0.35.0",
+        "pkg:pypi/gitpython@3.1.46",
+        "pkg:pypi/typing-extensions@4.15.0",
+        "pkg:pypi/semver@3.0.4",
+        "pkg:pypi/watchdog@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/threadpoolctl@3.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/toml@0.10.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tornado@6.5.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2025.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tzlocal@5.3.1",
+      "dependsOn": [
+        "pkg:pypi/tzdata@2025.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.6.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/validators@0.35.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/watchdog@6.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/werkzeug@3.1.5",
+      "dependsOn": [
+        "pkg:pypi/markupsafe@3.0.3",
+        "pkg:pypi/watchdog@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/zipp@3.23.0",
+      "dependsOn": []
+    }
+  ]
+}

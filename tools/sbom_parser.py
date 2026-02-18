@@ -108,7 +108,7 @@ def _parse_github_scp_like(url: str) -> Optional[str]:
     return None
 
 
-def _normalize_github_httpish(url: str) -> Optional[str]:
+def _normalize_github_httpish(url: str, timeout: int = 15) -> Optional[str]:
     """
     Normalize parseable GitHub URLs:
       https://github.com/owner/repo
@@ -129,7 +129,13 @@ def _normalize_github_httpish(url: str) -> Optional[str]:
         return None
 
     owner, repo = parts[0], _strip_dot_git(parts[1])
-    return f"https://github.com/{owner}/{repo}"
+
+    repo_url = f"https://github.com/{owner}/{repo}"
+
+    final = _resolve_final_url(repo_url, timeout=timeout)
+    if not final:
+        return None
+    return repo_url
 
 
 def _looks_like_gitbox_or_gitwip(url: str) -> bool:
@@ -183,6 +189,8 @@ def _resolve_final_url(url: str, *, timeout: int = 15) -> Optional[str]:
     Follow redirects and return the final resolved URL.
     Cached to avoid repeated network calls for the same input URL.
     """
+    if url == "https://github.com/paulmillr/async-each":
+        print('test')
     if not url:
         return None
 
@@ -196,6 +204,8 @@ def _resolve_final_url(url: str, *, timeout: int = 15) -> Optional[str]:
         r = requests.head(url, allow_redirects=True, timeout=timeout)
         if r.status_code >= 400 or not r.url:
             r = requests.get(url, allow_redirects=True, timeout=timeout)
+        if r.status_code == 404 or not r.url:
+            return None
         final = (r.url or "").strip()
         return final or None
     except requests.RequestException:
@@ -230,16 +240,27 @@ def normalize_vcs_url_to_github(
     # (fast, no network, matches your example)
     rew = _maybe_rewrite_gitwip_query_to_github(s)
     if rew:
+        final = _resolve_final_url(rew, timeout=timeout)
+        if not final:
+            return None
         return rew
 
     # 1) scp-like GitHub forms (git@github.com:owner/repo.git)
     scp = _parse_github_scp_like(s)
     if scp:
+        final = _resolve_final_url(scp, timeout=timeout)
+        if not final:
+            return None
         return scp
 
     # 2) Parseable GitHub URLs (https/git/ssh)
-    gh = _normalize_github_httpish(s)
+    gh = _normalize_github_httpish(s, timeout=timeout)
     if gh:
+        if gh == "https://github.com/paulmillr/async-each":
+            print('test')
+        final = _resolve_final_url(gh, timeout=timeout)
+        if not final:
+            return None
         return gh
 
     # 3) Mirror-ish hosts: follow redirects and only accept GitHub final URL
@@ -254,7 +275,7 @@ def normalize_vcs_url_to_github(
         if scp2:
             return scp2
 
-        gh2 = _normalize_github_httpish(final)
+        gh2 = _normalize_github_httpish(final, timeout=timeout)
         return gh2  # None if not GitHub
 
     # 4) Everything else (gitlab/bitbucket/unknown) => None
@@ -370,20 +391,20 @@ def extract_license_ids_or_names(component: dict[str, Any]) -> list[str]:
     return cleaned
 
 
-def find_repo_url(component: dict[str, Any]) -> Optional[str]:
+def find_repo_url(component: dict[str, Any], timeout: int = 15) -> Optional[str]:
     vcs_urls, other_urls = extract_urls(component)
 
     for u in vcs_urls:
-        if u == "https://git-wip-us.apache.org/repos/asf?p=commons-math.git":
+        if u == "https://github.com/paulmillr/async-each":
             print('test')
         norm = normalize_vcs_url_to_github(u, follow_redirects_for_mirrors=True)
         if norm:
             return norm
 
     for u in other_urls:
-        if u == "https://git-wip-us.apache.org/repos/asf?p=commons-math.git":
+        if u == "https://github.com/paulmillr/async-each":
             print('test')
-        norm = _normalize_github_httpish(u)
+        norm = _normalize_github_httpish(u, timeout=timeout)
         if norm:
             return norm
 
@@ -498,7 +519,7 @@ def _compute_direct_dependency_refs(
     return set()
 
 
-def parse_sbom(sbom_path: Path) -> list[Component]:
+def parse_sbom(sbom_path: Path, timeout: int = 15) -> list[Component]:
     data = json.loads(sbom_path.read_text(encoding="utf-8"))
 
     # Identify the top-level (project) component, but DO NOT yield/create a Component from it.
@@ -536,7 +557,7 @@ def parse_sbom(sbom_path: Path) -> list[Component]:
                     publisher=_safe_str(c.get("publisher")),
                     description=_safe_str(c.get("description")),
                     licenses=extract_license_ids_or_names(c),
-                    repo_url=find_repo_url(c),
+                    repo_url=find_repo_url(c, timeout=timeout),
                     is_direct=is_direct,
                 )
             )
@@ -555,7 +576,7 @@ def main() -> None:
         print(f"ERROR: sbom file not found: {Config.sbom_output_file_path}")
         sys.exit()
 
-    components = parse_sbom(Config.sbom_output_file_path)
+    components = parse_sbom(Config.sbom_output_file_path, timeout=Config.requests_timeout)
 
     if Config.sbom_parser_dedupe:
         seen: set[tuple[Optional[str], str, Optional[str]]] = set()

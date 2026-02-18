@@ -1,7 +1,8 @@
 import sys
 
 from configuration import Configuration as Config
-from sbom_generators import maven_sbom_gen
+from sbom_generators import maven_sbom_gen, pypi_sbom_gen, pypi_sbom_gen2, pypi_sbom_gen3, pypi_sbom_gen4, go_sbom_gen, \
+    npm_sbom_gen
 
 
 def main() -> None:
@@ -10,10 +11,13 @@ def main() -> None:
         maven_sbom_gen.main()
     elif Config.package_manager.lower() == "pypi":
         Config.sbom_input_file = Config.sbom_input_file if Config.sbom_input_file else Config.pypi_sbom_input_file
-        print('to do')
+        pypi_sbom_gen4.main()
     elif Config.package_manager.lower() == "npm":
         Config.sbom_input_file = Config.sbom_input_file if Config.sbom_input_file else Config.npm_sbom_input_file
-        print('to do')
+        npm_sbom_gen.main()
+    elif Config.package_manager.lower() == "go":
+        Config.sbom_input_file = Config.sbom_input_file if Config.sbom_input_file else Config.go_sbom_input_file
+        go_sbom_gen.main()
     elif Config.package_manager.lower() == "raw":
         Config.sbom_input_file = Config.sbom_input_file if Config.sbom_input_file else Config.raw_sbom_input_file
         print('to do')
