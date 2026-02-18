@@ -189,8 +189,6 @@ def _resolve_final_url(url: str, *, timeout: int = 15) -> Optional[str]:
     Follow redirects and return the final resolved URL.
     Cached to avoid repeated network calls for the same input URL.
     """
-    if url == "https://github.com/paulmillr/async-each":
-        print('test')
     if not url:
         return None
 
@@ -204,8 +202,8 @@ def _resolve_final_url(url: str, *, timeout: int = 15) -> Optional[str]:
         r = requests.head(url, allow_redirects=True, timeout=timeout)
         if r.status_code >= 400 or not r.url:
             r = requests.get(url, allow_redirects=True, timeout=timeout)
-        if r.status_code == 404 or not r.url:
-            return None
+            if r.status_code == 404 or not r.url:
+                return None
         final = (r.url or "").strip()
         return final or None
     except requests.RequestException:
@@ -256,8 +254,6 @@ def normalize_vcs_url_to_github(
     # 2) Parseable GitHub URLs (https/git/ssh)
     gh = _normalize_github_httpish(s, timeout=timeout)
     if gh:
-        if gh == "https://github.com/paulmillr/async-each":
-            print('test')
         final = _resolve_final_url(gh, timeout=timeout)
         if not final:
             return None
@@ -395,15 +391,11 @@ def find_repo_url(component: dict[str, Any], timeout: int = 15) -> Optional[str]
     vcs_urls, other_urls = extract_urls(component)
 
     for u in vcs_urls:
-        if u == "https://github.com/paulmillr/async-each":
-            print('test')
         norm = normalize_vcs_url_to_github(u, follow_redirects_for_mirrors=True)
         if norm:
             return norm
 
     for u in other_urls:
-        if u == "https://github.com/paulmillr/async-each":
-            print('test')
         norm = _normalize_github_httpish(u, timeout=timeout)
         if norm:
             return norm
