@@ -151,6 +151,8 @@ class Configuration:
     # PYPI SBOM GEN
     requirements_txt_file_name = "requirements.txt"
     requirements_txt_file_path = ""
+    requirements_in_file_name = "requirements.in"
+    requirements_in_file_path = ""
 
     # GO SBOM GEN
     go_mod_file_path = ""

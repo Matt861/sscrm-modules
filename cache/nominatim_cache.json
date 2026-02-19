@@ -118434,5 +118434,186 @@
       "76.7420485",
       "77.1667539"
     ]
+  },
+  "little rock, arkansas": {
+    "place_id": 310680091,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 111147,
+    "lat": "34.7465071",
+    "lon": "-92.2896267",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6263942028870829,
+    "addresstype": "city",
+    "name": "Little Rock",
+    "display_name": "Little Rock, Big Rock Township, Pulaski County, Arkansas, United States",
+    "address": {
+      "city": "Little Rock",
+      "municipality": "Big Rock Township",
+      "county": "Pulaski County",
+      "state": "Arkansas",
+      "ISO3166-2-lvl4": "US-AR",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "34.6256657",
+      "34.8218226",
+      "-92.5215905",
+      "-92.1506554"
+    ]
+  },
+  "olby, auvergne, france": {
+    "place_id": 78868832,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 126971,
+    "lat": "45.7445969",
+    "lon": "2.8668699",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5512722421680589,
+    "addresstype": "village",
+    "name": "Olby",
+    "display_name": "Olby, Issoire, Puy-de-Dôme, Auvergne-Rhône-Alpes, France métropolitaine, 63210, France",
+    "address": {
+      "village": "Olby",
+      "municipality": "Issoire",
+      "county": "Puy-de-Dôme",
+      "ISO3166-2-lvl6": "FR-63",
+      "state": "Auvergne-Rhône-Alpes",
+      "ISO3166-2-lvl4": "FR-ARA",
+      "region": "France métropolitaine",
+      "postcode": "63210",
+      "country": "France",
+      "country_code": "fr"
+    },
+    "boundingbox": [
+      "45.7241315",
+      "45.7771236",
+      "2.8237223",
+      "2.9254020"
+    ]
+  },
+  "hastings, england": {
+    "place_id": 90589217,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 131199,
+    "lat": "50.8550976",
+    "lon": "0.5821779",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5644647146088988,
+    "addresstype": "town",
+    "name": "Hastings",
+    "display_name": "Hastings, East Sussex, England, United Kingdom",
+    "address": {
+      "town": "Hastings",
+      "county": "East Sussex",
+      "ISO3166-2-lvl6": "GB-ESX",
+      "state": "England",
+      "ISO3166-2-lvl4": "GB-ENG",
+      "country": "United Kingdom",
+      "country_code": "gb"
+    },
+    "boundingbox": [
+      "50.8410788",
+      "50.8948284",
+      "0.5006111",
+      "0.6589558"
+    ]
+  },
+  "araras, brasil": {
+    "place_id": 9165987,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 298532,
+    "lat": "-22.3569192",
+    "lon": "-47.3838766",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5614879096744508,
+    "addresstype": "municipality",
+    "name": "Araras",
+    "display_name": "Araras, Região Imediata de Araras, Região Metropolitana de Piracicaba, Região Geográfica Intermediária de Campinas, São Paulo, Brasil",
+    "address": {
+      "municipality": "Araras",
+      "county": "Região Metropolitana de Piracicaba",
+      "state_district": "Região Geográfica Intermediária de Campinas",
+      "state": "São Paulo",
+      "ISO3166-2-lvl4": "BR-SP",
+      "country": "Brasil",
+      "country_code": "br"
+    },
+    "boundingbox": [
+      "-22.4760000",
+      "-22.1933707",
+      "-47.4886380",
+      "-47.1750000"
+    ]
+  },
+  "osnabrück, germany": {
+    "place_id": 129949310,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 62631,
+    "lat": "52.2719595",
+    "lon": "8.0476350",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 12,
+    "importance": 0.6407649170971277,
+    "addresstype": "city",
+    "name": "Osnabrück",
+    "display_name": "Osnabrück, Niedersachsen, Deutschland",
+    "address": {
+      "city": "Osnabrück",
+      "state": "Niedersachsen",
+      "ISO3166-2-lvl4": "DE-NI",
+      "country": "Deutschland",
+      "country_code": "de"
+    },
+    "boundingbox": [
+      "52.2185828",
+      "52.3374348",
+      "7.9297098",
+      "8.1806602"
+    ]
+  },
+  "germany, bückeburg": {
+    "place_id": 130890144,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1169355,
+    "lat": "52.2611037",
+    "lon": "9.0488959",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5261498206065245,
+    "addresstype": "town",
+    "name": "Bückeburg",
+    "display_name": "Bückeburg, Landkreis Schaumburg, Niedersachsen, 31675, Deutschland",
+    "address": {
+      "town": "Bückeburg",
+      "county": "Landkreis Schaumburg",
+      "state": "Niedersachsen",
+      "ISO3166-2-lvl4": "DE-NI",
+      "postcode": "31675",
+      "country": "Deutschland",
+      "country_code": "de"
+    },
+    "boundingbox": [
+      "52.2340512",
+      "52.3519422",
+      "8.9633174",
+      "9.0998639"
+    ]
   }
 }

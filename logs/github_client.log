@@ -1,0 +1,18 @@
+2026-02-18 20:25:01,972 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:01,972 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mergify[bot]'."}, {'type': 'NOT_FOUND', 'path': ['u4'], 'locations': [{'line': 37, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-18 20:25:02,388 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:02,388 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mergify[bot]'."}, {'type': 'NOT_FOUND', 'path': ['u4'], 'locations': [{'line': 37, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-18 20:25:02,760 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:02,760 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mergify[bot]'."}, {'type': 'NOT_FOUND', 'path': ['u4'], 'locations': [{'line': 37, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-18 20:25:03,115 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:03,115 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u2'], 'locations': [{'line': 21, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mergify[bot]'."}]
+2026-02-18 20:25:03,805 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:03,805 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mergify[bot]'."}]
+2026-02-18 20:25:04,000 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:04,000 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'mergify[bot]'."}]
+2026-02-18 20:25:04,131 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:04,131 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u1'], 'locations': [{'line': 13, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-18 20:25:04,358 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:04,358 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]
+2026-02-18 20:25:04,450 - loggers.github_client_logger - ERROR - None
+2026-02-18 20:25:04,450 - loggers.github_client_logger - ERROR - GitHub GraphQL errors: [{'type': 'NOT_FOUND', 'path': ['u0'], 'locations': [{'line': 5, 'column': 21}], 'message': "Could not resolve to a User with the login of 'dependabot[bot]'."}]

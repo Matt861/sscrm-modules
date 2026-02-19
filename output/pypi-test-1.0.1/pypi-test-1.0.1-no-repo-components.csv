@@ -1,0 +1,3 @@
+Component,Version,Group,Is_Direct,License,Vulnerabilities
+protobuf,6.33.5,pypi,True,['3-Clause BSD License'],
+pytz,2025.2,pypi,True,['MIT'],

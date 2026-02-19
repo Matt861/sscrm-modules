@@ -18,9 +18,9 @@ main_timer.start("starting main timer")
 
 
 def main() -> None:
-    Config.project_name = "npm-test"
-    Config.project_version = "1.0.3"
-    Config.package_manager = "npm"
+    Config.project_name = "pypi-test"
+    Config.project_version = "1.0.1"
+    Config.package_manager = "pypi"
     Config.software_end_use = "DELIVERABLE"
     #Config.sbom_input_dir = Path(Config.input_dir, "sbom_gen/crt/crt-service")
     Config.project_output_dir = Path(Config.output_dir, f"{Config.project_name}-{Config.project_version}")
