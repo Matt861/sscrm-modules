@@ -1,0 +1,4890 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:ad91bfdd-baad-40ff-96be-2be6ca4219a3",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-02-18T23:59:41Z",
+    "component": {
+      "type": "library",
+      "name": "npm-test",
+      "group": "com.lmco.crt",
+      "version": "1.0.2",
+      "bom-ref": "pkg:npm/npm-test@1.0.2",
+      "purl": "pkg:npm/npm-test@1.0.2"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "cli",
+      "version": "7.8.4",
+      "purl": "pkg:npm/@babel/cli@7.8.4",
+      "bom-ref": "pkg:npm/@babel/cli@7.8.4",
+      "description": "Babel command line.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://babeljs.io/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/babel/babel/tree/master/packages/babel-cli"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@babel/cli/-/cli-7.8.4.tgz"
+        }
+      ],
+      "group": "babel"
+    },
+    {
+      "type": "library",
+      "name": "anymatch",
+      "version": "2.0.0",
+      "purl": "pkg:npm/anymatch@2.0.0",
+      "bom-ref": "pkg:npm/anymatch@2.0.0",
+      "description": "Matches strings against configurable strings, globs, regular expressions, and/or functions",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/micromatch/anymatch"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/micromatch/anymatch"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/micromatch/anymatch/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/anymatch/-/anymatch-2.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "arr-diff",
+      "version": "4.0.0",
+      "purl": "pkg:npm/arr-diff@4.0.0",
+      "bom-ref": "pkg:npm/arr-diff@4.0.0",
+      "description": "Returns an array with only the unique values from the first array, by excluding all values from additional arrays using strict equality for comparisons.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/arr-diff"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/arr-diff"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/arr-diff/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/arr-diff/-/arr-diff-4.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "arr-flatten",
+      "version": "1.1.0",
+      "purl": "pkg:npm/arr-flatten@1.1.0",
+      "bom-ref": "pkg:npm/arr-flatten@1.1.0",
+      "description": "Recursively flatten an array or arrays.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/arr-flatten"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/arr-flatten"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/arr-flatten/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/arr-flatten/-/arr-flatten-1.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "arr-union",
+      "version": "3.1.0",
+      "purl": "pkg:npm/arr-union@3.1.0",
+      "bom-ref": "pkg:npm/arr-union@3.1.0",
+      "description": "Combines a list of arrays, returning a single array with unique values, using strict equality for comparisons.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/arr-union"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/arr-union"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/arr-union/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/arr-union/-/arr-union-3.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "array-unique",
+      "version": "0.3.2",
+      "purl": "pkg:npm/array-unique@0.3.2",
+      "bom-ref": "pkg:npm/array-unique@0.3.2",
+      "description": "Remove duplicate values from an array. Fastest ES5 implementation.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/array-unique"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/array-unique"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/array-unique/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/array-unique/-/array-unique-0.3.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "assign-symbols",
+      "version": "1.0.0",
+      "purl": "pkg:npm/assign-symbols@1.0.0",
+      "bom-ref": "pkg:npm/assign-symbols@1.0.0",
+      "description": "Assign the enumerable es6 Symbol properties from an object (or objects) to the first object passed on the arguments. Can be used as a supplement to other extend, assign or merge methods as a polyfill for the Symbols part of the es6 Object.assign method.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/assign-symbols"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/assign-symbols"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/assign-symbols/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/assign-symbols/-/assign-symbols-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "async-each",
+      "version": "1.0.6",
+      "purl": "pkg:npm/async-each@1.0.6",
+      "bom-ref": "pkg:npm/async-each@1.0.6",
+      "description": "No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach / map function for JavaScript.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/paulmillr/async-each/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/paulmillr/async-each"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/paulmillr/async-each/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/async-each/-/async-each-1.0.6.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "atob",
+      "version": "2.1.2",
+      "purl": "pkg:npm/atob@2.1.2",
+      "bom-ref": "pkg:npm/atob@2.1.2",
+      "description": "atob for Node.JS and Linux / Mac / Windows CLI (it's a one-liner)",
+      "licenses": [
+        {
+          "license": {
+            "name": "(MIT OR Apache-2.0)"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://git.coolaj86.com/coolaj86/atob.js.git"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "balanced-match",
+      "version": "1.0.2",
+      "purl": "pkg:npm/balanced-match@1.0.2",
+      "bom-ref": "pkg:npm/balanced-match@1.0.2",
+      "description": "Match balanced character pairs, like \"{\" and \"}\"",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/juliangruber/balanced-match"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/juliangruber/balanced-match/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "base",
+      "version": "0.11.2",
+      "purl": "pkg:npm/base@0.11.2",
+      "bom-ref": "pkg:npm/base@0.11.2",
+      "description": "base is the foundation for creating modular, unit testable and highly pluggable node.js applications, starting with a handful of common methods, like `set`, `get`, `del` and `use`.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/node-base/base"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/node-base/base"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/node-base/base/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/base/-/base-0.11.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "binary-extensions",
+      "version": "1.13.1",
+      "purl": "pkg:npm/binary-extensions@1.13.1",
+      "bom-ref": "pkg:npm/binary-extensions@1.13.1",
+      "description": "List of binary file extensions",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/sindresorhus/binary-extensions#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sindresorhus/binary-extensions"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sindresorhus/binary-extensions/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-1.13.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "bindings",
+      "version": "1.5.0",
+      "purl": "pkg:npm/bindings@1.5.0",
+      "bom-ref": "pkg:npm/bindings@1.5.0",
+      "description": "Helper module for loading your native module's .node file",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/TooTallNate/node-bindings"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/TooTallNate/node-bindings/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "1.1.12",
+      "purl": "pkg:npm/brace-expansion@1.1.12",
+      "bom-ref": "pkg:npm/brace-expansion@1.1.12",
+      "description": "Brace expansion as known from sh/bash",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/juliangruber/brace-expansion"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/juliangruber/brace-expansion/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.12.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "braces",
+      "version": "2.3.2",
+      "purl": "pkg:npm/braces@2.3.2",
+      "bom-ref": "pkg:npm/braces@2.3.2",
+      "description": "Bash-like brace expansion, implemented in JavaScript. Safer than other brace expansion libs, with complete support for the Bash 4.3 braces specification, without sacrificing speed.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/micromatch/braces"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/micromatch/braces"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/micromatch/braces/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/braces/-/braces-2.3.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "cache-base",
+      "version": "1.0.1",
+      "purl": "pkg:npm/cache-base@1.0.1",
+      "bom-ref": "pkg:npm/cache-base@1.0.1",
+      "description": "Basic object cache with `get`, `set`, `del`, and `has` methods for node.js/javascript projects.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/cache-base"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/cache-base"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/cache-base/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/cache-base/-/cache-base-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "chokidar",
+      "version": "2.1.8",
+      "purl": "pkg:npm/chokidar@2.1.8",
+      "bom-ref": "pkg:npm/chokidar@2.1.8",
+      "description": "A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/paulmillr/chokidar"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/paulmillr/chokidar"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/paulmillr/chokidar/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/chokidar/-/chokidar-2.1.8.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "class-utils",
+      "version": "0.3.6",
+      "purl": "pkg:npm/class-utils@0.3.6",
+      "bom-ref": "pkg:npm/class-utils@0.3.6",
+      "description": "Utils for working with JavaScript classes and prototype methods.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/class-utils"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/class-utils"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/class-utils/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/class-utils/-/class-utils-0.3.6.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "collection-visit",
+      "version": "1.0.0",
+      "purl": "pkg:npm/collection-visit@1.0.0",
+      "bom-ref": "pkg:npm/collection-visit@1.0.0",
+      "description": "Visit a method over the items in an object, or map visit over the objects in an array.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/collection-visit"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/collection-visit"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/collection-visit/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/collection-visit/-/collection-visit-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "commander",
+      "version": "4.1.1",
+      "purl": "pkg:npm/commander@4.1.1",
+      "bom-ref": "pkg:npm/commander@4.1.1",
+      "description": "the complete solution for node.js command-line programs",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/tj/commander.js#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/tj/commander.js"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/tj/commander.js/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "component-emitter",
+      "version": "1.3.1",
+      "purl": "pkg:npm/component-emitter@1.3.1",
+      "bom-ref": "pkg:npm/component-emitter@1.3.1",
+      "description": "Event emitter",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/sindresorhus/component-emitter#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sindresorhus/component-emitter"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sindresorhus/component-emitter/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "concat-map",
+      "version": "0.0.1",
+      "purl": "pkg:npm/concat-map@0.0.1",
+      "bom-ref": "pkg:npm/concat-map@0.0.1",
+      "description": "concatenative mapdashery",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/substack/node-concat-map"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/substack/node-concat-map/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "convert-source-map",
+      "version": "1.9.0",
+      "purl": "pkg:npm/convert-source-map@1.9.0",
+      "bom-ref": "pkg:npm/convert-source-map@1.9.0",
+      "description": "Converts a source-map from/to  different formats and allows adding/changing properties.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/thlorenz/convert-source-map"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/thlorenz/convert-source-map/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-1.9.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "copy-descriptor",
+      "version": "0.1.1",
+      "purl": "pkg:npm/copy-descriptor@0.1.1",
+      "bom-ref": "pkg:npm/copy-descriptor@0.1.1",
+      "description": "Copy a descriptor from object A to object B",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/copy-descriptor"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/copy-descriptor"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/copy-descriptor/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/copy-descriptor/-/copy-descriptor-0.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "core-util-is",
+      "version": "1.0.3",
+      "purl": "pkg:npm/core-util-is@1.0.3",
+      "bom-ref": "pkg:npm/core-util-is@1.0.3",
+      "description": "The `util.is*` functions introduced in Node v0.12.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/core-util-is#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/core-util-is/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "debug",
+      "version": "2.6.9",
+      "purl": "pkg:npm/debug@2.6.9",
+      "bom-ref": "pkg:npm/debug@2.6.9",
+      "description": "small debugging utility",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/visionmedia/debug#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/visionmedia/debug/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "decode-uri-component",
+      "version": "0.2.2",
+      "purl": "pkg:npm/decode-uri-component@0.2.2",
+      "bom-ref": "pkg:npm/decode-uri-component@0.2.2",
+      "description": "A better decodeURIComponent",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/SamVerschueren/decode-uri-component#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/SamVerschueren/decode-uri-component"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/SamVerschueren/decode-uri-component/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "define-property",
+      "version": "0.2.5",
+      "purl": "pkg:npm/define-property@0.2.5",
+      "bom-ref": "pkg:npm/define-property@0.2.5",
+      "description": "Define a non-enumerable property on an object.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/define-property"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/define-property"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/define-property/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/define-property/-/define-property-0.2.5.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "define-property",
+      "version": "1.0.0",
+      "purl": "pkg:npm/define-property@1.0.0",
+      "bom-ref": "pkg:npm/define-property@1.0.0",
+      "description": "Define a non-enumerable property on an object.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/define-property"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/define-property"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/define-property/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/define-property/-/define-property-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "define-property",
+      "version": "2.0.2",
+      "purl": "pkg:npm/define-property@2.0.2",
+      "bom-ref": "pkg:npm/define-property@2.0.2",
+      "description": "Define a non-enumerable property on an object. Uses Reflect.defineProperty when available, otherwise Object.defineProperty.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/define-property"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/define-property"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/define-property/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/define-property/-/define-property-2.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "expand-brackets",
+      "version": "2.1.4",
+      "purl": "pkg:npm/expand-brackets@2.1.4",
+      "bom-ref": "pkg:npm/expand-brackets@2.1.4",
+      "description": "Expand POSIX bracket expressions (character classes) in glob patterns.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/expand-brackets"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/expand-brackets"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/expand-brackets/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/expand-brackets/-/expand-brackets-2.1.4.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "extend-shallow",
+      "version": "2.0.1",
+      "purl": "pkg:npm/extend-shallow@2.0.1",
+      "bom-ref": "pkg:npm/extend-shallow@2.0.1",
+      "description": "Extend an object with the properties of additional objects. node.js/javascript util.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/extend-shallow"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/extend-shallow"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/extend-shallow/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/extend-shallow/-/extend-shallow-2.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "extend-shallow",
+      "version": "3.0.2",
+      "purl": "pkg:npm/extend-shallow@3.0.2",
+      "bom-ref": "pkg:npm/extend-shallow@3.0.2",
+      "description": "Extend an object with the properties of additional objects. node.js/javascript util.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/extend-shallow"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/extend-shallow"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/extend-shallow/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/extend-shallow/-/extend-shallow-3.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "extglob",
+      "version": "2.0.4",
+      "purl": "pkg:npm/extglob@2.0.4",
+      "bom-ref": "pkg:npm/extglob@2.0.4",
+      "description": "Extended glob support for JavaScript. Adds (almost) the expressive power of regular expressions to glob patterns.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/micromatch/extglob"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/micromatch/extglob"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/micromatch/extglob/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/extglob/-/extglob-2.0.4.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "file-uri-to-path",
+      "version": "1.0.0",
+      "purl": "pkg:npm/file-uri-to-path@1.0.0",
+      "bom-ref": "pkg:npm/file-uri-to-path@1.0.0",
+      "description": "Convert a file: URI to a file path",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/TooTallNate/file-uri-to-path"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/TooTallNate/file-uri-to-path/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fill-range",
+      "version": "4.0.0",
+      "purl": "pkg:npm/fill-range@4.0.0",
+      "bom-ref": "pkg:npm/fill-range@4.0.0",
+      "description": "Fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toRegex`",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/fill-range"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/fill-range"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/fill-range/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/fill-range/-/fill-range-4.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "for-in",
+      "version": "1.0.2",
+      "purl": "pkg:npm/for-in@1.0.2",
+      "bom-ref": "pkg:npm/for-in@1.0.2",
+      "description": "Iterate over the own and inherited enumerable properties of an object, and return an object with properties that evaluate to true from the callback. Exit early by returning `false`. JavaScript/Node.js",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/for-in"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/for-in"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/for-in/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fragment-cache",
+      "version": "0.2.1",
+      "purl": "pkg:npm/fragment-cache@0.2.1",
+      "bom-ref": "pkg:npm/fragment-cache@0.2.1",
+      "description": "A cache for managing namespaced sub-caches",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/fragment-cache"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/fragment-cache"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/fragment-cache/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/fragment-cache/-/fragment-cache-0.2.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fs-readdir-recursive",
+      "version": "1.1.0",
+      "purl": "pkg:npm/fs-readdir-recursive@1.1.0",
+      "bom-ref": "pkg:npm/fs-readdir-recursive@1.1.0",
+      "description": "Recursively read a directory",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/fs-utils/fs-readdir-recursive#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/fs-utils/fs-readdir-recursive"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/fs-utils/fs-readdir-recursive/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/fs-readdir-recursive/-/fs-readdir-recursive-1.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fs.realpath",
+      "version": "1.0.0",
+      "purl": "pkg:npm/fs.realpath@1.0.0",
+      "bom-ref": "pkg:npm/fs.realpath@1.0.0",
+      "description": "Use node's fs.realpath, but fall back to the JS implementation if the native one fails",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/fs.realpath#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/isaacs/fs.realpath"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/fs.realpath/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fsevents",
+      "version": "1.2.13",
+      "purl": "pkg:npm/fsevents@1.2.13",
+      "bom-ref": "pkg:npm/fsevents@1.2.13",
+      "description": "Native Access to Mac OS-X FSEvents",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/strongloop/fsevents"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/strongloop/fsevents"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/strongloop/fsevents/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/fsevents/-/fsevents-1.2.13.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "function-bind",
+      "version": "1.1.2",
+      "purl": "pkg:npm/function-bind@1.1.2",
+      "bom-ref": "pkg:npm/function-bind@1.1.2",
+      "description": "Implementation of Function.prototype.bind",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Raynos/function-bind"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/Raynos/function-bind"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/Raynos/function-bind/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "get-value",
+      "version": "2.0.6",
+      "purl": "pkg:npm/get-value@2.0.6",
+      "bom-ref": "pkg:npm/get-value@2.0.6",
+      "description": "Use property paths (`a.b.c`) to get a nested value from an object.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/get-value"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/get-value"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/get-value/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/get-value/-/get-value-2.0.6.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "glob-parent",
+      "version": "3.1.0",
+      "purl": "pkg:npm/glob-parent@3.1.0",
+      "bom-ref": "pkg:npm/glob-parent@3.1.0",
+      "description": "Strips glob magic from a string to provide the parent directory path",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/es128/glob-parent"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/es128/glob-parent"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/es128/glob-parent/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/glob-parent/-/glob-parent-3.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "glob",
+      "version": "7.2.3",
+      "purl": "pkg:npm/glob@7.2.3",
+      "bom-ref": "pkg:npm/glob@7.2.3",
+      "description": "a little globber",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/node-glob#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/node-glob/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/glob/-/glob-7.2.3.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "purl": "pkg:npm/graceful-fs@4.2.11",
+      "bom-ref": "pkg:npm/graceful-fs@4.2.11",
+      "description": "A drop-in replacement for fs, making various improvements.",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/node-graceful-fs#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/isaacs/node-graceful-fs"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/node-graceful-fs/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "has-value",
+      "version": "0.3.1",
+      "purl": "pkg:npm/has-value@0.3.1",
+      "bom-ref": "pkg:npm/has-value@0.3.1",
+      "description": "Returns true if a value exists, false if empty. Works with deeply nested values using object paths.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/has-value"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/has-value"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/has-value/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/has-value/-/has-value-0.3.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "has-value",
+      "version": "1.0.0",
+      "purl": "pkg:npm/has-value@1.0.0",
+      "bom-ref": "pkg:npm/has-value@1.0.0",
+      "description": "Returns true if a value exists, false if empty. Works with deeply nested values using object paths.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/has-value"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/has-value"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/has-value/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/has-value/-/has-value-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "has-values",
+      "version": "0.1.4",
+      "purl": "pkg:npm/has-values@0.1.4",
+      "bom-ref": "pkg:npm/has-values@0.1.4",
+      "description": "Returns true if any values exist, false if empty. Works for booleans, functions, numbers, strings, nulls, objects and arrays.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/has-values"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/has-values"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/has-values/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/has-values/-/has-values-0.1.4.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "has-values",
+      "version": "1.0.0",
+      "purl": "pkg:npm/has-values@1.0.0",
+      "bom-ref": "pkg:npm/has-values@1.0.0",
+      "description": "Returns true if any values exist, false if empty. Works for booleans, functions, numbers, strings, nulls, objects and arrays.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/has-values"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/has-values"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/has-values/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/has-values/-/has-values-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "hasown",
+      "version": "2.0.2",
+      "purl": "pkg:npm/hasown@2.0.2",
+      "bom-ref": "pkg:npm/hasown@2.0.2",
+      "description": "A robust, ES3 compatible, \"has own property\" predicate.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/inspect-js/hasOwn#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/inspect-js/hasOwn"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/inspect-js/hasOwn/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "inflight",
+      "version": "1.0.6",
+      "purl": "pkg:npm/inflight@1.0.6",
+      "bom-ref": "pkg:npm/inflight@1.0.6",
+      "description": "Add callbacks to requests in flight to avoid async duplication",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/inflight"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/npm/inflight"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/inflight/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "inherits",
+      "version": "2.0.4",
+      "purl": "pkg:npm/inherits@2.0.4",
+      "bom-ref": "pkg:npm/inherits@2.0.4",
+      "description": "Browser-friendly inheritance fully compatible with standard node.js inherits()",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/inherits#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/inherits/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-accessor-descriptor",
+      "version": "1.0.1",
+      "purl": "pkg:npm/is-accessor-descriptor@1.0.1",
+      "bom-ref": "pkg:npm/is-accessor-descriptor@1.0.1",
+      "description": "Returns true if a value has the characteristics of a valid JavaScript accessor descriptor.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/inspect-js/is-accessor-descriptor"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/inspect-js/is-accessor-descriptor"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/inspect-js/is-accessor-descriptor/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-accessor-descriptor/-/is-accessor-descriptor-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-binary-path",
+      "version": "1.0.1",
+      "purl": "pkg:npm/is-binary-path@1.0.1",
+      "bom-ref": "pkg:npm/is-binary-path@1.0.1",
+      "description": "Check if a filepath is a binary file",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/sindresorhus/is-binary-path"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sindresorhus/is-binary-path"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sindresorhus/is-binary-path/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-buffer",
+      "version": "1.1.6",
+      "purl": "pkg:npm/is-buffer@1.1.6",
+      "bom-ref": "pkg:npm/is-buffer@1.1.6",
+      "description": "Determine if an object is a Buffer",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/feross/is-buffer#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/feross/is-buffer/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-data-descriptor",
+      "version": "1.0.1",
+      "purl": "pkg:npm/is-data-descriptor@1.0.1",
+      "bom-ref": "pkg:npm/is-data-descriptor@1.0.1",
+      "description": "Returns true if a value has the characteristics of a valid JavaScript data descriptor.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/inspect-js/is-data-descriptor"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/inspect-js/is-data-descriptor"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/inspect-js/is-data-descriptor/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-data-descriptor/-/is-data-descriptor-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-descriptor",
+      "version": "0.1.7",
+      "purl": "pkg:npm/is-descriptor@0.1.7",
+      "bom-ref": "pkg:npm/is-descriptor@0.1.7",
+      "description": "Returns true if a value has the characteristics of a valid JavaScript descriptor. Works for data descriptors and accessor descriptors.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/inspect-js/is-descriptor"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/inspect-js/is-descriptor"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/inspect-js/is-descriptor/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-descriptor/-/is-descriptor-0.1.7.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-descriptor",
+      "version": "1.0.3",
+      "purl": "pkg:npm/is-descriptor@1.0.3",
+      "bom-ref": "pkg:npm/is-descriptor@1.0.3",
+      "description": "Returns true if a value has the characteristics of a valid JavaScript descriptor. Works for data descriptors and accessor descriptors.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/inspect-js/is-descriptor"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/inspect-js/is-descriptor"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/inspect-js/is-descriptor/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-descriptor/-/is-descriptor-1.0.3.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-extendable",
+      "version": "0.1.1",
+      "purl": "pkg:npm/is-extendable@0.1.1",
+      "bom-ref": "pkg:npm/is-extendable@0.1.1",
+      "description": "Returns true if a value is any of the object types: array, regexp, plain object, function or date. This is useful for determining if a value can be extended, e.g. \"can the value have keys?\"",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/is-extendable"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/is-extendable"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/is-extendable/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-extendable",
+      "version": "1.0.1",
+      "purl": "pkg:npm/is-extendable@1.0.1",
+      "bom-ref": "pkg:npm/is-extendable@1.0.1",
+      "description": "Returns true if a value is a plain object, array or function.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/is-extendable"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/is-extendable"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/is-extendable/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-extendable/-/is-extendable-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "purl": "pkg:npm/is-extglob@2.1.1",
+      "bom-ref": "pkg:npm/is-extglob@2.1.1",
+      "description": "Returns true if a string has an extglob.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/is-extglob"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/is-extglob"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/is-extglob/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-glob",
+      "version": "3.1.0",
+      "purl": "pkg:npm/is-glob@3.1.0",
+      "bom-ref": "pkg:npm/is-glob@3.1.0",
+      "description": "Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a bet",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/is-glob"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/is-glob"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/is-glob/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-glob/-/is-glob-3.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-glob",
+      "version": "4.0.3",
+      "purl": "pkg:npm/is-glob@4.0.3",
+      "bom-ref": "pkg:npm/is-glob@4.0.3",
+      "description": "Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a bet",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/micromatch/is-glob"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/micromatch/is-glob"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/micromatch/is-glob/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-number",
+      "version": "3.0.0",
+      "purl": "pkg:npm/is-number@3.0.0",
+      "bom-ref": "pkg:npm/is-number@3.0.0",
+      "description": "Returns true if the value is a number. comprehensive tests.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/is-number"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/is-number"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/is-number/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-number/-/is-number-3.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-plain-object",
+      "version": "2.0.4",
+      "purl": "pkg:npm/is-plain-object@2.0.4",
+      "bom-ref": "pkg:npm/is-plain-object@2.0.4",
+      "description": "Returns true if an object was created by the `Object` constructor.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/is-plain-object"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/is-plain-object"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/is-plain-object/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-plain-object/-/is-plain-object-2.0.4.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-windows",
+      "version": "1.0.2",
+      "purl": "pkg:npm/is-windows@1.0.2",
+      "bom-ref": "pkg:npm/is-windows@1.0.2",
+      "description": "Returns true if the platform is windows. UMD module, works with node.js, commonjs, browser, AMD, electron, etc.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/is-windows"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/is-windows"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/is-windows/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-windows/-/is-windows-1.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "isarray",
+      "version": "1.0.0",
+      "purl": "pkg:npm/isarray@1.0.0",
+      "bom-ref": "pkg:npm/isarray@1.0.0",
+      "description": "Array#isArray for older browsers",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/juliangruber/isarray"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/juliangruber/isarray/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "isobject",
+      "version": "2.1.0",
+      "purl": "pkg:npm/isobject@2.1.0",
+      "bom-ref": "pkg:npm/isobject@2.1.0",
+      "description": "Returns true if the value is an object and not an array or null.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/isobject"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/isobject"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/isobject/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/isobject/-/isobject-2.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "isobject",
+      "version": "3.0.1",
+      "purl": "pkg:npm/isobject@3.0.1",
+      "bom-ref": "pkg:npm/isobject@3.0.1",
+      "description": "Returns true if the value is an object and not an array or null.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/isobject"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/isobject"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/isobject/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "kind-of",
+      "version": "3.2.2",
+      "purl": "pkg:npm/kind-of@3.2.2",
+      "bom-ref": "pkg:npm/kind-of@3.2.2",
+      "description": "Get the native type of a value.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/kind-of"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/kind-of"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/kind-of/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "kind-of",
+      "version": "4.0.0",
+      "purl": "pkg:npm/kind-of@4.0.0",
+      "bom-ref": "pkg:npm/kind-of@4.0.0",
+      "description": "Get the native type of a value.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/kind-of"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/kind-of"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/kind-of/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/kind-of/-/kind-of-4.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "kind-of",
+      "version": "6.0.3",
+      "purl": "pkg:npm/kind-of@6.0.3",
+      "bom-ref": "pkg:npm/kind-of@6.0.3",
+      "description": "Get the native type of a value.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/kind-of"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/kind-of"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/kind-of/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.23",
+      "purl": "pkg:npm/lodash@4.17.23",
+      "bom-ref": "pkg:npm/lodash@4.17.23",
+      "description": "Lodash modular utilities.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://lodash.com/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/lodash/lodash"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lodash/lodash/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "make-dir",
+      "version": "2.1.0",
+      "purl": "pkg:npm/make-dir@2.1.0",
+      "bom-ref": "pkg:npm/make-dir@2.1.0",
+      "description": "Make a directory and its parents if needed - Think `mkdir -p`",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/sindresorhus/make-dir#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sindresorhus/make-dir"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sindresorhus/make-dir/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/make-dir/-/make-dir-2.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "map-cache",
+      "version": "0.2.2",
+      "purl": "pkg:npm/map-cache@0.2.2",
+      "bom-ref": "pkg:npm/map-cache@0.2.2",
+      "description": "Basic cache object for storing key-value pairs.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/map-cache"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/map-cache"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/map-cache/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/map-cache/-/map-cache-0.2.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "map-visit",
+      "version": "1.0.0",
+      "purl": "pkg:npm/map-visit@1.0.0",
+      "bom-ref": "pkg:npm/map-visit@1.0.0",
+      "description": "Map `visit` over an array of objects.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/map-visit"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/map-visit"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/map-visit/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/map-visit/-/map-visit-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "micromatch",
+      "version": "3.1.10",
+      "purl": "pkg:npm/micromatch@3.1.10",
+      "bom-ref": "pkg:npm/micromatch@3.1.10",
+      "description": "Glob matching for javascript/node.js. A drop-in replacement and faster alternative to minimatch and multimatch.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/micromatch/micromatch"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/micromatch/micromatch"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/micromatch/micromatch/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/micromatch/-/micromatch-3.1.10.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "minimatch",
+      "version": "3.1.2",
+      "purl": "pkg:npm/minimatch@3.1.2",
+      "bom-ref": "pkg:npm/minimatch@3.1.2",
+      "description": "a glob matcher in javascript",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/minimatch#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/minimatch/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "mixin-deep",
+      "version": "1.3.2",
+      "purl": "pkg:npm/mixin-deep@1.3.2",
+      "bom-ref": "pkg:npm/mixin-deep@1.3.2",
+      "description": "Deeply mix the properties of objects into the first object. Like merge-deep, but doesn't clone.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/mixin-deep"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/mixin-deep"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/mixin-deep/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/mixin-deep/-/mixin-deep-1.3.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ms",
+      "version": "2.0.0",
+      "purl": "pkg:npm/ms@2.0.0",
+      "bom-ref": "pkg:npm/ms@2.0.0",
+      "description": "Tiny milisecond conversion utility",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/zeit/ms#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/zeit/ms"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/zeit/ms/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "nan",
+      "version": "2.25.0",
+      "purl": "pkg:npm/nan@2.25.0",
+      "bom-ref": "pkg:npm/nan@2.25.0",
+      "description": "Native Abstractions for Node.js: C++ header for Node 0.8 -> 25 compatibility",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/nodejs/nan#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/nodejs/nan/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/nan/-/nan-2.25.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "nanomatch",
+      "version": "1.2.13",
+      "purl": "pkg:npm/nanomatch@1.2.13",
+      "bom-ref": "pkg:npm/nanomatch@1.2.13",
+      "description": "Fast, minimal glob matcher for node.js. Similar to micromatch, minimatch and multimatch, but complete Bash 4.3 wildcard support only (no support for exglobs, posix brackets or braces)",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/micromatch/nanomatch"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/micromatch/nanomatch"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/micromatch/nanomatch/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/nanomatch/-/nanomatch-1.2.13.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "normalize-path",
+      "version": "2.1.1",
+      "purl": "pkg:npm/normalize-path@2.1.1",
+      "bom-ref": "pkg:npm/normalize-path@2.1.1",
+      "description": "Normalize file path slashes to be unix-like forward slashes. Also condenses repeat slashes to a single slash and removes and trailing slashes unless disabled.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/normalize-path"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/normalize-path"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/normalize-path/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/normalize-path/-/normalize-path-2.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "normalize-path",
+      "version": "3.0.0",
+      "purl": "pkg:npm/normalize-path@3.0.0",
+      "bom-ref": "pkg:npm/normalize-path@3.0.0",
+      "description": "Normalize slashes in a file path to be posix/unix-like forward slashes. Also condenses repeat slashes to a single slash and removes and trailing slashes, unless disabled.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/normalize-path"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/normalize-path"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/normalize-path/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "object-copy",
+      "version": "0.1.0",
+      "purl": "pkg:npm/object-copy@0.1.0",
+      "bom-ref": "pkg:npm/object-copy@0.1.0",
+      "description": "Copy static properties, prototype properties, and descriptors from one object to another.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/object-copy"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/object-copy"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/object-copy/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/object-copy/-/object-copy-0.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "object-visit",
+      "version": "1.0.1",
+      "purl": "pkg:npm/object-visit@1.0.1",
+      "bom-ref": "pkg:npm/object-visit@1.0.1",
+      "description": "Call a specified method on each value in the given object.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/object-visit"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/object-visit"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/object-visit/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/object-visit/-/object-visit-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "object.pick",
+      "version": "1.3.0",
+      "purl": "pkg:npm/object.pick@1.3.0",
+      "bom-ref": "pkg:npm/object.pick@1.3.0",
+      "description": "Returns a filtered copy of an object with only the specified keys, similar to `_.pick` from lodash / underscore.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/object.pick"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/object.pick"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/object.pick/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/object.pick/-/object.pick-1.3.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "once",
+      "version": "1.4.0",
+      "purl": "pkg:npm/once@1.4.0",
+      "bom-ref": "pkg:npm/once@1.4.0",
+      "description": "Run a function exactly one time",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/isaacs/once#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/isaacs/once/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/once/-/once-1.4.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pascalcase",
+      "version": "0.1.1",
+      "purl": "pkg:npm/pascalcase@0.1.1",
+      "bom-ref": "pkg:npm/pascalcase@0.1.1",
+      "description": "Convert a string to pascal-case.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/pascalcase"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/pascalcase"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/pascalcase/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/pascalcase/-/pascalcase-0.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "path-dirname",
+      "version": "1.0.2",
+      "purl": "pkg:npm/path-dirname@1.0.2",
+      "bom-ref": "pkg:npm/path-dirname@1.0.2",
+      "description": "Node.js path.dirname() ponyfill",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/es128/path-dirname#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/es128/path-dirname"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/es128/path-dirname/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/path-dirname/-/path-dirname-1.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "path-is-absolute",
+      "version": "1.0.1",
+      "purl": "pkg:npm/path-is-absolute@1.0.1",
+      "bom-ref": "pkg:npm/path-is-absolute@1.0.1",
+      "description": "Node.js 0.12 path.isAbsolute() ponyfill",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/sindresorhus/path-is-absolute#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sindresorhus/path-is-absolute"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sindresorhus/path-is-absolute/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pify",
+      "version": "4.0.1",
+      "purl": "pkg:npm/pify@4.0.1",
+      "bom-ref": "pkg:npm/pify@4.0.1",
+      "description": "Promisify a callback-style function",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/sindresorhus/pify#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sindresorhus/pify"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sindresorhus/pify/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "posix-character-classes",
+      "version": "0.1.1",
+      "purl": "pkg:npm/posix-character-classes@0.1.1",
+      "bom-ref": "pkg:npm/posix-character-classes@0.1.1",
+      "description": "POSIX character classes for creating regular expressions.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/posix-character-classes"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/posix-character-classes"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/posix-character-classes/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "process-nextick-args",
+      "version": "2.0.1",
+      "purl": "pkg:npm/process-nextick-args@2.0.1",
+      "bom-ref": "pkg:npm/process-nextick-args@2.0.1",
+      "description": "process.nextTick but always with args",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/calvinmetcalf/process-nextick-args"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/calvinmetcalf/process-nextick-args"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/calvinmetcalf/process-nextick-args/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "purl": "pkg:npm/readable-stream@2.3.8",
+      "bom-ref": "pkg:npm/readable-stream@2.3.8",
+      "description": "Streams3, a user-land copy of the stream library from Node.js",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/nodejs/readable-stream#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/nodejs/readable-stream/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "readdirp",
+      "version": "2.2.1",
+      "purl": "pkg:npm/readdirp@2.2.1",
+      "bom-ref": "pkg:npm/readdirp@2.2.1",
+      "description": "Recursive version of fs.readdir with streaming api.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/paulmillr/readdirp"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/paulmillr/readdirp/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/readdirp/-/readdirp-2.2.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "regex-not",
+      "version": "1.0.2",
+      "purl": "pkg:npm/regex-not@1.0.2",
+      "bom-ref": "pkg:npm/regex-not@1.0.2",
+      "description": "Create a javascript regular expression for matching everything except for the given string.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/regex-not"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/regex-not"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/regex-not/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/regex-not/-/regex-not-1.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "remove-trailing-separator",
+      "version": "1.1.0",
+      "purl": "pkg:npm/remove-trailing-separator@1.1.0",
+      "bom-ref": "pkg:npm/remove-trailing-separator@1.1.0",
+      "description": "Removes separators from the end of the string.",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/darsain/remove-trailing-separator#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/darsain/remove-trailing-separator"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/darsain/remove-trailing-separator/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "repeat-element",
+      "version": "1.1.4",
+      "purl": "pkg:npm/repeat-element@1.1.4",
+      "bom-ref": "pkg:npm/repeat-element@1.1.4",
+      "description": "Create an array by repeating the given value n times.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/repeat-element"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/repeat-element"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/repeat-element/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/repeat-element/-/repeat-element-1.1.4.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "repeat-string",
+      "version": "1.6.1",
+      "purl": "pkg:npm/repeat-string@1.6.1",
+      "bom-ref": "pkg:npm/repeat-string@1.6.1",
+      "description": "Repeat the given string n times. Fastest implementation for repeating a string.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/repeat-string"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/repeat-string"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/repeat-string/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "resolve-url",
+      "version": "0.2.1",
+      "purl": "pkg:npm/resolve-url@0.2.1",
+      "bom-ref": "pkg:npm/resolve-url@0.2.1",
+      "description": "Like Node.js’ `path.resolve`/`url.resolve` for the browser.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/lydell/resolve-url"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lydell/resolve-url/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/resolve-url/-/resolve-url-0.2.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ret",
+      "version": "0.1.15",
+      "purl": "pkg:npm/ret@0.1.15",
+      "bom-ref": "pkg:npm/ret@0.1.15",
+      "description": "Tokenizes a string that represents a regular expression.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/fent/ret.js#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/fent/ret.js/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/ret/-/ret-0.1.15.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "purl": "pkg:npm/safe-buffer@5.1.2",
+      "bom-ref": "pkg:npm/safe-buffer@5.1.2",
+      "description": "Safer Node.js Buffer API",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/feross/safe-buffer"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/feross/safe-buffer/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "safe-regex",
+      "version": "1.1.0",
+      "purl": "pkg:npm/safe-regex@1.1.0",
+      "bom-ref": "pkg:npm/safe-regex@1.1.0",
+      "description": "detect possibly catastrophic, exponential-time regular expressions",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/substack/safe-regex"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/substack/safe-regex/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/safe-regex/-/safe-regex-1.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "semver",
+      "version": "5.7.2",
+      "purl": "pkg:npm/semver@5.7.2",
+      "bom-ref": "pkg:npm/semver@5.7.2",
+      "description": "The semantic version parser used by npm.",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/npm/node-semver#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/npm/node-semver"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/npm/node-semver/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/semver/-/semver-5.7.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "set-value",
+      "version": "2.0.1",
+      "purl": "pkg:npm/set-value@2.0.1",
+      "bom-ref": "pkg:npm/set-value@2.0.1",
+      "description": "Create nested values and any intermediaries using dot notation (`'a.b.c'`) paths.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/set-value"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/set-value"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/set-value/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/set-value/-/set-value-2.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "slash",
+      "version": "2.0.0",
+      "purl": "pkg:npm/slash@2.0.0",
+      "bom-ref": "pkg:npm/slash@2.0.0",
+      "description": "Convert Windows backslash paths to slash paths",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/sindresorhus/slash#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sindresorhus/slash"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sindresorhus/slash/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/slash/-/slash-2.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "snapdragon-node",
+      "version": "2.1.1",
+      "purl": "pkg:npm/snapdragon-node@2.1.1",
+      "bom-ref": "pkg:npm/snapdragon-node@2.1.1",
+      "description": "Snapdragon utility for creating a new AST node in custom code, such as plugins.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/snapdragon-node"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/snapdragon-node"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/snapdragon-node/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/snapdragon-node/-/snapdragon-node-2.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "snapdragon-util",
+      "version": "3.0.1",
+      "purl": "pkg:npm/snapdragon-util@3.0.1",
+      "bom-ref": "pkg:npm/snapdragon-util@3.0.1",
+      "description": "Utilities for the snapdragon parser/compiler.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/snapdragon-util"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/snapdragon-util"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/snapdragon-util/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/snapdragon-util/-/snapdragon-util-3.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "snapdragon",
+      "version": "0.8.2",
+      "purl": "pkg:npm/snapdragon@0.8.2",
+      "bom-ref": "pkg:npm/snapdragon@0.8.2",
+      "description": "Fast, pluggable and easy-to-use parser-renderer factory.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/snapdragon"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/snapdragon"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/snapdragon/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/snapdragon/-/snapdragon-0.8.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "source-map-resolve",
+      "version": "0.5.3",
+      "purl": "pkg:npm/source-map-resolve@0.5.3",
+      "bom-ref": "pkg:npm/source-map-resolve@0.5.3",
+      "description": "Resolve the source map and/or sources for a generated file.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/lydell/source-map-resolve#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/lydell/source-map-resolve"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lydell/source-map-resolve/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/source-map-resolve/-/source-map-resolve-0.5.3.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "source-map-url",
+      "version": "0.4.1",
+      "purl": "pkg:npm/source-map-url@0.4.1",
+      "bom-ref": "pkg:npm/source-map-url@0.4.1",
+      "description": "Tools for working with sourceMappingURL comments.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/lydell/source-map-url#readme"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/lydell/source-map-url"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lydell/source-map-url/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/source-map-url/-/source-map-url-0.4.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "source-map",
+      "version": "0.5.7",
+      "purl": "pkg:npm/source-map@0.5.7",
+      "bom-ref": "pkg:npm/source-map@0.5.7",
+      "description": "Generates and consumes source maps",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/mozilla/source-map"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mozilla/source-map/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "split-string",
+      "version": "3.1.0",
+      "purl": "pkg:npm/split-string@3.1.0",
+      "bom-ref": "pkg:npm/split-string@3.1.0",
+      "description": "Split a string on a character except when the character is escaped.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/split-string"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/split-string"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/split-string/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/split-string/-/split-string-3.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "static-extend",
+      "version": "0.1.2",
+      "purl": "pkg:npm/static-extend@0.1.2",
+      "bom-ref": "pkg:npm/static-extend@0.1.2",
+      "description": "Adds a static `extend` method to a class, to simplify inheritance. Extends the static properties, prototype properties, and descriptors from a `Parent` constructor onto `Child` constructors.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/static-extend"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/static-extend"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/static-extend/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/static-extend/-/static-extend-0.1.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "purl": "pkg:npm/string_decoder@1.1.1",
+      "bom-ref": "pkg:npm/string_decoder@1.1.1",
+      "description": "The string_decoder module from Node core",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/nodejs/string_decoder"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/nodejs/string_decoder/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "to-object-path",
+      "version": "0.3.0",
+      "purl": "pkg:npm/to-object-path@0.3.0",
+      "bom-ref": "pkg:npm/to-object-path@0.3.0",
+      "description": "Create an object path from a list or array of strings.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/to-object-path"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/to-object-path"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/to-object-path/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/to-object-path/-/to-object-path-0.3.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "to-regex-range",
+      "version": "2.1.1",
+      "purl": "pkg:npm/to-regex-range@2.1.1",
+      "bom-ref": "pkg:npm/to-regex-range@2.1.1",
+      "description": "Pass two numbers, get a regex-compatible source string for matching ranges. Validated against more than 2.78 million test assertions.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/micromatch/to-regex-range"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/micromatch/to-regex-range"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/micromatch/to-regex-range/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/to-regex-range/-/to-regex-range-2.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "to-regex",
+      "version": "3.0.2",
+      "purl": "pkg:npm/to-regex@3.0.2",
+      "bom-ref": "pkg:npm/to-regex@3.0.2",
+      "description": "Generate a regex from a string or array of strings.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/to-regex"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/to-regex"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/to-regex/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/to-regex/-/to-regex-3.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "union-value",
+      "version": "1.0.1",
+      "purl": "pkg:npm/union-value@1.0.1",
+      "bom-ref": "pkg:npm/union-value@1.0.1",
+      "description": "Set an array of unique values as the property of an object. Supports setting deeply nested properties using using object-paths/dot notation.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/union-value"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/union-value"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/union-value/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/union-value/-/union-value-1.0.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "unset-value",
+      "version": "1.0.0",
+      "purl": "pkg:npm/unset-value@1.0.0",
+      "bom-ref": "pkg:npm/unset-value@1.0.0",
+      "description": "Delete nested properties from an object using dot notation.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/unset-value"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/unset-value"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/unset-value/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/unset-value/-/unset-value-1.0.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "upath",
+      "version": "1.2.0",
+      "purl": "pkg:npm/upath@1.2.0",
+      "bom-ref": "pkg:npm/upath@1.2.0",
+      "description": "A proxy to `path`, replacing `\\` with `/` for all results & new methods to normalize & join keeping leading `./` and add, change, default, trim file extensions.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://github.com/anodynos/upath/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "http://github.com/anodynos/upath/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/upath/-/upath-1.2.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "urix",
+      "version": "0.1.0",
+      "purl": "pkg:npm/urix@0.1.0",
+      "bom-ref": "pkg:npm/urix@0.1.0",
+      "description": "Makes Windows-style paths more unix and URI friendly.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/lydell/urix"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lydell/urix/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/urix/-/urix-0.1.0.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "use",
+      "version": "3.1.1",
+      "purl": "pkg:npm/use@3.1.1",
+      "bom-ref": "pkg:npm/use@3.1.1",
+      "description": "Easily add plugin support to your node.js application.",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jonschlinkert/use"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jonschlinkert/use"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jonschlinkert/use/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/use/-/use-3.1.1.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "purl": "pkg:npm/util-deprecate@1.0.2",
+      "bom-ref": "pkg:npm/util-deprecate@1.0.2",
+      "description": "The Node.js `util.deprecate()` function with browser support",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/TooTallNate/util-deprecate"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/TooTallNate/util-deprecate/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "wrappy",
+      "version": "1.0.2",
+      "purl": "pkg:npm/wrappy@1.0.2",
+      "bom-ref": "pkg:npm/wrappy@1.0.2",
+      "description": "Callback wrapping utility",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/npm/wrappy"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/npm/wrappy"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/npm/wrappy/issues"
+        },
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:npm/npm-test@1.0.2",
+      "dependsOn": [
+        "pkg:npm/@babel/cli@7.8.4"
+      ]
+    },
+    {
+      "ref": "pkg:npm/@babel/cli@7.8.4",
+      "dependsOn": [
+        "pkg:npm/chokidar@2.1.8",
+        "pkg:npm/commander@4.1.1",
+        "pkg:npm/convert-source-map@1.9.0",
+        "pkg:npm/fs-readdir-recursive@1.1.0",
+        "pkg:npm/glob@7.2.3",
+        "pkg:npm/lodash@4.17.23",
+        "pkg:npm/make-dir@2.1.0",
+        "pkg:npm/slash@2.0.0",
+        "pkg:npm/source-map@0.5.7"
+      ]
+    },
+    {
+      "ref": "pkg:npm/anymatch@2.0.0",
+      "dependsOn": [
+        "pkg:npm/micromatch@3.1.10",
+        "pkg:npm/normalize-path@2.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/arr-diff@4.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/arr-flatten@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/arr-union@3.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/array-unique@0.3.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/assign-symbols@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/async-each@1.0.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/atob@2.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/balanced-match@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/base@0.11.2",
+      "dependsOn": [
+        "pkg:npm/cache-base@1.0.1",
+        "pkg:npm/class-utils@0.3.6",
+        "pkg:npm/component-emitter@1.3.1",
+        "pkg:npm/define-property@1.0.0",
+        "pkg:npm/isobject@3.0.1",
+        "pkg:npm/mixin-deep@1.3.2",
+        "pkg:npm/pascalcase@0.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/binary-extensions@1.13.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/bindings@1.5.0",
+      "dependsOn": [
+        "pkg:npm/file-uri-to-path@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/brace-expansion@1.1.12",
+      "dependsOn": [
+        "pkg:npm/balanced-match@1.0.2",
+        "pkg:npm/concat-map@0.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/braces@2.3.2",
+      "dependsOn": [
+        "pkg:npm/arr-flatten@1.1.0",
+        "pkg:npm/array-unique@0.3.2",
+        "pkg:npm/extend-shallow@2.0.1",
+        "pkg:npm/fill-range@4.0.0",
+        "pkg:npm/isobject@3.0.1",
+        "pkg:npm/repeat-element@1.1.4",
+        "pkg:npm/snapdragon-node@2.1.1",
+        "pkg:npm/snapdragon@0.8.2",
+        "pkg:npm/split-string@3.1.0",
+        "pkg:npm/to-regex@3.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/cache-base@1.0.1",
+      "dependsOn": [
+        "pkg:npm/collection-visit@1.0.0",
+        "pkg:npm/component-emitter@1.3.1",
+        "pkg:npm/get-value@2.0.6",
+        "pkg:npm/has-value@1.0.0",
+        "pkg:npm/isobject@3.0.1",
+        "pkg:npm/set-value@2.0.1",
+        "pkg:npm/to-object-path@0.3.0",
+        "pkg:npm/union-value@1.0.1",
+        "pkg:npm/unset-value@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/chokidar@2.1.8",
+      "dependsOn": [
+        "pkg:npm/anymatch@2.0.0",
+        "pkg:npm/async-each@1.0.6",
+        "pkg:npm/braces@2.3.2",
+        "pkg:npm/fsevents@1.2.13",
+        "pkg:npm/glob-parent@3.1.0",
+        "pkg:npm/inherits@2.0.4",
+        "pkg:npm/is-binary-path@1.0.1",
+        "pkg:npm/is-glob@4.0.3",
+        "pkg:npm/normalize-path@3.0.0",
+        "pkg:npm/path-is-absolute@1.0.1",
+        "pkg:npm/readdirp@2.2.1",
+        "pkg:npm/upath@1.2.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/class-utils@0.3.6",
+      "dependsOn": [
+        "pkg:npm/arr-union@3.1.0",
+        "pkg:npm/define-property@0.2.5",
+        "pkg:npm/isobject@3.0.1",
+        "pkg:npm/static-extend@0.1.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/collection-visit@1.0.0",
+      "dependsOn": [
+        "pkg:npm/map-visit@1.0.0",
+        "pkg:npm/object-visit@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/commander@4.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/component-emitter@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/concat-map@0.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/convert-source-map@1.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/copy-descriptor@0.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/core-util-is@1.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/debug@2.6.9",
+      "dependsOn": [
+        "pkg:npm/ms@2.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/decode-uri-component@0.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/define-property@0.2.5",
+      "dependsOn": [
+        "pkg:npm/is-descriptor@0.1.7"
+      ]
+    },
+    {
+      "ref": "pkg:npm/define-property@1.0.0",
+      "dependsOn": [
+        "pkg:npm/is-descriptor@1.0.3"
+      ]
+    },
+    {
+      "ref": "pkg:npm/define-property@2.0.2",
+      "dependsOn": [
+        "pkg:npm/is-descriptor@1.0.3",
+        "pkg:npm/isobject@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/expand-brackets@2.1.4",
+      "dependsOn": [
+        "pkg:npm/debug@2.6.9",
+        "pkg:npm/define-property@0.2.5",
+        "pkg:npm/extend-shallow@2.0.1",
+        "pkg:npm/posix-character-classes@0.1.1",
+        "pkg:npm/regex-not@1.0.2",
+        "pkg:npm/snapdragon@0.8.2",
+        "pkg:npm/to-regex@3.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/extend-shallow@2.0.1",
+      "dependsOn": [
+        "pkg:npm/is-extendable@0.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/extend-shallow@3.0.2",
+      "dependsOn": [
+        "pkg:npm/assign-symbols@1.0.0",
+        "pkg:npm/is-extendable@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/extglob@2.0.4",
+      "dependsOn": [
+        "pkg:npm/array-unique@0.3.2",
+        "pkg:npm/define-property@1.0.0",
+        "pkg:npm/expand-brackets@2.1.4",
+        "pkg:npm/extend-shallow@2.0.1",
+        "pkg:npm/fragment-cache@0.2.1",
+        "pkg:npm/regex-not@1.0.2",
+        "pkg:npm/snapdragon@0.8.2",
+        "pkg:npm/to-regex@3.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/file-uri-to-path@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/fill-range@4.0.0",
+      "dependsOn": [
+        "pkg:npm/extend-shallow@2.0.1",
+        "pkg:npm/is-number@3.0.0",
+        "pkg:npm/repeat-string@1.6.1",
+        "pkg:npm/to-regex-range@2.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/for-in@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/fragment-cache@0.2.1",
+      "dependsOn": [
+        "pkg:npm/map-cache@0.2.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/fs-readdir-recursive@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/fs.realpath@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/fsevents@1.2.13",
+      "dependsOn": [
+        "pkg:npm/bindings@1.5.0",
+        "pkg:npm/nan@2.25.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/function-bind@1.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/get-value@2.0.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/glob@7.2.3",
+      "dependsOn": [
+        "pkg:npm/fs.realpath@1.0.0",
+        "pkg:npm/inflight@1.0.6",
+        "pkg:npm/inherits@2.0.4",
+        "pkg:npm/minimatch@3.1.2",
+        "pkg:npm/once@1.4.0",
+        "pkg:npm/path-is-absolute@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/glob-parent@3.1.0",
+      "dependsOn": [
+        "pkg:npm/is-glob@3.1.0",
+        "pkg:npm/path-dirname@1.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/graceful-fs@4.2.11",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/has-value@0.3.1",
+      "dependsOn": [
+        "pkg:npm/get-value@2.0.6",
+        "pkg:npm/has-values@0.1.4",
+        "pkg:npm/isobject@2.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/has-value@1.0.0",
+      "dependsOn": [
+        "pkg:npm/get-value@2.0.6",
+        "pkg:npm/has-values@1.0.0",
+        "pkg:npm/isobject@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/has-values@0.1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/has-values@1.0.0",
+      "dependsOn": [
+        "pkg:npm/is-number@3.0.0",
+        "pkg:npm/kind-of@4.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/hasown@2.0.2",
+      "dependsOn": [
+        "pkg:npm/function-bind@1.1.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/inflight@1.0.6",
+      "dependsOn": [
+        "pkg:npm/once@1.4.0",
+        "pkg:npm/wrappy@1.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/inherits@2.0.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/is-accessor-descriptor@1.0.1",
+      "dependsOn": [
+        "pkg:npm/hasown@2.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-binary-path@1.0.1",
+      "dependsOn": [
+        "pkg:npm/binary-extensions@1.13.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-buffer@1.1.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/is-data-descriptor@1.0.1",
+      "dependsOn": [
+        "pkg:npm/hasown@2.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-descriptor@0.1.7",
+      "dependsOn": [
+        "pkg:npm/is-accessor-descriptor@1.0.1",
+        "pkg:npm/is-data-descriptor@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-descriptor@1.0.3",
+      "dependsOn": [
+        "pkg:npm/is-accessor-descriptor@1.0.1",
+        "pkg:npm/is-data-descriptor@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-extendable@0.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/is-extendable@1.0.1",
+      "dependsOn": [
+        "pkg:npm/is-plain-object@2.0.4"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-extglob@2.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/is-glob@3.1.0",
+      "dependsOn": [
+        "pkg:npm/is-extglob@2.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-glob@4.0.3",
+      "dependsOn": [
+        "pkg:npm/is-extglob@2.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-number@3.0.0",
+      "dependsOn": [
+        "pkg:npm/kind-of@3.2.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-plain-object@2.0.4",
+      "dependsOn": [
+        "pkg:npm/isobject@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/is-windows@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/isarray@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/isobject@2.1.0",
+      "dependsOn": [
+        "pkg:npm/isarray@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/isobject@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/kind-of@3.2.2",
+      "dependsOn": [
+        "pkg:npm/is-buffer@1.1.6"
+      ]
+    },
+    {
+      "ref": "pkg:npm/kind-of@4.0.0",
+      "dependsOn": [
+        "pkg:npm/is-buffer@1.1.6"
+      ]
+    },
+    {
+      "ref": "pkg:npm/kind-of@6.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/lodash@4.17.23",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/make-dir@2.1.0",
+      "dependsOn": [
+        "pkg:npm/pify@4.0.1",
+        "pkg:npm/semver@5.7.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/map-cache@0.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/map-visit@1.0.0",
+      "dependsOn": [
+        "pkg:npm/object-visit@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/micromatch@3.1.10",
+      "dependsOn": [
+        "pkg:npm/arr-diff@4.0.0",
+        "pkg:npm/array-unique@0.3.2",
+        "pkg:npm/braces@2.3.2",
+        "pkg:npm/define-property@2.0.2",
+        "pkg:npm/extend-shallow@3.0.2",
+        "pkg:npm/extglob@2.0.4",
+        "pkg:npm/fragment-cache@0.2.1",
+        "pkg:npm/kind-of@6.0.3",
+        "pkg:npm/nanomatch@1.2.13",
+        "pkg:npm/object.pick@1.3.0",
+        "pkg:npm/regex-not@1.0.2",
+        "pkg:npm/snapdragon@0.8.2",
+        "pkg:npm/to-regex@3.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/minimatch@3.1.2",
+      "dependsOn": [
+        "pkg:npm/brace-expansion@1.1.12"
+      ]
+    },
+    {
+      "ref": "pkg:npm/mixin-deep@1.3.2",
+      "dependsOn": [
+        "pkg:npm/for-in@1.0.2",
+        "pkg:npm/is-extendable@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/ms@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/nan@2.25.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/nanomatch@1.2.13",
+      "dependsOn": [
+        "pkg:npm/arr-diff@4.0.0",
+        "pkg:npm/array-unique@0.3.2",
+        "pkg:npm/define-property@2.0.2",
+        "pkg:npm/extend-shallow@3.0.2",
+        "pkg:npm/fragment-cache@0.2.1",
+        "pkg:npm/is-windows@1.0.2",
+        "pkg:npm/kind-of@6.0.3",
+        "pkg:npm/object.pick@1.3.0",
+        "pkg:npm/regex-not@1.0.2",
+        "pkg:npm/snapdragon@0.8.2",
+        "pkg:npm/to-regex@3.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/normalize-path@2.1.1",
+      "dependsOn": [
+        "pkg:npm/remove-trailing-separator@1.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/normalize-path@3.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/object-copy@0.1.0",
+      "dependsOn": [
+        "pkg:npm/copy-descriptor@0.1.1",
+        "pkg:npm/define-property@0.2.5",
+        "pkg:npm/kind-of@3.2.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/object-visit@1.0.1",
+      "dependsOn": [
+        "pkg:npm/isobject@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/object.pick@1.3.0",
+      "dependsOn": [
+        "pkg:npm/isobject@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/once@1.4.0",
+      "dependsOn": [
+        "pkg:npm/wrappy@1.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/pascalcase@0.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/path-dirname@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/path-is-absolute@1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/pify@4.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/posix-character-classes@0.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/process-nextick-args@2.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/readable-stream@2.3.8",
+      "dependsOn": [
+        "pkg:npm/core-util-is@1.0.3",
+        "pkg:npm/inherits@2.0.4",
+        "pkg:npm/isarray@1.0.0",
+        "pkg:npm/process-nextick-args@2.0.1",
+        "pkg:npm/safe-buffer@5.1.2",
+        "pkg:npm/string_decoder@1.1.1",
+        "pkg:npm/util-deprecate@1.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/readdirp@2.2.1",
+      "dependsOn": [
+        "pkg:npm/graceful-fs@4.2.11",
+        "pkg:npm/micromatch@3.1.10",
+        "pkg:npm/readable-stream@2.3.8"
+      ]
+    },
+    {
+      "ref": "pkg:npm/regex-not@1.0.2",
+      "dependsOn": [
+        "pkg:npm/extend-shallow@3.0.2",
+        "pkg:npm/safe-regex@1.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/remove-trailing-separator@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/repeat-element@1.1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/repeat-string@1.6.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/resolve-url@0.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/ret@0.1.15",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-buffer@5.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-regex@1.1.0",
+      "dependsOn": [
+        "pkg:npm/ret@0.1.15"
+      ]
+    },
+    {
+      "ref": "pkg:npm/semver@5.7.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/set-value@2.0.1",
+      "dependsOn": [
+        "pkg:npm/extend-shallow@2.0.1",
+        "pkg:npm/is-extendable@0.1.1",
+        "pkg:npm/is-plain-object@2.0.4",
+        "pkg:npm/split-string@3.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/slash@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/snapdragon@0.8.2",
+      "dependsOn": [
+        "pkg:npm/base@0.11.2",
+        "pkg:npm/debug@2.6.9",
+        "pkg:npm/define-property@0.2.5",
+        "pkg:npm/extend-shallow@2.0.1",
+        "pkg:npm/map-cache@0.2.2",
+        "pkg:npm/source-map-resolve@0.5.3",
+        "pkg:npm/source-map@0.5.7",
+        "pkg:npm/use@3.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/snapdragon-node@2.1.1",
+      "dependsOn": [
+        "pkg:npm/define-property@1.0.0",
+        "pkg:npm/isobject@3.0.1",
+        "pkg:npm/snapdragon-util@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/snapdragon-util@3.0.1",
+      "dependsOn": [
+        "pkg:npm/kind-of@3.2.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/source-map@0.5.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/source-map-resolve@0.5.3",
+      "dependsOn": [
+        "pkg:npm/atob@2.1.2",
+        "pkg:npm/decode-uri-component@0.2.2",
+        "pkg:npm/resolve-url@0.2.1",
+        "pkg:npm/source-map-url@0.4.1",
+        "pkg:npm/urix@0.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/source-map-url@0.4.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/split-string@3.1.0",
+      "dependsOn": [
+        "pkg:npm/extend-shallow@3.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/static-extend@0.1.2",
+      "dependsOn": [
+        "pkg:npm/define-property@0.2.5",
+        "pkg:npm/object-copy@0.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/string_decoder@1.1.1",
+      "dependsOn": [
+        "pkg:npm/safe-buffer@5.1.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/to-object-path@0.3.0",
+      "dependsOn": [
+        "pkg:npm/kind-of@3.2.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/to-regex@3.0.2",
+      "dependsOn": [
+        "pkg:npm/define-property@2.0.2",
+        "pkg:npm/extend-shallow@3.0.2",
+        "pkg:npm/regex-not@1.0.2",
+        "pkg:npm/safe-regex@1.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/to-regex-range@2.1.1",
+      "dependsOn": [
+        "pkg:npm/is-number@3.0.0",
+        "pkg:npm/repeat-string@1.6.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/union-value@1.0.1",
+      "dependsOn": [
+        "pkg:npm/arr-union@3.1.0",
+        "pkg:npm/get-value@2.0.6",
+        "pkg:npm/is-extendable@0.1.1",
+        "pkg:npm/set-value@2.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/unset-value@1.0.0",
+      "dependsOn": [
+        "pkg:npm/has-value@0.3.1",
+        "pkg:npm/isobject@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/upath@1.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/urix@0.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/use@3.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/util-deprecate@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/wrappy@1.0.2",
+      "dependsOn": []
+    }
+  ]
+}

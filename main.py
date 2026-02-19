@@ -19,7 +19,7 @@ main_timer.start("starting main timer")
 
 def main() -> None:
     Config.project_name = "npm-test"
-    Config.project_version = "1.0.0"
+    Config.project_version = "1.0.3"
     Config.package_manager = "npm"
     Config.software_end_use = "DELIVERABLE"
     #Config.sbom_input_dir = Path(Config.input_dir, "sbom_gen/crt/crt-service")
@@ -40,11 +40,11 @@ def main() -> None:
     sbom_parser_timer.stop("stopping sbom_parser timer")
     logger.info(sbom_parser_timer.elapsed("Elapsed time for sbom_parser: "))
 
-    repo_url_finder_timer = Timer()
-    repo_url_finder_timer.start("starting repo_url_finder timer")
-    repo_url_finder.main()
-    repo_url_finder_timer.stop("stopping repo_url_finder timer")
-    logger.info(repo_url_finder_timer.elapsed("Elapsed time for repo_url_finder: "))
+    # repo_url_finder_timer = Timer()
+    # repo_url_finder_timer.start("starting repo_url_finder timer")
+    # repo_url_finder.main()
+    # repo_url_finder_timer.stop("stopping repo_url_finder timer")
+    # logger.info(repo_url_finder_timer.elapsed("Elapsed time for repo_url_finder: "))
 
     github_metrics_timer = Timer()
     github_metrics_timer.start("starting github_metrics timer")

@@ -118018,5 +118018,421 @@
       "13.6683192",
       "13.8983086"
     ]
+  },
+  "brooklyn, nyc": {
+    "place_id": 332861603,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 9691750,
+    "lat": "40.6526006",
+    "lon": "-73.9497211",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 14,
+    "importance": 0.7384986389272082,
+    "addresstype": "suburb",
+    "name": "Brooklyn",
+    "display_name": "Brooklyn, Kings County, New York, United States",
+    "address": {
+      "suburb": "Brooklyn",
+      "county": "Kings County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "40.5503390",
+      "40.7394340",
+      "-74.0566880",
+      "-73.8329450"
+    ]
+  },
+  "london (uk)": {
+    "place_id": 259398780,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 175342,
+    "lat": "51.5074456",
+    "lon": "-0.1277653",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 10,
+    "importance": 0.8920997258748663,
+    "addresstype": "city",
+    "name": "Greater London",
+    "display_name": "Greater London, England, United Kingdom",
+    "address": {
+      "city": "Greater London",
+      "state": "England",
+      "ISO3166-2-lvl4": "GB-ENG",
+      "country": "United Kingdom",
+      "country_code": "gb"
+    },
+    "boundingbox": [
+      "51.2867601",
+      "51.6918741",
+      "-0.5103751",
+      "0.3340155"
+    ]
+  },
+  "portland, oregon, us": {
+    "place_id": 304557507,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 186579,
+    "lat": "45.5202471",
+    "lon": "-122.6741940",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.7099002160354798,
+    "addresstype": "city",
+    "name": "Portland",
+    "display_name": "Portland, Multnomah County, Oregon, United States",
+    "address": {
+      "city": "Portland",
+      "county": "Multnomah County",
+      "state": "Oregon",
+      "ISO3166-2-lvl4": "US-OR",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "45.4325360",
+      "45.6528812",
+      "-122.8367489",
+      "-122.4720252"
+    ]
+  },
+  "somewhere in the cloud": null,
+  "east of atlanta, ga": {
+    "place_id": 17941299,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 81133247,
+    "lat": "-34.7239835",
+    "lon": "138.6793319",
+    "category": "highway",
+    "type": "residential",
+    "place_rank": 26,
+    "importance": 0.05340822384985119,
+    "addresstype": "road",
+    "name": "Atlanta Street",
+    "display_name": "Atlanta Street, Elizabeth East, Adelaide, City of Playford, South Australia, 5112, Australia",
+    "address": {
+      "road": "Atlanta Street",
+      "suburb": "Elizabeth East",
+      "city": "Adelaide",
+      "municipality": "City of Playford",
+      "state": "South Australia",
+      "ISO3166-2-lvl4": "AU-SA",
+      "postcode": "5112",
+      "country": "Australia",
+      "country_code": "au"
+    },
+    "boundingbox": [
+      "-34.7245578",
+      "-34.7233500",
+      "138.6789259",
+      "138.6796372"
+    ]
+  },
+  "seattle wa usa": {
+    "place_id": 299176370,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 237385,
+    "lat": "47.6038321",
+    "lon": "-122.3300620",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.7344378062407435,
+    "addresstype": "city",
+    "name": "Seattle",
+    "display_name": "Seattle, King County, Washington, United States",
+    "address": {
+      "city": "Seattle",
+      "county": "King County",
+      "state": "Washington",
+      "ISO3166-2-lvl4": "US-WA",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "47.4810022",
+      "47.7341503",
+      "-122.4596960",
+      "-122.2244330"
+    ]
+  },
+  "montreal,qc": {
+    "place_id": 337883586,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1634158,
+    "lat": "45.5031824",
+    "lon": "-73.5698065",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.7683399932257889,
+    "addresstype": "city",
+    "name": "Montréal",
+    "display_name": "Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada",
+    "address": {
+      "city": "Montréal",
+      "county": "Agglomération de Montréal",
+      "state_district": "Montréal (région administrative)",
+      "state": "Québec",
+      "ISO3166-2-lvl4": "CA-QC",
+      "country": "Canada",
+      "country_code": "ca"
+    },
+    "boundingbox": [
+      "45.4100756",
+      "45.7047897",
+      "-73.9741567",
+      "-73.4742952"
+    ]
+  },
+  "italy, campania, avellino": {
+    "place_id": 72732439,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 40715,
+    "lat": "40.9965446",
+    "lon": "15.1405690",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 12,
+    "importance": 0.7198376965574826,
+    "addresstype": "county",
+    "name": "Avellino",
+    "display_name": "Avellino, Campania, Italia",
+    "address": {
+      "county": "Avellino",
+      "ISO3166-2-lvl6": "IT-AV",
+      "state": "Campania",
+      "ISO3166-2-lvl4": "IT-72",
+      "country": "Italia",
+      "country_code": "it"
+    },
+    "boundingbox": [
+      "40.7066450",
+      "41.2864497",
+      "14.5594641",
+      "15.5723064"
+    ]
+  },
+  "kaysville, ut": {
+    "place_id": 304851771,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 198893,
+    "lat": "41.0349847",
+    "lon": "-111.9383931",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.43867315271075213,
+    "addresstype": "town",
+    "name": "Kaysville",
+    "display_name": "Kaysville, Davis County, Utah, 84037, United States",
+    "address": {
+      "town": "Kaysville",
+      "county": "Davis County",
+      "state": "Utah",
+      "ISO3166-2-lvl4": "US-UT",
+      "postcode": "84037",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "40.9946013",
+      "41.0601286",
+      "-111.9945853",
+      "-111.8992442"
+    ]
+  },
+  "☉": null,
+  "jaén": {
+    "place_id": 273903510,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 348998,
+    "lat": "37.9553976",
+    "lon": "-3.4937431",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 10,
+    "importance": 0.5929690562866567,
+    "addresstype": "province",
+    "name": "Jaén",
+    "display_name": "Jaén, Andalucía, España",
+    "address": {
+      "province": "Jaén",
+      "ISO3166-2-lvl6": "ES-J",
+      "state": "Andalucía",
+      "ISO3166-2-lvl4": "ES-AN",
+      "country": "España",
+      "country_code": "es"
+    },
+    "boundingbox": [
+      "37.3782781",
+      "38.5325672",
+      "-4.2876404",
+      "-2.4344367"
+    ]
+  },
+  "north idaho": {
+    "place_id": 300431922,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 432954761,
+    "lat": "42.5868285",
+    "lon": "-114.4416125",
+    "category": "amenity",
+    "type": "place_of_worship",
+    "place_rank": 30,
+    "importance": 0.36543920323915313,
+    "addresstype": "amenity",
+    "name": "Twin Falls Idaho Temple",
+    "display_name": "Twin Falls Idaho Temple, North Temple Drive, Twin Falls, Twin Falls County, Idaho, 83301, United States",
+    "address": {
+      "amenity": "Twin Falls Idaho Temple",
+      "road": "North Temple Drive",
+      "city": "Twin Falls",
+      "county": "Twin Falls County",
+      "state": "Idaho",
+      "ISO3166-2-lvl4": "US-ID",
+      "postcode": "83301",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "42.5866929",
+      "42.5869372",
+      "-114.4419636",
+      "-114.4412622"
+    ]
+  },
+  "china,shenzhen": {
+    "place_id": 420500810,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3464353,
+    "lat": "22.5445741",
+    "lon": "114.0545429",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 10,
+    "importance": 0.66507068790013,
+    "addresstype": "city",
+    "name": "深圳市",
+    "display_name": "深圳市, 广东省, 中国",
+    "address": {
+      "city": "深圳市",
+      "state": "广东省",
+      "ISO3166-2-lvl4": "CN-GD",
+      "country": "中国",
+      "country_code": "cn"
+    },
+    "boundingbox": [
+      "21.8213642",
+      "23.0165340",
+      "113.6805151",
+      "115.3890648"
+    ]
+  },
+  "new york city, usa": {
+    "place_id": 423955799,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 175905,
+    "lat": "40.7127281",
+    "lon": "-74.0060152",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 10,
+    "importance": 0.8817923363604117,
+    "addresstype": "city",
+    "name": "New York",
+    "display_name": "New York, United States",
+    "address": {
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "40.4765780",
+      "40.9176300",
+      "-74.2588430",
+      "-73.7002330"
+    ]
+  },
+  "czech republic, hradec králové": {
+    "place_id": 122154452,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 439071,
+    "lat": "50.2092113",
+    "lon": "15.8327512",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6205887515027263,
+    "addresstype": "city",
+    "name": "Hradec Králové",
+    "display_name": "Hradec Králové, SO POÚ Hradec Králové, SO ORP Hradec Králové, okres Hradec Králové, Královéhradecký kraj, Severovýchod, Česko",
+    "address": {
+      "city": "Hradec Králové",
+      "municipality": "SO POÚ Hradec Králové",
+      "county": "SO ORP Hradec Králové",
+      "state_district": "okres Hradec Králové",
+      "ISO3166-2-lvl5": "CZ-521",
+      "state": "Královéhradecký kraj",
+      "ISO3166-2-lvl4": "CZ-52",
+      "region": "Severovýchod",
+      "country": "Česko",
+      "country_code": "cz"
+    },
+    "boundingbox": [
+      "50.1599871",
+      "50.2673626",
+      "15.7467677",
+      "15.9350339"
+    ]
+  },
+  "almaty (kz)": {
+    "place_id": 407524904,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2465058,
+    "lat": "43.2363924",
+    "lon": "76.9457275",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.7102229689593114,
+    "addresstype": "city",
+    "name": "Алматы",
+    "display_name": "Алматы, Қазақстан",
+    "address": {
+      "city": "Алматы",
+      "ISO3166-2-lvl4": "KZ-75",
+      "country": "Қазақстан",
+      "country_code": "kz"
+    },
+    "boundingbox": [
+      "43.0328438",
+      "43.4037657",
+      "76.7420485",
+      "77.1667539"
+    ]
   }
 }

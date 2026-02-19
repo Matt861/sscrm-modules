@@ -1,0 +1,5 @@
+Component,Version,Group,Is_Direct,License,Vulnerabilities
+async-each,1.0.6,,False,['MIT'],
+atob,2.1.2,,False,['(MIT OR Apache-2.0)'],
+concat-map,0.0.1,,False,['MIT'],
+safe-regex,1.1.0,,False,['MIT'],
