@@ -165,6 +165,17 @@ class Configuration:
     package_lock_json_file_path = ""
     npmrc_file_path = ""
 
+    # RPM SBOM GEN
+    rpm_txt_file_name = "rpm.txt"
+    rpm_txt_file_path = ""
+    rpms_folder_name = "rpms"
+    rpms_folder_path = ""
+    rpm_local_repo = ""
+    rpm_local_repos = ""
+    rpm_cache_dir = ""
+    rpm_local_repos_path = ""
+    rpm_repos = []
+
 
 
 

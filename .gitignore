@@ -3,3 +3,6 @@
 .idea
 /old_code
 /cache
+/input/sbom_gen/rpm_repodata
+/input/sbom_gen/rpm_repos
+/input/sbom_gen/rpms

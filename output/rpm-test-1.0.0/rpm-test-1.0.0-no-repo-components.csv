@@ -1,0 +1,6 @@
+Component,Version,Group,Is_Direct,License,Vulnerabilities
+pgaudit_18,18.0-1PGDG.rhel9,,True,[],
+postgresql18-contrib,18.0-1PGDG.rhel9,,True,[],
+postgresql18-libs,18.0-1PGDG.rhel9,,True,[],
+postgresql18-server,18.0-1PGDG.rhel9,,True,[],
+postgresql18,18.0-1PGDG.rhel9,,True,[],

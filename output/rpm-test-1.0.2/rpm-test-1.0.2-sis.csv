@@ -1,0 +1,736 @@
+Package,Version,Group,Publisher,Repo_URL,Unclass_Total,Passes_SIA,eFOSS_Status,Is_Direct,Description,Mission_Justification,Mission_Impact,Is_Latest_Version,Older_Version_Justification,Prev_Approved_Versions,Vulnerabilities,Critical_or_High,Is_Executable,Non_Standard_File,Security_Scannable,Is_Modified,Procurement,OS_Identification,Alternate_Solutions,Used_On_Deliverable,Software_Type,End_Use,SIA_Scan_ID,SIA_Scan_Date,Stars,Forks,Closed_Issues,Releases,Tags,Age_Days,Last_Update_Hours,Prevalence_Score,Stars_Score,Forks_Score,Maturity_Score,Last_Update_Score,Trusted_Org_Bonus,Trusted_Orgs
+acl,2.3.1-4.el9,"Red Hat, Inc.",,,,,,False,"This package contains the getfacl and setfacl utilities needed for
+manipulating access control lists.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+alternatives,1.24-2.el9,"Red Hat, Inc.",fedora-sysv,https://github.com/fedora-sysv/chkconfig,52,Undetermined,,False,"alternatives creates, removes, maintains and displays information about the
+symbolic links comprising the alternatives system. It is possible for several
+programs fulfilling the same or similar functions to be installed on a single
+system at the same time.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,1774b209-e06f-490b-9c9a-82c8e7b645b0,2026-02-22T21:12:26.631677Z,17,36,18,11,191,3352,801,8,2,12,15,15,0,
+audit-libs,3.1.5-7.el9,"Red Hat, Inc.",,,,,,False,"The audit-libs package contains the dynamic libraries needed for
+applications to use the audit framework.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+basesystem,11-13.el9,"Red Hat, Inc.",,,,,,False,"Basesystem defines the components of a basic Red Hat Enterprise Linux system
+(for example, the package installation order to use during bootstrapping).
+Basesystem should be in every installation of a system, and it
+should never be removed.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+bash,5.1.8-9.el9,"Red Hat, Inc.",,,,,,False,"The GNU Bourne Again shell (Bash) is a shell or command language
+interpreter that is compatible with the Bourne shell (sh). Bash
+incorporates useful features from the Korn shell (ksh) and the C shell
+(csh). Most sh scripts can be run by bash without modification.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+bzip2-libs,1.0.8-10.el9_5,"Red Hat, Inc.",,,,,,False,Libraries for applications using the bzip2 compression format.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+ca-certificates,2025.2.80_v9.0.305-91.el9,"Red Hat, Inc.",,,,,,False,"This package contains the set of CA certificates chosen by the
+Mozilla Foundation for use with the Internet PKI.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+coreutils,8.32-39.el9,"Red Hat, Inc.",,,,,,False,"These are the GNU core utilities.  This package is the combination of
+the old GNU fileutils, sh-utils, and textutils packages.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+coreutils-common,8.32-39.el9,"Red Hat, Inc.",,,,,,False,"Optional though recommended components,
+including documentation and translations.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+cracklib,2.9.6-27.el9,"Red Hat, Inc.",,,,,,False,"CrackLib tests passwords to determine whether they match certain
+security-oriented characteristics, with the purpose of stopping users
+from choosing passwords that are easy to guess. CrackLib performs
+several tests on passwords: it tries to generate words from a username
+and gecos entry and checks those words against the password; it checks
+for simplistic patterns in passwords; and it checks for the password
+in a dictionary.
+
+CrackLib is actually a library containing a particular C function
+which is used to check the password, as well as other C
+functions. CrackLib is not a replacement for a passwd program; it must
+be used in conjunction with an existing passwd program.
+
+Install the cracklib package if you need a program to check users'
+passwords to see if they are at least minimally secure. If you install
+CrackLib, you will also want to install the cracklib-dicts package.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+cracklib-dicts,2.9.6-27.el9,"Red Hat, Inc.",,,,,,False,"The cracklib-dicts package includes the CrackLib dictionaries.
+CrackLib will need to use the dictionary appropriate to your system,
+which is normally put in /usr/share/dict/words. Cracklib-dicts also
+contains the utilities necessary for the creation of new dictionaries.
+
+If you are installing CrackLib, you should also install cracklib-dicts.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+crypto-policies,20250905-1.git377cc42.el9_7,"Red Hat, Inc.",,,,,,False,"This package provides pre-built configuration files with
+cryptographic policies for various cryptographic back-ends,
+such as SSL/TLS libraries.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+cyrus-sasl-lib,2.1.27-22.el9,"Red Hat, Inc.",,,,,,False,"The cyrus-sasl-lib package contains shared libraries which are needed by
+applications which use the Cyrus SASL library.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+dbus,1:1.12.20-8.el9,"Red Hat, Inc.",,,,,,False,"D-BUS is a system for sending messages between applications. It is
+used both for the system-wide message bus service, and as a
+per-user-login-session messaging facility.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+dbus-broker,28-7.el9,"Red Hat, Inc.",bus1,https://github.com/bus1/dbus-broker,75,True,,False,"dbus-broker is an implementation of a message bus as defined by the D-Bus
+specification. Its aim is to provide high performance and reliability, while
+keeping compatibility to the D-Bus reference implementation. It is exclusively
+written for Linux systems, and makes use of many modern features provided by
+recent Linux kernel releases.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,40736ecb-8131-4c63-833e-9665524f3604,2026-02-22T21:12:26.577667Z,770,89,166,33,41,3276,24,20,10,15,15,15,0,
+dbus-common,1:1.12.20-8.el9,"Red Hat, Inc.",,,,,,False,"The dbus-common package provides the configuration and setup files for D-Bus
+implementations to provide a System and User Message Bus.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+expat,2.5.0-5.el9_7.1,"Red Hat, Inc.",,,,,,False,"This is expat, the C library for parsing XML, written by James Clark. Expat
+is a stream oriented XML parser. This means that you register handlers with
+the parser prior to starting the parse. These handlers are called when the
+parser discovers the associated structures in the document being parsed. A
+start tag is an example of the kind of structures for which you may
+register handlers.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+filesystem,3.16-5.el9,"Red Hat, Inc.",,,,,,False,"The filesystem package is one of the basic packages that is installed
+on a Linux system. Filesystem contains the basic directory layout
+for a Linux operating system, including the correct permissions for
+the directories.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+findutils,1:4.8.0-7.el9,"Red Hat, Inc.",,,,,,False,"The findutils package contains programs which will help you locate
+files on your system.  The find utility searches through a hierarchy
+of directories looking for files which match a certain set of criteria
+(such as a file name pattern).  The xargs utility builds and executes
+command lines from standard input arguments (usually lists of file
+names generated by the find command).
+
+You should install findutils because it includes tools that are very
+useful for finding things on your system.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+gawk,5.1.0-6.el9,"Red Hat, Inc.",,,,,,False,"The gawk package contains the GNU version of AWK text processing utility. AWK is
+a programming language designed for text processing and typically used as a data
+extraction and reporting tool.
+
+The gawk utility can be used to do quick and easy text pattern matching,
+extracting or reformatting. It is considered to be a standard Linux tool for
+text processing.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+gdbm-libs,1:1.23-1.el9,"Red Hat, Inc.",,,,,,False,Libraries for the Gdbm GNU database indexing library,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+glibc,2.34-231.el9_7.10,"Red Hat, Inc.",,,,,,False,"The glibc package contains standard libraries which are used by
+multiple programs on the system. In order to save disk space and
+memory, as well as to make upgrading easier, common system code is
+kept in one place and shared between programs. This particular package
+contains the most important sets of shared libraries: the standard C
+library and the standard math library. Without these two libraries, a
+Linux system will not function.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+glibc-all-langpacks,2.34-231.el9_7.10,"Red Hat, Inc.",,,,,,False,All language packs for glibc.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+glibc-common,2.34-231.el9_7.10,"Red Hat, Inc.",,,,,,False,"The glibc-common package includes common binaries for the GNU libc
+libraries, as well as national language (locale) support.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+gmp,1:6.2.0-13.el9,"Red Hat, Inc.",,,,,,False,"The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+grep,3.6-5.el9,"Red Hat, Inc.",,,,,,False,"The GNU versions of commonly used grep utilities. Grep searches through
+textual input for lines which contain a match to a specified pattern and then
+prints the matching lines. GNU's grep utilities include grep, egrep and fgrep.
+
+GNU grep is needed by many scripts, so it shall be installed on every system.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+groff-base,1.22.4-10.el9,"Red Hat, Inc.",,,,,,False,"The groff-base package contains only necessary parts of groff formatting
+system which are required to display manual pages, and the groff's default
+display device (PostScript).",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+gzip,1.12-1.el9,"Red Hat, Inc.",,,,,,False,"The gzip package contains the popular GNU gzip data compression
+program. Gzipped files have a .gz extension.
+
+Gzip should be installed on your system, because it is a
+very commonly used data compression program.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+keyutils-libs,1.6.3-1.el9,"Red Hat, Inc.",,,,,,False,"This package provides a wrapper library for the key management facility system
+calls.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+kmod-libs,28-11.el9,"Red Hat, Inc.",,,,,,False,"The kmod-libs package provides runtime libraries for any application that
+wishes to load or unload Linux kernel modules from the running system.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+krb5-libs,1.21.1-8.el9_6,"Red Hat, Inc.",,,,,,False,"Kerberos is a network authentication system. The krb5-libs package
+contains the shared libraries needed by Kerberos 5. If you are using
+Kerberos, you need to install this package.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libacl,2.3.1-4.el9,"Red Hat, Inc.",,,,,,False,"This package contains the libacl.so dynamic library which contains
+the POSIX 1003.1e draft standard 17 functions for manipulating access
+control lists.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libattr,2.5.1-3.el9,"Red Hat, Inc.",,,,,,False,"This package contains the libattr.so dynamic library which contains
+the extended attribute system calls and library functions.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libblkid,2.37.4-21.el9_7,"Red Hat, Inc.",,,,,,False,"This is block device identification library, part of util-linux.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libcap,2.48-10.el9,"Red Hat, Inc.",,,,,,False,"libcap is a library for getting and setting POSIX.1e (formerly POSIX 6)
+draft 15 capabilities.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libcap-ng,0.8.2-7.el9,"Red Hat, Inc.",,,,,,False,Libcap-ng is a library that makes using posix capabilities easier,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libcom_err,1.46.5-8.el9,"Red Hat, Inc.",,,,,,False,"This is the common error description library, part of e2fsprogs.
+
+libcom_err is an attempt to present a common error-handling mechanism.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libdb,5.3.28-57.el9_6,"Red Hat, Inc.",,,,,,False,"The Berkeley Database (Berkeley DB) is a programmatic toolkit that
+provides embedded database support for both traditional and
+client/server applications. The Berkeley DB includes B+tree, Extended
+Linear Hashing, Fixed and Variable-length record access methods,
+transactions, locking, logging, shared memory caching, and database
+recovery. The Berkeley DB supports C, C++, and Perl APIs. It is
+used by many applications, including Python and Perl, so this should
+be installed on all systems.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libeconf,0.4.1-4.el9,"Red Hat, Inc.",openSUSE,https://github.com/openSUSE/libeconf,67,Undetermined,,False,"libeconf is a highly flexible and configurable library to parse and manage
+key=value configuration files. It reads configuration file snippets from
+different directories and builds the final configuration file from it.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,fabe5397-b2b7-4988-acc9-6c41ddc355fe,2026-02-22T21:12:26.587300Z,90,32,51,41,45,2494,1661,20,8,12,15,12,0,
+libevent,2.1.12-8.el9_4,"Red Hat, Inc.",,,,,,False,"The libevent API provides a mechanism to execute a callback function
+when a specific event occurs on a file descriptor or after a timeout
+has been reached. libevent is meant to replace the asynchronous event
+loop found in event driven network servers. An application just needs
+to call event_dispatch() and can then add or remove events dynamically
+without having to change the event loop.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libfdisk,2.37.4-21.el9_7,"Red Hat, Inc.",,,,,,False,"This is library for fdisk-like programs, part of util-linux.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libffi,3.4.2-8.el9,"Red Hat, Inc.",,,,,,False,"Compilers for high level languages generate code that follow certain
+conventions.  These conventions are necessary, in part, for separate
+compilation to work.  One such convention is the ""calling convention"".
+The calling convention is a set of assumptions made by the compiler
+about where function arguments will be found on entry to a function.  A
+calling convention also specifies where the return value for a function
+is found.
+
+Some programs may not know at the time of compilation what arguments
+are to be passed to a function.  For instance, an interpreter may be
+told at run-time about the number and types of arguments used to call a
+given function.  `Libffi' can be used in such programs to provide a
+bridge from the interpreter program to compiled code.
+
+The `libffi' library provides a portable, high level programming
+interface to various calling conventions.  This allows a programmer to
+call any function specified by a call interface description at run time.
+
+FFI stands for Foreign Function Interface.  A foreign function
+interface is the popular name for the interface that allows code
+written in one language to call code written in another language.  The
+`libffi' library really only provides the lowest, machine dependent
+layer of a fully featured foreign function interface.  A layer must
+exist above `libffi' that handles type conversions for values passed
+between the two languages.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libgcc,11.5.0-11.el9,"Red Hat, Inc.",,,,,,False,"This package contains GCC shared support library which is needed
+e.g. for exception handling support.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libgcrypt,1.10.0-11.el9,"Red Hat, Inc.",,,,,,False,"Libgcrypt is a general purpose crypto library based on the code used
+in GNU Privacy Guard.  This is a development version.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libgpg-error,1.42-5.el9,"Red Hat, Inc.",,,,,,False,"This is a library that defines common error values for all GnuPG
+components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+pinentry, SmartCard Daemon and possibly more in the future.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libicu,67.1-10.el9_6,"Red Hat, Inc.",,,,,,False,"The International Components for Unicode (ICU) libraries provide
+robust and full-featured Unicode services on a wide variety of
+platforms. ICU supports the most current version of the Unicode
+standard, and they provide support for supplementary Unicode
+characters (needed for GB 18030 repertoire support).
+As computing environments become more heterogeneous, software
+portability becomes more important. ICU lets you produce the same
+results across all the various platforms you support, without
+sacrificing performance. It offers great flexibility to extend and
+customize the supplied services.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libmount,2.37.4-21.el9_7,"Red Hat, Inc.",,,,,,False,"This is the device mounting library, part of util-linux.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libpwquality,1.4.4-8.el9,"Red Hat, Inc.",libpwquality,https://github.com/libpwquality/libpwquality,54,Undetermined,,False,"This is a library for password quality checks and generation
+of random passwords that pass the checks.
+This library uses the cracklib and cracklib dictionaries
+to perform some of the checks.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,446111fd-fbb7-475a-8f88-91d8e3afa618,2026-02-22T21:12:26.564158Z,79,46,34,7,17,3299,2314,8,7,15,15,9,0,
+libseccomp,2.5.2-2.el9,"Red Hat, Inc.",seccomp,https://github.com/seccomp/libseccomp,75,True,,False,"The libseccomp library provides an easy to use interface to the Linux Kernel's
+syscall filtering mechanism, seccomp.  The libseccomp API allows an application
+to specify which syscalls, and optionally which syscall arguments, the
+application is allowed to execute, all of which are enforced by the Linux
+Kernel.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,e9dd017f-fcd1-4ae0-9981-77faef3c6d72,2026-02-22T21:12:26.571157Z,899,189,196,27,27,4056,222,20,10,15,15,15,0,
+libselinux,3.6-3.el9,"Red Hat, Inc.",SELinuxProject,https://github.com/SELinuxProject/selinux,75,True,,False,"Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libselinux provides an API for SELinux applications to get and set
+process and file security contexts and to obtain security policy
+decisions.  Required for any applications that use the SELinux API.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,0681e0e0-d693-4daf-86e2-144d51cf9cbf,2026-02-22T21:12:26.648690Z,1560,396,134,46,863,4276,10,20,10,15,15,15,0,
+libsemanage,3.6-5.el9_6,"Red Hat, Inc.",SELinuxProject,https://github.com/SELinuxProject/selinux,75,True,,False,"Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libsemanage provides an API for the manipulation of SELinux binary policies.
+It is used by checkpolicy (the policy compiler) and similar tools, as well
+as by programs like load_policy that need to perform specific transformations
+on binary policies such as customizing policy boolean settings.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,0681e0e0-d693-4daf-86e2-144d51cf9cbf,2026-02-22T21:12:26.648690Z,1560,396,134,46,863,4276,10,20,10,15,15,15,0,
+libsepol,3.6-3.el9,"Red Hat, Inc.",SELinuxProject,https://github.com/SELinuxProject/selinux,75,True,,False,"Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libsepol provides an API for the manipulation of SELinux binary policies.
+It is used by checkpolicy (the policy compiler) and similar tools, as well
+as by programs like load_policy that need to perform specific transformations
+on binary policies such as customizing policy boolean settings.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,0681e0e0-d693-4daf-86e2-144d51cf9cbf,2026-02-22T21:12:26.648690Z,1560,396,134,46,863,4276,10,20,10,15,15,15,0,
+libsigsegv,2.13-4.el9,"Red Hat, Inc.",,,,,,False,"This is a library for handling page faults in user mode. A page fault
+occurs when a program tries to access to a region of memory that is
+currently not available. Catching and handling a page fault is a useful
+technique for implementing:
+  - pageable virtual memory
+  - memory-mapped access to persistent databases
+  - generational garbage collectors
+  - stack overflow handlers
+  - distributed shared memory",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libsmartcols,2.37.4-21.el9_7,"Red Hat, Inc.",,,,,,False,"This is library for ls-like terminal programs, part of util-linux.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libstdc++,11.5.0-11.el9,"Red Hat, Inc.",,,,,,False,"The libstdc++ package contains a rewritten standard compliant GCC Standard
+C++ Library.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libtasn1,4.16.0-9.el9,"Red Hat, Inc.",,,,,,False,"A library that provides Abstract Syntax Notation One (ASN.1, as specified
+by the X.680 ITU-T recommendation) parsing and structures management, and
+Distinguished Encoding Rules (DER, as per X.690) encoding and decoding functions.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libtool-ltdl,2.4.6-46.el9,"Red Hat, Inc.",,,,,,False,"The libtool-ltdl package contains the GNU Libtool Dynamic Module Loader, a
+library that provides a consistent, portable interface which simplifies the
+process of using dynamic modules.
+
+These runtime libraries are needed by programs that link directly to the
+system-installed ltdl libraries; they are not needed by software built using
+the rest of the GNU Autotools (including GNU Autoconf and GNU Automake).",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+liburing,2.5-1.el9,"Red Hat, Inc.",,,,,,False,"Provides native async IO for the Linux kernel, in a fast and efficient
+manner, for both buffered and O_DIRECT.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libutempter,1.2.1-6.el9,"Red Hat, Inc.",,,,,,False,"This library provides interface for terminal emulators such as
+screen and xterm to record user sessions to utmp and wtmp files.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libuuid,2.37.4-21.el9_7,"Red Hat, Inc.",,,,,,False,"This is the universally unique ID library, part of util-linux.
+
+The libuuid library generates and parses 128-bit universally unique
+id's (UUID's).  A UUID is an identifier that is unique across both
+space and time, with respect to the space of all UUIDs.  A UUID can
+be used for multiple purposes, from tagging objects with an extremely
+short lifetime, to reliably identifying very persistent objects
+across a network.
+
+See also the ""uuid"" package, which is a separate implementation.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libverto,0.3.2-3.el9,"Red Hat, Inc.",latchset,https://github.com/latchset/libverto,43,Undetermined,,False,"libverto provides a way for libraries to expose asynchronous interfaces
+without having to choose a particular event loop, offloading this
+decision to the end application which consumes the library.
+
+If you are packaging an application, not library, based on libverto,
+you should depend either on a specific implementation module or you
+can depend on the virtual provides 'libverto-module-base'. This will
+ensure that you have at least one module installed that provides io,
+timeout and signal functionality. Currently glib is the only module
+that does not provide these three because it lacks signal. However,
+glib will support signal in the future.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,db801927-8557-4ff3-b92a-bf37b771fa56,2026-02-22T21:12:26.606033Z,21,5,18,10,13,3436,756,8,2,3,15,15,0,
+libxcrypt,4.4.18-3.el9,"Red Hat, Inc.",besser82,https://github.com/besser82/libxcrypt,67,Undetermined,,False,"libxcrypt is a modern library for one-way hashing of passwords.  It
+supports a wide variety of both modern and historical hashing methods:
+yescrypt, gost-yescrypt, scrypt, bcrypt, sha512crypt, sha256crypt,
+md5crypt, SunMD5, sha1crypt, NT, bsdicrypt, bigcrypt, and descrypt.
+It provides the traditional Unix crypt and crypt_r interfaces, as well
+as a set of extended interfaces pioneered by Openwall Linux, crypt_rn,
+crypt_ra, crypt_gensalt, crypt_gensalt_rn, and crypt_gensalt_ra.
+
+libxcrypt is intended to be used by login(1), passwd(1), and other
+similar programs; that is, to hash a small number of passwords during
+an interactive authentication dialogue with a human. It is not suitable
+for use in bulk password-cracking applications, or in any other situation
+where speed is more important than careful handling of sensitive data.
+However, it is intended to be fast and lightweight enough for use in
+servers that must field thousands of login attempts per minute.
+
+This version of the library does not provide the legacy API functions
+that have been provided by glibc's libcrypt.so.1.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,9b04843f-4047-4be7-8a8b-10092ef6d543,2026-02-22T21:12:26.552598Z,232,67,79,16,58,3939,31,12,10,15,15,15,0,
+libxml2,2.9.13-14.el9_7,"Red Hat, Inc.",,,,,,False,"This library allows to manipulate XML files. It includes support
+to read, modify and write XML and HTML files. There is DTDs support
+this includes parsing and validation even with complex DtDs, either
+at parse time or later once the document has been modified. The output
+can be a simple SAX stream or and in-memory DOM like representations.
+In this case one can use the built-in XPath and XPointer implementation
+to select sub nodes or ranges. A flexible Input/Output mechanism is
+available, with existing HTTP and FTP modules and combined to an
+URI library.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libxslt,1.1.34-13.el9_6,"Red Hat, Inc.",,,,,,False,"This C library allows to transform XML files into other XML files
+(or HTML, text, ...) using the standard XSLT stylesheet transformation
+mechanism. To use it you need to have a version of libxml2 >= 2.6.27
+installed. The xsltproc command is a command line interface to the XSLT engine",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+libzstd,1.5.5-1.el9,"Red Hat, Inc.",facebook,https://github.com/facebook/zstd,75,True,,False,Zstandard compression shared library.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,7db91787-71e9-40be-b494-257694d30110,2026-02-22T21:12:26.675042Z,26664,2413,1324,68,77,4048,5,20,10,15,15,15,0,
+lz4-libs,1.9.3-5.el9,"Red Hat, Inc.",,,,,,False,This package contains the libaries for lz4.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+mpfr,4.1.0-7.el9,"Red Hat, Inc.",,,,,,False,"The MPFR library is a C library for multiple-precision floating-point
+computations with ""correct rounding"". The MPFR is efficient and
+also has a well-defined semantics. It copies the good ideas from the
+ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+(53-bit mantissa). MPFR is based on the GMP multiple-precision library.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+ncurses,6.2-12.20210508.el9,"Red Hat, Inc.",,,,,,False,"The curses library routines are a terminal-independent method of
+updating character screens with reasonable optimization.  The ncurses
+(new curses) library is a freely distributable replacement for the
+discontinued 4.4 BSD classic curses library.
+
+This package contains support utilities, including a terminfo compiler
+tic, a decompiler infocmp, clear, tput, tset, and a termcap conversion
+tool captoinfo.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+ncurses-base,6.2-12.20210508.el9,"Red Hat, Inc.",,,,,,False,"This package contains descriptions of common terminals. Other terminal
+descriptions are included in the ncurses-term package.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+ncurses-libs,6.2-12.20210508.el9,"Red Hat, Inc.",,,,,,False,"The curses library routines are a terminal-independent method of
+updating character screens with reasonable optimization.  The ncurses
+(new curses) library is a freely distributable replacement for the
+discontinued 4.4 BSD classic curses library.
+
+This package contains the ncurses libraries.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+numactl-libs,2.0.19-3.el9,"Red Hat, Inc.",numactl,https://github.com/numactl/numactl,75,True,,False,"numactl-libs provides libnuma, a library to do allocations with
+NUMA policy in applications.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,68a87d08-8ee8-466b-85b7-6070f2e3e207,2026-02-22T21:12:26.626676Z,487,160,97,42,45,4219,29,20,10,15,15,15,0,
+openldap,2.6.8-4.el9,"Red Hat, Inc.",,,,,,False,"OpenLDAP is an open source suite of LDAP (Lightweight Directory Access
+Protocol) applications and development tools. LDAP is a set of
+protocols for accessing directory services (usually phone book style
+information, but other information is possible) over the Internet,
+similar to the way DNS (Domain Name System) information is propagated
+over the Internet. The openldap package contains configuration files,
+libraries, and documentation for OpenLDAP.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+openssl,1:3.5.1-7.el9_7,"Red Hat, Inc.",,,,,,False,"The OpenSSL toolkit provides support for secure communications between
+machines. OpenSSL includes a certificate management tool and shared
+libraries which provide various cryptographic algorithms and
+protocols.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+openssl-fips-provider,3.0.7-8.el9,"Red Hat, Inc.",,,,,,False,"This package provides a custom build of the OpenSSL FIPS module that has been
+submitted to NIST for certification.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+openssl-fips-provider-so,3.0.7-8.el9,"Red Hat, Inc.",,,,,,False,"This package provides a custom build of the OpenSSL FIPS module that has been
+submitted to NIST for certification.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+openssl-libs,1:3.5.1-7.el9_7,"Red Hat, Inc.",,,,,,False,"OpenSSL is a toolkit for supporting cryptography. The openssl-libs
+package contains the libraries that are used by various applications which
+support cryptographic algorithms and protocols.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+p11-kit,0.25.3-3.el9_5,"Red Hat, Inc.",,,,,,False,"p11-kit provides a way to load and enumerate PKCS#11 modules, as well
+as a standard configuration setup for installing PKCS#11 modules in
+such a way that they're discoverable.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+p11-kit-trust,0.25.3-3.el9_5,"Red Hat, Inc.",,,,,,False,"The p11-kit-trust package contains a system trust PKCS#11 module which
+contains certificate anchors and blocklists.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+pam,1.5.1-26.el9_6,"Red Hat, Inc.",,,,,,False,"PAM (Pluggable Authentication Modules) is a system security tool that
+allows system administrators to set authentication policy without
+having to recompile programs that handle authentication.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+pcre,8.44-4.el9,"Red Hat, Inc.",,,,,,False,"PCRE, Perl-compatible regular expression, library has its own native API, but
+a set of wrapper functions that are based on the POSIX API are also supplied
+in the libpcreposix library. Note that this just provides a POSIX calling
+interface to PCRE: the regular expressions themselves still follow Perl syntax
+and semantics. This package provides support for strings in 8-bit and UTF-8
+encodings. Detailed change log is provided by pcre-doc package.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+pcre2,10.40-6.el9,"Red Hat, Inc.",,,,,,False,"PCRE2 is a re-working of the original PCRE (Perl-compatible regular
+expression) library to provide an entirely new API.
+
+PCRE2 is written in C, and it has its own API. There are three sets of
+functions, one for the 8-bit library, which processes strings of bytes, one
+for the 16-bit library, which processes strings of 16-bit values, and one for
+the 32-bit library, which processes strings of 32-bit values. There are no C++
+wrappers. This package provides support for strings in 8-bit and UTF-8
+encodings. Install pcre2-utf16 or pcre2-utf32 packages for the other ones.
+
+The distribution does contain a set of C wrapper functions for the 8-bit
+library that are based on the POSIX regular expression API (see the pcre2posix
+man page). These can be found in a library called libpcre2posix. Note that
+this just provides a POSIX calling interface to PCRE2; the regular expressions
+themselves still follow Perl syntax and semantics. The POSIX API is
+restricted, and does not give full access to all of PCRE2's facilities.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+pcre2-syntax,10.40-6.el9,"Red Hat, Inc.",,,,,,False,"This is a set of manual pages that document a syntax of the regular
+expressions implemented by the PCRE2 library.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-AutoLoader,5.74-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The AutoLoader module works with the AutoSplit module and the ""__END__"" token
+to defer the loading of some subroutines until they are used rather than
+loading them all at once.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-B,1.80-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The ""B"" module supplies classes which allow a Perl program to delve into its
+own innards. It is the module used to implement the backends of the Perl
+compiler.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Carp,1.50-460.el9,"Red Hat, Inc.",,,,,,False,"The Carp routines are useful in your own modules because they act like
+die() or warn(), but with a message which is more likely to be useful to a
+user of your module. In the case of cluck, confess, and longmess that
+context is a summary of every call in the call-stack. For a shorter message
+you can use carp or croak which report the error as being from where your
+module was called. There is no guarantee that that is where the error was,
+but it is a good educated guess.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Class-Struct,0.66-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"Class::Struct module exports a single function struct(). Given a list of
+element names and types, and optionally a class name, struct() creates a
+Perl 5 class that implements a struct-like data structure.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Data-Dumper,2.174-462.el9,"Red Hat, Inc.",,,,,,False,"Given a list of scalars or reference variables, writes out their contents
+in perl syntax. The references can also be objects. The content of each
+variable is output in a single Perl statement. Handles self-referential
+structures correctly.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Digest,1.19-4.el9,"Red Hat, Inc.",,,,,,False,"The Digest:: modules calculate digests, also called ""fingerprints"" or
+""hashes"", of some data, called a message. The digest is (usually) some
+small/fixed size string. The actual size of the digest depends of the
+algorithm used. The message is simply a sequence of arbitrary bytes or bits.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Digest-MD5,2.58-4.el9,"Red Hat, Inc.",,,,,,False,"The Digest::MD5 module allows you to use the RSA Data Security Inc. MD5
+Message Digest algorithm from within Perl programs. The algorithm takes as
+input a message of arbitrary length and produces as output a 128-bit
+""fingerprint"" or ""message digest"" of the input.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Encode,4:3.08-462.el9,"Red Hat, Inc.",,,,,,False,"The Encode module provides the interface between Perl strings and the rest
+of the system. Perl strings are sequences of characters.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Errno,1.30-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"""Errno"" defines and conditionally exports all the error constants defined in
+your system ""errno.h"" include file. It has a single export tag, "":POSIX"",
+which will export all POSIX defined error numbers.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Exporter,5.74-461.el9,"Red Hat, Inc.",,,,,,False,"The Exporter module implements an import method which allows a module to
+export functions and variables to its users' name spaces. Many modules use
+Exporter rather than implementing their own import method because Exporter
+provides a highly flexible interface, with an implementation optimized for
+the common case.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Fcntl,1.13-481.1.el9_6,"Red Hat, Inc.",,,,,,False,Fcntl module provides file operation related options.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-File-Basename,2.85-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"These routines allow you to parse file paths into their directory, file name,
+and suffix.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-File-Path,2.18-4.el9,"Red Hat, Inc.",,,,,,False,"This module provides a convenient way to create directories of arbitrary
+depth and to delete an entire directory subtree from the file system.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-File-Temp,1:0.231.100-4.el9,"Red Hat, Inc.",,,,,,False,"File::Temp can be used to create and open temporary files in a safe way.
+There is both a function interface and an object-oriented interface. The
+File::Temp constructor or the tempfile() function can be used to return the
+name and the open file handle of a temporary file. The tempdir() function
+can be used to create a temporary directory.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-File-stat,1.09-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"This module overrides the core stat() and lstat() functions, replacing them
+with versions that return File::stat objects. This object has methods that
+return the similarly named structure field name from the stat(2) function.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-FileHandle,2.03-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"This is an object-oriented interface for opening files and performing
+input/output operations on them.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Getopt-Long,1:2.52-4.el9,"Red Hat, Inc.",,,,,,False,"The Getopt::Long module implements an extended getopt function called
+GetOptions(). It parses the command line from @ARGV, recognizing and removing
+specified options and their possible values.  It adheres to the POSIX syntax
+for command line options, with GNU extensions. In general, this means that
+options have long names instead of single letters, and are introduced with
+a double dash ""--"". Support for bundling of command line options, as was the
+case with the more traditional single-letter approach, is provided but not
+enabled by default.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Getopt-Std,1.12-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The Getopt::Std module provides functions for processing single-character
+switches with switch clustering. Pass one argument which is a string
+containing all switches to be recognized.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-HTTP-Tiny,0.076-462.el9,"Red Hat, Inc.",,,,,,False,"This is a very simple HTTP/1.1 client, designed for doing simple GET requests
+without the overhead of a large framework like LWP::UserAgent.
+
+It is more correct and more complete than HTTP::Lite. It supports proxies
+(currently only non-authenticating ones) and redirection. It also correctly
+resumes after EINTR.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-IO,1.43-481.1.el9_6,"Red Hat, Inc.",,,,,,False,This is a collection of Perl input/output modules.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-IO-Socket-IP,0.41-5.el9,"Red Hat, Inc.",,,,,,False,"This module provides a protocol-independent way to use IPv4 and IPv6
+sockets, intended as a replacement for IO::Socket::INET. Most constructor
+arguments and methods are provided in a backward-compatible way.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-IO-Socket-SSL,2.073-2.el9,"Red Hat, Inc.",,,,,,False,"This module is a true drop-in replacement for IO::Socket::INET that
+uses SSL to encrypt data before it is transferred to a remote server
+or client. IO::Socket::SSL supports all the extra features that one
+needs to write a full-featured SSL client or server application:
+multiple SSL contexts, cipher selection, certificate verification, and
+SSL version selection. As an extra bonus, it works perfectly with
+mod_perl.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-IPC-Open3,1.21-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"These are functions that spawn a given command and connects the standard
+output of the command for reading, standard output for writing, and standard
+error output for handling the errors.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-MIME-Base64,3.16-4.el9,"Red Hat, Inc.",,,,,,False,"This package contains a Base64 encoder/decoder and a quoted-printable
+encoder/decoder. These encoding methods are specified in RFC 2045 - MIME
+(Multipurpose Internet Mail Extensions).",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Mozilla-CA,20200520-6.el9,"Red Hat, Inc.",,,,,,False,"Mozilla::CA provides a path to ca-certificates copy of Mozilla's bundle of
+certificate authority certificates in a form that can be consumed by modules
+and libraries based on OpenSSL.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Net-SSLeay,1.94-3.el9,"Red Hat, Inc.",,,,,,False,"This module offers some high level convenience functions for accessing
+web pages on SSL servers (for symmetry, same API is offered for
+accessing http servers, too), a sslcat() function for writing your own
+clients, and finally access to the SSL API of SSLeay/OpenSSL package
+so you can write servers or clients for more complicated applications.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-POSIX,1.94-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The POSIX module permits you to access all (or nearly all) the standard POSIX
+1003.1 identifiers. Many of these identifiers have been given Perl interfaces.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-PathTools,3.78-461.el9,"Red Hat, Inc.",,,,,,False,This is the combined distribution for the File::Spec and Cwd modules.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Pod-Escapes,1:1.07-460.el9,"Red Hat, Inc.",,,,,,False,This module provides things that are useful in decoding Pod E<...> sequences.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Pod-Perldoc,3.28.01-461.el9,"Red Hat, Inc.",,,,,,False,"perldoc looks up a piece of documentation in POD format that is embedded
+in the perl installation tree or in a Perl script, and displays it via
+""groff -man | $PAGER"". This is primarily used for the documentation for
+the Perl library modules.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Pod-Simple,1:3.42-4.el9,"Red Hat, Inc.",,,,,,False,"Pod::Simple is a Perl library for parsing text in the POD (plain old
+documentation) markup language that is typically used for writing
+documentation for Perl and for Perl modules.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Pod-Usage,4:2.01-4.el9,"Red Hat, Inc.",,,,,,False,"pod2usage will print a usage message for the invoking script (using its
+embedded POD documentation) and then exit the script with the desired exit
+status. The usage message printed may have any one of three levels of
+""verboseness"": If the verbose level is 0, then only a synopsis is printed.
+If the verbose level is 1, then the synopsis is printed along with a
+description (if present) of the command line options and arguments. If the
+verbose level is 2, then the entire manual page is printed.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Scalar-List-Utils,4:1.56-462.el9,"Red Hat, Inc.",,,,,,False,"This package contains a selection of subroutines that people have expressed
+would be nice to have in the perl core, but the usage would not really be
+high enough to warrant the use of a keyword, and the size so small such
+that being individual extensions would be wasteful.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-SelectSaver,1.02-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"A ""SelectSaver"" object contains a reference to the file handle that was
+selected when it was created. When the object is destroyed, it re-selects the
+file handle that was selected when it was created.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Socket,4:2.031-4.el9,"Red Hat, Inc.",,,,,,False,"This Perl module provides a variety of constants, structure manipulators and
+other functions related to socket-based networking. The values and functions
+provided are useful when used in conjunction with Perl core functions such as
+socket(), setsockopt() and bind(). It also provides several other support
+functions, mostly for dealing with conversions of network addresses between
+human-readable and native binary forms, and for hostname resolver operations.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Storable,1:3.21-460.el9,"Red Hat, Inc.",,,,,,False,"The Storable package brings persistence to your Perl data structures
+containing scalar, array, hash or reference objects, i.e. anything that
+can be conveniently stored to disk and retrieved at a later time.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Symbol,1.08-481.1.el9_6,"Red Hat, Inc.",,,,,,False,The Symbol module provides functions for manipulating Perl symbols.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Term-ANSIColor,5.01-461.el9,"Red Hat, Inc.",,,,,,False,"This module has two interfaces, one through color() and colored() and the
+other through constants. It also offers the utility functions uncolor(),
+colorstrip(), colorvalid(), and coloralias(), which have to be explicitly
+imported to be used.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Term-Cap,1.17-460.el9,"Red Hat, Inc.",,,,,,False,"These are low-level functions to extract and use capabilities from a terminal
+capability (termcap) database.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Text-ParseWords,3.30-460.el9,"Red Hat, Inc.",,,,,,False,"The nested_quotewords() and quotewords() functions accept a delimiter (which
+can be a regular expression) and a list of lines and then breaks those lines
+up into a list of words ignoring delimiters that appear inside quotes.
+quotewords() returns all of the tokens in a single long list, while
+nested_quotewords() returns a list of token lists corresponding to the
+elements of @lines. parse_line() does tokenizing on a single string. The
+quotewords() functions simply call &parse_line(), so if you're only splitting
+one line you can call parse_line() directly and save a function call.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Text-Tabs+Wrap,2013.0523-460.el9,"Red Hat, Inc.",,,,,,False,"Text::Tabs performs the same job that the UNIX expand(1) and unexpand(1)
+commands do: adding or removing tabs from a document.
+
+Text::Wrap::wrap() will reformat lines into paragraphs. All it does is break
+up long lines, it will not join short lines together.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-Time-Local,2:1.300-7.el9,"Red Hat, Inc.",,,,,,False,"This module provides functions that are the inverse of built-in perl functions
+localtime() and gmtime(). They accept a date as a six-element array, and
+return the corresponding time(2) value in seconds since the system epoch
+(Midnight, January 1, 1970 GMT on Unix, for example). This value can be
+positive or negative, though POSIX only requires support for positive values,
+so dates before the system's epoch may not work on all operating systems.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-URI,5.09-3.el9,"Red Hat, Inc.",,,,,,False,"This module implements the URI class. Objects of this class represent
+""Uniform Resource Identifier references"" as specified in RFC 2396 (and
+updated by RFC 2732).",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-base,2.27-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"""base"" module allows you to both load one or more modules, while setting up
+inheritance from those modules at the same time.  Unless you are using the
+""fields"" pragma, consider this module discouraged in favor of the
+lighter-weight ""parent"".",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-constant,1.33-461.el9,"Red Hat, Inc.",,,,,,False,"This pragma allows you to declare constants at compile-time:
+
+use constant PI => 4 * atan2(1, 1);
+
+When you declare a constant such as ""PI"" using the method shown above,
+each machine your script runs upon can have as many digits of accuracy
+as it can use. Also, your program will be easier to read, more likely
+to be maintained (and maintained correctly), and far less likely to
+send a space probe to the wrong planet because nobody noticed the one
+equation in which you wrote 3.14195.
+
+When a constant is used in an expression, Perl replaces it with its
+value at compile time, and may then optimize the expression further.
+In particular, any code in an ""if (CONSTANT)"" block will be optimized
+away if the constant is false.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-if,0.60.800-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The ""if"" module is used to conditionally load another module.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-interpreter,4:5.32.1-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"This is a Perl interpreter as a standalone executable /usr/bin/perl
+required for handling Perl scripts. It does not provide all the other Perl
+modules or tools.
+
+Install this package if you want to program in Perl or enable your system to
+handle Perl scripts with /usr/bin/perl interpreter.
+
+If your script requires some Perl modules, you can install them with
+""perl(MODULE)"" where ""MODULE"" is a name of required module. E.g. install
+""perl(Test::More)"" to make Test::More Perl module available.
+
+If you need all the Perl modules that come with upstream Perl sources, so
+called core modules, install perl package.
+
+If you only need perl run-time as a shared library, i.e. Perl interpreter
+embedded into another application, the only essential package is perl-libs.
+
+Perl header files can be found in perl-devel package.
+
+Perl utils like ""h2ph"" or ""perlbug"" can be found in perl-utils package.
+
+Perl debugger, usually invoked with ""perl -d"", is available in perl-debugger
+package.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-libnet,3.13-4.el9,"Red Hat, Inc.",,,,,,False,"This is a collection of Perl modules which provides a simple and
+consistent programming interface (API) to the client side of various
+protocols used in the internet community.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-libs,4:5.32.1-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The is a perl run-time (interpreter as a shared library and include
+directories).",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-mro,1.23-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The ""mro"" name space provides several utilities for dealing with method
+resolution order and method caching in general.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-overload,1.31-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"The ""overload"" pragma allows overloading of Perl operators for a class. To
+overload built-in functions, see ""Overriding Built-in Functions"" in perlsub
+POD instead.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-overloading,0.02-481.1.el9_6,"Red Hat, Inc.",,,,,,False,Overloading pragma allows you to lexically disable or enable overloading.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-parent,1:0.238-460.el9,"Red Hat, Inc.",,,,,,False,"Allows you to both load one or more modules, while setting up inheritance
+from those modules at the same time. Mostly similar in effect to:
+
+	package Baz;
+
+	BEGIN {
+		require Foo;
+		require Bar;
+
+		push @ISA, qw(Foo Bar);
+	}",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-podlators,1:4.14-460.el9,"Red Hat, Inc.",,,,,,False,"This package contains Pod::Man and Pod::Text modules which convert POD input
+to *roff source output, suitable for man pages, or plain text.  It also
+includes several sub-classes of Pod::Text for formatted output to terminals
+with various capabilities.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-subs,1.03-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"This will predeclare all the subroutines whose names are in the list,
+allowing you to use them without parentheses (as list operators) even
+before they're declared.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+perl-vars,1.05-481.1.el9_6,"Red Hat, Inc.",,,,,,False,"This pragma will predeclare all the variables whose names are in the
+list, allowing you to use them under ""use strict"", and disabling any
+typo warnings for them.
+
+For use with variables in the current package for a single scope, the
+functionality provided by this pragma has been superseded by ""our""
+declarations, available in Perl v5.6.0 or later, and use of this pragma is
+discouraged.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+pgaudit_18,18.0-1PGDG.rhel9,PostgreSQL Global Development Group,pgaudit,https://github.com/pgaudit/pgaudit,75,True,,True,"The PostgreSQL Audit extension (pgaudit) provides detailed session
+and/or object audit logging via the standard PostgreSQL logging
+facility.
+
+The goal of the PostgreSQL Audit extension (pgaudit) is to provide
+PostgreSQL users with capability to produce audit logs often required to
+comply with government, financial, or ISO certifications.
+
+An audit is an official inspection of an individual's or organization's
+accounts, typically by an independent body. The information gathered by
+the PostgreSQL Audit extension (pgaudit) is properly called an audit
+trail or audit log. The term audit log is used in this documentation.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,4bbd8a79-14f7-4518-af7c-abad116eaca2,2026-02-22T21:28:52.658732Z,1597,186,182,45,63,3890,42,20,10,15,15,15,0,
+postgresql18,18.0-1PGDG.rhel9,PostgreSQL Global Development Group,postgres,https://github.com/postgres/postgres,75,True,,True,"PostgreSQL is an advanced Object-Relational database management system (DBMS).
+The base postgresql package contains the client programs that you'll need to
+access a PostgreSQL DBMS server. These client programs can be located on the
+same machine as the PostgreSQL server, or on a remote machine that accesses a
+PostgreSQL server over a network connection. The PostgreSQL server can be found
+in the postgresql18-server sub-package.
+
+If you want to manipulate a PostgreSQL database on a local or remote PostgreSQL
+server, you need this package. You also need to install this package
+if you're installing the postgresql18-server package.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,b42ade4d-eac7-4642-b30b-c3c48dbff0d3,2026-02-22T21:28:52.591846Z,20097,5441,0,0,674,5633,4,20,10,15,15,15,0,
+postgresql18-contrib,18.0-1PGDG.rhel9,PostgreSQL Global Development Group,postgres,https://github.com/postgres/postgres,75,True,,True,"The postgresql18-contrib package contains various extension
+modules that are included in the PostgreSQL distribution.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,b42ade4d-eac7-4642-b30b-c3c48dbff0d3,2026-02-22T21:28:52.591846Z,20097,5441,0,0,674,5633,4,20,10,15,15,15,0,
+postgresql18-libs,18.0-1PGDG.rhel9,PostgreSQL Global Development Group,postgres,https://github.com/postgres/postgres,75,True,,True,"The postgresql18-libs package provides the essential shared
+libraries for any PostgreSQL client program or interface. You will need to
+install this package to use any other PostgreSQL package or any clients that
+need to connect to a PostgreSQL server.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,b42ade4d-eac7-4642-b30b-c3c48dbff0d3,2026-02-22T21:28:52.591846Z,20097,5441,0,0,674,5633,4,20,10,15,15,15,0,
+postgresql18-server,18.0-1PGDG.rhel9,PostgreSQL Global Development Group,postgres,https://github.com/postgres/postgres,75,True,,True,"PostgreSQL is an advanced Object-Relational database management system (DBMS).
+The postgresql18-server package contains the programs needed to
+create and run a PostgreSQL server, which will in turn allow you to create and
+maintain PostgreSQL databases.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,b42ade4d-eac7-4642-b30b-c3c48dbff0d3,2026-02-22T21:28:52.591846Z,20097,5441,0,0,674,5633,4,20,10,15,15,15,0,
+python3-libs,3.9.25-3.el9_7,"Red Hat, Inc.",,,,,,False,"This package contains runtime libraries for use by Python:
+- the majority of the Python standard library
+- a dynamically linked library for use by applications that embed Python as
+  a scripting language, and by the main ""python3"" executable",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+python3-pip-wheel,21.3.1-1.el9,"Red Hat, Inc.",,,,,,False,A Python wheel of pip to use with venv.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+python3-setuptools-wheel,53.0.0-15.el9,"Red Hat, Inc.",,,,,,False,A Python wheel of setuptools to use with venv.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+readline,8.1-4.el9,"Red Hat, Inc.",,,,,,False,"The Readline library provides a set of functions that allow users to
+edit command lines. Both Emacs and vi editing modes are available. The
+Readline library includes additional functions for maintaining a list
+of previously-entered command lines for recalling or editing those
+lines, and for performing csh-like history expansion on previous
+commands.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+redhat-release,9.7-0.7.el9,"Red Hat, Inc.",,,,,,False,Red Hat Enterprise Linux release files,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+sed,4.8-9.el9,"Red Hat, Inc.",,,,,,False,"The sed (Stream EDitor) editor is a stream or batch (non-interactive)
+editor.  Sed takes text as input, performs an operation or set of
+operations on the text and outputs the modified text.  The operations
+that sed performs (substitutions, deletions, insertions, etc.) can be
+specified in a script file or from the command line.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+setup,2.13.7-10.el9,"Red Hat, Inc.",,,,,,False,"The setup package contains a set of important system configuration and
+setup files, such as passwd, group, and profile.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+shadow-utils,2:4.9-15.el9,"Red Hat, Inc.",shadow-maint,https://github.com/shadow-maint/shadow,75,True,,False,"The shadow-utils package includes the necessary programs for
+converting UNIX password files to the shadow password format, plus
+programs for managing user and group accounts. The pwconv command
+converts passwords to the shadow password format. The pwunconv command
+unconverts shadow passwords and generates a passwd file (a standard
+UNIX password file). The pwck command checks the integrity of password
+and shadow files. The lastlog command prints out the last login times
+for all users. The useradd, userdel, and usermod commands are used for
+managing user accounts. The groupadd, groupdel, and groupmod commands
+are used for managing group accounts.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,6fba6822-2aab-4388-9538-6cb02cce7d31,2026-02-22T21:12:26.675542Z,369,260,370,51,99,4645,9,20,10,15,15,15,0,
+sqlite-libs,3.34.1-9.el9_7,"Red Hat, Inc.",,,,,,False,This package contains the shared library for sqlite.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+systemd,252-55.el9_7.7,"Red Hat, Inc.",,,,,,False,"systemd is a system and service manager that runs as PID 1 and starts
+the rest of the system. It provides aggressive parallelization
+capabilities, uses socket and D-Bus activation for starting services,
+offers on-demand starting of daemons, keeps track of processes using
+Linux control groups, maintains mount and automount points, and
+implements an elaborate transactional dependency-based service control
+logic. systemd supports SysV and LSB init scripts and works as a
+replacement for sysvinit. Other parts of this package are a logging daemon,
+utilities to control basic system configuration like the hostname,
+date, locale, maintain a list of logged-in users, system accounts,
+runtime directories and settings, and daemons to manage simple network
+configuration, network time synchronization, log forwarding, and name
+resolution.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+systemd-libs,252-55.el9_7.7,"Red Hat, Inc.",,,,,,False,Libraries for systemd and udev.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+systemd-pam,252-55.el9_7.7,"Red Hat, Inc.",,,,,,False,Systemd PAM module registers the session with systemd-logind.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+systemd-rpm-macros,252-55.el9_7.7,"Red Hat, Inc.",,,,,,False,"Just the definitions of rpm macros.
+
+See
+https://docs.fedoraproject.org/en-US/packaging-guidelines/Scriptlets/#_systemd
+for information how to use those macros.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+tzdata,2025c-1.el9,"Red Hat, Inc.",,,,,,False,"This package contains data files with rules for various timezones around
+the world.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+util-linux,2.37.4-21.el9_7,"Red Hat, Inc.",,,,,,False,"The util-linux package contains a large variety of low-level system
+utilities that are necessary for a Linux system to function. Among
+others, Util-linux contains the fdisk configuration tool and the login
+program.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+util-linux-core,2.37.4-21.el9_7,"Red Hat, Inc.",,,,,,False,"This is a very basic set of Linux utilities that is necessary on
+minimal installations.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+xz-libs,5.2.5-8.el9_0,"Red Hat, Inc.",,,,,,False,Libraries for decoding files compressed with LZMA or XZ utils.,,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,
+zlib,1.2.11-40.el9,"Red Hat, Inc.",,,,,,False,"Zlib is a general-purpose, patent-free, lossless data compression
+library which is used by many different programs.",,,,,,,,No,No,Yes,No,"OpenSource, Freeware",,,Yes,rpm,DELIVERABLE,,,,,,,,,,,,,,,,

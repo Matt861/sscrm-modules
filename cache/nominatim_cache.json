@@ -118615,5 +118615,2122 @@
       "8.9633174",
       "9.0998639"
     ]
+  },
+  "san jose,ca usa": {
+    "place_id": 298996079,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 112143,
+    "lat": "37.3361663",
+    "lon": "-121.8905910",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6813152075052304,
+    "addresstype": "city",
+    "name": "San Jose",
+    "display_name": "San Jose, Santa Clara County, California, United States",
+    "address": {
+      "city": "San Jose",
+      "county": "Santa Clara County",
+      "state": "California",
+      "ISO3166-2-lvl4": "US-CA",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "37.1231596",
+      "37.4691477",
+      "-122.0462270",
+      "-121.5858438"
+    ]
+  },
+  "seoul,korea": {
+    "place_id": 411208958,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2297418,
+    "lat": "37.5666791",
+    "lon": "126.9782914",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.7778382871785516,
+    "addresstype": "city",
+    "name": "서울특별시",
+    "display_name": "서울특별시, 대한민국",
+    "address": {
+      "city": "서울특별시",
+      "ISO3166-2-lvl4": "KR-11",
+      "country": "대한민국",
+      "country_code": "kr"
+    },
+    "boundingbox": [
+      "37.4285424",
+      "37.7014794",
+      "126.7644328",
+      "127.1837702"
+    ]
+  },
+  "finland, joensuu": {
+    "place_id": 155383628,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2521759,
+    "lat": "62.6006375",
+    "lon": "29.7619759",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5817580158494295,
+    "addresstype": "city",
+    "name": "Joensuu",
+    "display_name": "Joensuu, Joensuun seutukunta, Pohjois-Karjala, Manner-Suomi, Suomi / Finland",
+    "address": {
+      "city": "Joensuu",
+      "municipality": "Joensuun seutukunta",
+      "state": "Pohjois-Karjala",
+      "ISO3166-2-lvl4": "FI-13",
+      "region": "Manner-Suomi",
+      "country": "Suomi / Finland",
+      "country_code": "fi"
+    },
+    "boundingbox": [
+      "62.2508037",
+      "63.0475887",
+      "29.6130951",
+      "31.0935058"
+    ]
+  },
+  "udin, italy": {
+    "place_id": 62555002,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 179272,
+    "lat": "46.0634632",
+    "lon": "13.2358377",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6529912037225715,
+    "addresstype": "city",
+    "name": "Udine / Udin",
+    "display_name": "Udine / Udin, Udine / Udin / Videm, Friuli-Venezia Giulia, 33100, Italia",
+    "address": {
+      "city": "Udine / Udin",
+      "county": "Udine / Udin / Videm",
+      "ISO3166-2-lvl6": "IT-UD",
+      "state": "Friuli-Venezia Giulia",
+      "ISO3166-2-lvl4": "IT-36",
+      "postcode": "33100",
+      "country": "Italia",
+      "country_code": "it"
+    },
+    "boundingbox": [
+      "46.0017067",
+      "46.1171089",
+      "13.1844828",
+      "13.2944831"
+    ]
+  },
+  "京都": {
+    "place_id": 247294371,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 267316272,
+    "lat": "34.9853497",
+    "lon": "135.7587660",
+    "category": "railway",
+    "type": "station",
+    "place_rank": 30,
+    "importance": 0.5576958448192043,
+    "addresstype": "railway",
+    "name": "京都",
+    "display_name": "京都, 八条通, 西九条北ノ内町, 南区, 京都市, 京都府, 601-8412, 日本",
+    "address": {
+      "railway": "京都",
+      "road": "八条通",
+      "neighbourhood": "西九条北ノ内町",
+      "suburb": "南区",
+      "city": "京都市",
+      "province": "京都府",
+      "ISO3166-2-lvl4": "JP-26",
+      "postcode": "601-8412",
+      "country": "日本",
+      "country_code": "jp"
+    },
+    "boundingbox": [
+      "34.9803497",
+      "34.9903497",
+      "135.7537660",
+      "135.7637660"
+    ]
+  },
+  "naboo": {
+    "place_id": 291466402,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 826814628,
+    "lat": "25.3841655",
+    "lon": "-108.1341611",
+    "category": "natural",
+    "type": "wood",
+    "place_rank": 22,
+    "importance": 0.10671023651483938,
+    "addresstype": "wood",
+    "name": "Naboo",
+    "display_name": "Naboo, La Gastritis, Angostura, Sinaloa, 81600, México",
+    "address": {
+      "wood": "Naboo",
+      "hamlet": "La Gastritis",
+      "town": "Angostura",
+      "county": "Angostura",
+      "state": "Sinaloa",
+      "ISO3166-2-lvl4": "MX-SIN",
+      "postcode": "81600",
+      "country": "México",
+      "country_code": "mx"
+    },
+    "boundingbox": [
+      "25.3839623",
+      "25.3845023",
+      "-108.1344918",
+      "-108.1340049"
+    ]
+  },
+  "c-137": {
+    "place_id": 111123207,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 690717247,
+    "lat": "48.0967864",
+    "lon": "7.3403321",
+    "category": "highway",
+    "type": "track",
+    "place_rank": 26,
+    "importance": 0.05340186388952465,
+    "addresstype": "road",
+    "name": "Meisenhuettenweg",
+    "display_name": "Meisenhuettenweg, Colmar, Colmar-Ribeauvillé, Haut-Rhin, Grand Est, France métropolitaine, 68000, France",
+    "address": {
+      "road": "Meisenhuettenweg",
+      "town": "Colmar",
+      "municipality": "Colmar-Ribeauvillé",
+      "county": "Haut-Rhin",
+      "ISO3166-2-lvl6": "FR-68",
+      "state": "Grand Est",
+      "ISO3166-2-lvl4": "FR-GES",
+      "region": "France métropolitaine",
+      "postcode": "68000",
+      "country": "France",
+      "country_code": "fr"
+    },
+    "boundingbox": [
+      "48.0949492",
+      "48.0976004",
+      "7.3380146",
+      "7.3415132"
+    ]
+  },
+  "numazu, japan": {
+    "place_id": 243624351,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 4674541,
+    "lat": "35.0957963",
+    "lon": "138.8633946",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5506913491450209,
+    "addresstype": "city",
+    "name": "沼津市",
+    "display_name": "沼津市, 静岡県, 410-8601, 日本",
+    "address": {
+      "city": "沼津市",
+      "province": "静岡県",
+      "ISO3166-2-lvl4": "JP-22",
+      "postcode": "410-8601",
+      "country": "日本",
+      "country_code": "jp"
+    },
+    "boundingbox": [
+      "34.9231333",
+      "35.2192430",
+      "138.6350207",
+      "138.9243420"
+    ]
+  },
+  "oak cliff, tx": {
+    "place_id": 308260037,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 151382680,
+    "lat": "32.7392973",
+    "lon": "-96.8111126",
+    "category": "place",
+    "type": "hamlet",
+    "place_rank": 20,
+    "importance": 0.13340974822613869,
+    "addresstype": "hamlet",
+    "name": "Oak Cliff",
+    "display_name": "Oak Cliff, Dallas, Dallas County, Texas, 75203, United States",
+    "address": {
+      "hamlet": "Oak Cliff",
+      "city": "Dallas",
+      "county": "Dallas County",
+      "state": "Texas",
+      "ISO3166-2-lvl4": "US-TX",
+      "postcode": "75203",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "32.7192973",
+      "32.7592973",
+      "-96.8311126",
+      "-96.7911126"
+    ]
+  },
+  "new york city / toronto": {
+    "place_id": 324046195,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 20127829,
+    "lat": "43.1618333",
+    "lon": "-77.6192038",
+    "category": "highway",
+    "type": "service",
+    "place_rank": 27,
+    "importance": 0.04006956511787593,
+    "addresstype": "road",
+    "name": "Toronto Street",
+    "display_name": "Toronto Street, Brown Square, City of Rochester, Monroe County, New York, 14608, United States",
+    "address": {
+      "road": "Toronto Street",
+      "neighbourhood": "Brown Square",
+      "city": "City of Rochester",
+      "county": "Monroe County",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "14608",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "43.1615390",
+      "43.1621276",
+      "-77.6196036",
+      "-77.6188040"
+    ]
+  },
+  "around": {
+    "place_id": 207919992,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 826330617,
+    "lat": "29.8953380",
+    "lon": "118.9362208",
+    "category": "highway",
+    "type": "unclassified",
+    "place_rank": 26,
+    "importance": 0.05339587930113676,
+    "addresstype": "road",
+    "name": "Around",
+    "display_name": "Around, 杜坑, 王阜乡, 淳安县, 杭州市, 浙江省, 中国",
+    "address": {
+      "road": "Around",
+      "hamlet": "杜坑",
+      "town": "王阜乡",
+      "city": "淳安县",
+      "state": "浙江省",
+      "ISO3166-2-lvl4": "CN-ZJ",
+      "country": "中国",
+      "country_code": "cn"
+    },
+    "boundingbox": [
+      "29.8898796",
+      "29.8980315",
+      "118.9345953",
+      "118.9426494"
+    ]
+  },
+  "nuernberg, germany": {
+    "place_id": 426348922,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 62780,
+    "lat": "49.4538720",
+    "lon": "11.0772980",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 12,
+    "importance": 0.7176013348002949,
+    "addresstype": "city",
+    "name": "Nürnberg",
+    "display_name": "Nürnberg, Bayern, Deutschland",
+    "address": {
+      "city": "Nürnberg",
+      "state": "Bayern",
+      "ISO3166-2-lvl4": "DE-BY",
+      "country": "Deutschland",
+      "country_code": "de"
+    },
+    "boundingbox": [
+      "49.3314339",
+      "49.5407534",
+      "10.9887326",
+      "11.2825957"
+    ]
+  },
+  "i’m on earth right now, sometimes in the air.": null,
+  "shefford, qc, canada": {
+    "place_id": 338145964,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 13108369,
+    "lat": "45.4322322",
+    "lon": "-72.6674126",
+    "category": "boundary",
+    "type": "political",
+    "place_rank": 25,
+    "importance": 0.41705598036976543,
+    "addresstype": "political",
+    "name": "Shefford",
+    "display_name": "Shefford, La Haute-Yamaska, Estrie, Québec, Canada",
+    "address": {
+      "political": "Shefford",
+      "county": "La Haute-Yamaska",
+      "state_district": "Estrie",
+      "state": "Québec",
+      "ISO3166-2-lvl4": "CA-QC",
+      "country": "Canada",
+      "country_code": "ca"
+    },
+    "boundingbox": [
+      "45.2655474",
+      "45.5992243",
+      "-73.1620766",
+      "-72.1285940"
+    ]
+  },
+  "harbin, heilongjiang, china": {
+    "place_id": 208187908,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2755608,
+    "lat": "45.7593633",
+    "lon": "126.6276177",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 10,
+    "importance": 0.6491747132011086,
+    "addresstype": "city",
+    "name": "哈尔滨市",
+    "display_name": "哈尔滨市, 香坊区, 黑龙江省, 中国",
+    "address": {
+      "city": "哈尔滨市",
+      "district": "香坊区",
+      "state": "黑龙江省",
+      "ISO3166-2-lvl4": "CN-HL",
+      "country": "中国",
+      "country_code": "cn"
+    },
+    "boundingbox": [
+      "44.0599824",
+      "46.6718214",
+      "125.6782545",
+      "130.2335015"
+    ]
+  },
+  "brno cz / komárno sk": null,
+  "somewhere solving a case...": null,
+  "istanbul, tr": {
+    "place_id": 399441014,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1882099475,
+    "lat": "41.0063810",
+    "lon": "28.9758715",
+    "category": "place",
+    "type": "city",
+    "place_rank": 16,
+    "importance": 0.7828175079468411,
+    "addresstype": "city",
+    "name": "İstanbul",
+    "display_name": "İstanbul, Fatih, İstanbul, Marmara Bölgesi, 34122, Türkiye",
+    "address": {
+      "city": "İstanbul",
+      "town": "Fatih",
+      "province": "İstanbul",
+      "ISO3166-2-lvl4": "TR-34",
+      "region": "Marmara Bölgesi",
+      "postcode": "34122",
+      "country": "Türkiye",
+      "country_code": "tr"
+    },
+    "boundingbox": [
+      "40.8463810",
+      "41.1663810",
+      "28.8158715",
+      "29.1358715"
+    ]
+  },
+  "our fair city, ma": null,
+  "china shanghai": {
+    "place_id": 320200086,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 11365326761,
+    "lat": "38.8175376",
+    "lon": "-77.2760556",
+    "category": "amenity",
+    "type": "restaurant",
+    "place_rank": 30,
+    "importance": 4.98336766612805e-05,
+    "addresstype": "amenity",
+    "name": "China Shanghai",
+    "display_name": "China Shanghai, 9573, Braddock Road, Long Branch, Fairfax County, Virginia, 22032, United States",
+    "address": {
+      "amenity": "China Shanghai",
+      "house_number": "9573",
+      "road": "Braddock Road",
+      "village": "Long Branch",
+      "county": "Fairfax County",
+      "state": "Virginia",
+      "ISO3166-2-lvl4": "US-VA",
+      "postcode": "22032",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "38.8174876",
+      "38.8175876",
+      "-77.2761056",
+      "-77.2760056"
+    ]
+  },
+  "wnlo, wuhan, china": null,
+  "webster groves, missouri": {
+    "place_id": 311010635,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 140019,
+    "lat": "38.5923390",
+    "lon": "-90.3564329",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.4699767424626483,
+    "addresstype": "town",
+    "name": "Webster Groves",
+    "display_name": "Webster Groves, Saint Louis County, Missouri, 63119, United States",
+    "address": {
+      "town": "Webster Groves",
+      "county": "Saint Louis County",
+      "state": "Missouri",
+      "ISO3166-2-lvl4": "US-MO",
+      "postcode": "63119",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "38.5622450",
+      "38.6101500",
+      "-90.3773090",
+      "-90.3262140"
+    ]
+  },
+  "round rock": {
+    "place_id": 292776106,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 115318,
+    "lat": "30.5085915",
+    "lon": "-97.6788056",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5676171814139401,
+    "addresstype": "city",
+    "name": "Round Rock",
+    "display_name": "Round Rock, Williamson County, Texas, United States",
+    "address": {
+      "city": "Round Rock",
+      "county": "Williamson County",
+      "state": "Texas",
+      "ISO3166-2-lvl4": "US-TX",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "30.4682901",
+      "30.5937774",
+      "-97.7648422",
+      "-97.5900541"
+    ]
+  },
+  "birtinya, qld, australia": {
+    "place_id": 23145343,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 11675233,
+    "lat": "-26.7452315",
+    "lon": "153.1143477",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 18,
+    "importance": 0.31915543443907224,
+    "addresstype": "city_district",
+    "name": "Birtinya",
+    "display_name": "Birtinya, Sunshine Coast Regional, Queensland, 4575, Australia",
+    "address": {
+      "city_district": "Birtinya",
+      "city": "Sunshine Coast Regional",
+      "state": "Queensland",
+      "ISO3166-2-lvl4": "AU-QLD",
+      "postcode": "4575",
+      "country": "Australia",
+      "country_code": "au"
+    },
+    "boundingbox": [
+      "-26.7608980",
+      "-26.7295420",
+      "153.1028210",
+      "153.1284360"
+    ]
+  },
+  "täby, sweden": {
+    "place_id": 154000045,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 397194,
+    "lat": "59.4670482",
+    "lon": "18.0658494",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 14,
+    "importance": 0.493251797299316,
+    "addresstype": "municipality",
+    "name": "Täby kommun",
+    "display_name": "Täby kommun, Stockholms län, Sverige",
+    "address": {
+      "municipality": "Täby kommun",
+      "county": "Stockholms län",
+      "ISO3166-2-lvl4": "SE-AB",
+      "country": "Sverige",
+      "country_code": "se"
+    },
+    "boundingbox": [
+      "59.4121839",
+      "59.5111750",
+      "17.9817062",
+      "18.1536593"
+    ]
+  },
+  "liberec, czech republic": {
+    "place_id": 123004098,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 439073,
+    "lat": "50.7702648",
+    "lon": "15.0583947",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.63313052620111,
+    "addresstype": "city",
+    "name": "Liberec",
+    "display_name": "Liberec, SO POÚ Liberec, SO ORP Liberec, okres Liberec, Liberecký kraj, Severovýchod, Česko",
+    "address": {
+      "city": "Liberec",
+      "municipality": "SO POÚ Liberec",
+      "county": "SO ORP Liberec",
+      "state_district": "okres Liberec",
+      "ISO3166-2-lvl5": "CZ-513",
+      "state": "Liberecký kraj",
+      "ISO3166-2-lvl4": "CZ-51",
+      "region": "Severovýchod",
+      "country": "Česko",
+      "country_code": "cz"
+    },
+    "boundingbox": [
+      "50.7079791",
+      "50.8243417",
+      "14.9529697",
+      "15.1468816"
+    ]
+  },
+  "san rafael": {
+    "place_id": 299031486,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 112679,
+    "lat": "37.9747795",
+    "lon": "-122.5316686",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5454821486894933,
+    "addresstype": "city",
+    "name": "San Rafael",
+    "display_name": "San Rafael, Marin County, California, United States",
+    "address": {
+      "city": "San Rafael",
+      "county": "Marin County",
+      "state": "California",
+      "ISO3166-2-lvl4": "US-CA",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "37.9388466",
+      "38.0290987",
+      "-122.5897220",
+      "-122.4354202"
+    ]
+  },
+  "münchen / varaždin": null,
+  "tajikistan, dushanbe city": {
+    "place_id": 198098869,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 8944132273,
+    "lat": "38.5580844",
+    "lon": "68.8117866",
+    "category": "amenity",
+    "type": "atm",
+    "place_rank": 30,
+    "importance": 6.634699015788538e-05,
+    "addresstype": "amenity",
+    "name": "Dushanbe city",
+    "display_name": "Dushanbe city, кӯчаи Моёншо Назаршоев, Ноҳияи Шоҳмансур, Душанбе, 734000, Тоҷикистон",
+    "address": {
+      "amenity": "Dushanbe city",
+      "road": "кӯчаи Моёншо Назаршоев",
+      "borough": "Ноҳияи Шоҳмансур",
+      "city": "Душанбе",
+      "ISO3166-2-lvl4": "TJ-DU",
+      "postcode": "734000",
+      "country": "Тоҷикистон",
+      "country_code": "tj"
+    },
+    "boundingbox": [
+      "38.5580344",
+      "38.5581344",
+      "68.8117366",
+      "68.8118366"
+    ]
+  },
+  "finland, espoo": {
+    "place_id": 155562167,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 36097,
+    "lat": "60.2049651",
+    "lon": "24.6559808",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6342690203373709,
+    "addresstype": "city",
+    "name": "Espoo",
+    "display_name": "Espoo, Helsingin seutukunta, Uusimaa, Manner-Suomi, Suomi / Finland",
+    "address": {
+      "city": "Espoo",
+      "municipality": "Helsingin seutukunta",
+      "state": "Uusimaa",
+      "ISO3166-2-lvl4": "FI-18",
+      "region": "Manner-Suomi",
+      "country": "Suomi / Finland",
+      "country_code": "fi"
+    },
+    "boundingbox": [
+      "59.9010905",
+      "60.3639149",
+      "24.4992905",
+      "24.9423061"
+    ]
+  },
+  "ferrara - italy": {
+    "place_id": 70048132,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 43292,
+    "lat": "44.7667642",
+    "lon": "11.8279390",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 12,
+    "importance": 0.7066128644598664,
+    "addresstype": "county",
+    "name": "Ferrara",
+    "display_name": "Ferrara, Emilia-Romagna, Italia",
+    "address": {
+      "county": "Ferrara",
+      "ISO3166-2-lvl6": "IT-FE",
+      "state": "Emilia-Romagna",
+      "ISO3166-2-lvl4": "IT-45",
+      "country": "Italia",
+      "country_code": "it"
+    },
+    "boundingbox": [
+      "44.5466121",
+      "44.9869430",
+      "11.2346755",
+      "12.3987088"
+    ]
+  },
+  "popovice / rataje": {
+    "place_id": 174010296,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1598911071,
+    "lat": "49.2793958",
+    "lon": "17.3324520",
+    "category": "place",
+    "type": "village",
+    "place_rank": 19,
+    "importance": 0.14672484702830543,
+    "addresstype": "village",
+    "name": "Popovice",
+    "display_name": "Popovice, Rataje, okres Kroměříž, Zlínský kraj, Střední Morava, 768 12, Česko",
+    "address": {
+      "village": "Popovice",
+      "state_district": "okres Kroměříž",
+      "ISO3166-2-lvl5": "CZ-721",
+      "state": "Zlínský kraj",
+      "ISO3166-2-lvl4": "CZ-72",
+      "region": "Střední Morava",
+      "postcode": "768 12",
+      "country": "Česko",
+      "country_code": "cz"
+    },
+    "boundingbox": [
+      "49.2593958",
+      "49.2993958",
+      "17.3124520",
+      "17.3524520"
+    ]
+  },
+  "columbia md": {
+    "place_id": 321477559,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 107551729,
+    "lat": "39.2139474",
+    "lon": "-76.8558453",
+    "category": "shop",
+    "type": "supermarket",
+    "place_rank": 30,
+    "importance": 5.670023651479389e-05,
+    "addresstype": "shop",
+    "name": "Whole Foods Market",
+    "display_name": "Whole Foods Market, 10275, Little Patuxent Parkway, Columbia Town Center, Columbia, Howard County, Maryland, 21044, United States",
+    "address": {
+      "shop": "Whole Foods Market",
+      "house_number": "10275",
+      "road": "Little Patuxent Parkway",
+      "suburb": "Columbia Town Center",
+      "city": "Columbia",
+      "county": "Howard County",
+      "state": "Maryland",
+      "ISO3166-2-lvl4": "US-MD",
+      "postcode": "21044",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "39.2136185",
+      "39.2142813",
+      "-76.8562257",
+      "-76.8554648"
+    ]
+  },
+  "maryland usa": {
+    "place_id": 322216801,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 162112,
+    "lat": "39.5162401",
+    "lon": "-76.9382069",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.7686056198997216,
+    "addresstype": "state",
+    "name": "Maryland",
+    "display_name": "Maryland, United States",
+    "address": {
+      "state": "Maryland",
+      "ISO3166-2-lvl4": "US-MD",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "37.8865288",
+      "39.7230286",
+      "-79.4873055",
+      "-74.9852049"
+    ]
+  },
+  "local group": {
+    "place_id": 407547677,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 12849396601,
+    "lat": "29.8085639",
+    "lon": "-95.3774970",
+    "category": "office",
+    "type": "union",
+    "place_rank": 30,
+    "importance": 7.782024872201141e-05,
+    "addresstype": "office",
+    "name": "Plumbers Local Union No. 68 Group Protection Plan and Benefit Office",
+    "display_name": "Plumbers Local Union No. 68 Group Protection Plan and Benefit Office, 468, Link Road, Houston Heights, Houston, Harris County, Texas, 77009, United States",
+    "address": {
+      "office": "Plumbers Local Union No. 68 Group Protection Plan and Benefit Office",
+      "house_number": "468",
+      "road": "Link Road",
+      "suburb": "Houston Heights",
+      "city": "Houston",
+      "county": "Harris County",
+      "state": "Texas",
+      "ISO3166-2-lvl4": "US-TX",
+      "postcode": "77009",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "29.8085139",
+      "29.8086139",
+      "-95.3775470",
+      "-95.3774470"
+    ]
+  },
+  "nashik": {
+    "place_id": 226113105,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 245686763,
+    "lat": "20.0112475",
+    "lon": "73.7902364",
+    "category": "place",
+    "type": "city",
+    "place_rank": 16,
+    "importance": 0.5253975792723263,
+    "addresstype": "city",
+    "name": "Nashik",
+    "display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "address": {
+      "city": "Nashik",
+      "county": "Nashik Subdistrict",
+      "state_district": "Nashik",
+      "state": "Maharashtra",
+      "ISO3166-2-lvl4": "IN-MH",
+      "postcode": "422001",
+      "country": "India",
+      "country_code": "in"
+    },
+    "boundingbox": [
+      "19.8512475",
+      "20.1712475",
+      "73.6302364",
+      "73.9502364"
+    ]
+  },
+  "/sys": {
+    "place_id": 245286149,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 9081964952,
+    "lat": "35.7013781",
+    "lon": "139.7759366",
+    "category": "office",
+    "type": "company",
+    "place_rank": 30,
+    "importance": 8.593499656667457e-05,
+    "addresstype": "office",
+    "name": "SYS",
+    "display_name": "SYS, 昭和通り, 台東一丁目, 台東, 台東区, 東京都, 110-8605, 日本",
+    "address": {
+      "office": "SYS",
+      "road": "昭和通り",
+      "neighbourhood": "台東一丁目",
+      "quarter": "台東",
+      "city": "台東区",
+      "ISO3166-2-lvl4": "JP-13",
+      "postcode": "110-8605",
+      "country": "日本",
+      "country_code": "jp"
+    },
+    "boundingbox": [
+      "35.7013281",
+      "35.7014281",
+      "139.7758866",
+      "139.7759866"
+    ]
+  },
+  "roaming": {
+    "place_id": 334796282,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 949813055,
+    "lat": "43.6984650",
+    "lon": "-70.4410552",
+    "category": "highway",
+    "type": "path",
+    "place_rank": 27,
+    "importance": 0.040051557946135644,
+    "addresstype": "road",
+    "name": "Roaming",
+    "display_name": "Roaming, Gorham, Cumberland County, Maine, 04038, United States",
+    "address": {
+      "road": "Roaming",
+      "town": "Gorham",
+      "county": "Cumberland County",
+      "state": "Maine",
+      "ISO3166-2-lvl4": "US-ME",
+      "postcode": "04038",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "43.6954258",
+      "43.6998033",
+      "-70.4430389",
+      "-70.4361547"
+    ]
+  },
+  "raleigh/durham, nc": {
+    "place_id": 317709194,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 209063360,
+    "lat": "35.8803614",
+    "lon": "-78.7872382",
+    "category": "aeroway",
+    "type": "aerodrome",
+    "place_rank": 30,
+    "importance": 0.4347857769869391,
+    "addresstype": "aeroway",
+    "name": "Raleigh-Durham International Airport",
+    "display_name": "Raleigh-Durham International Airport, 1000, Trade Drive, Morrisville, Wake County, North Carolina, 27560, United States",
+    "address": {
+      "aeroway": "Raleigh-Durham International Airport",
+      "house_number": "1000",
+      "road": "Trade Drive",
+      "town": "Morrisville",
+      "county": "Wake County",
+      "state": "North Carolina",
+      "ISO3166-2-lvl4": "US-NC",
+      "postcode": "27560",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "35.8615493",
+      "35.8984564",
+      "-78.8061221",
+      "-78.7691239"
+    ]
+  },
+  "amsterdam netherlands": {
+    "place_id": 144817366,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 271110,
+    "lat": "52.3730796",
+    "lon": "4.8924534",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.7882100161799769,
+    "addresstype": "city",
+    "name": "Amsterdam",
+    "display_name": "Amsterdam, Noord-Holland, Nederland",
+    "address": {
+      "city": "Amsterdam",
+      "municipality": "Amsterdam",
+      "state": "Noord-Holland",
+      "ISO3166-2-lvl4": "NL-NH",
+      "country": "Nederland",
+      "country_code": "nl"
+    },
+    "boundingbox": [
+      "52.2781742",
+      "52.4310638",
+      "4.7287776",
+      "5.0791622"
+    ]
+  },
+  "new york. ny": {
+    "place_id": 423950695,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 175905,
+    "lat": "40.7127281",
+    "lon": "-74.0060152",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 10,
+    "importance": 0.8817923363604117,
+    "addresstype": "city",
+    "name": "New York",
+    "display_name": "New York, United States",
+    "address": {
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "40.4765780",
+      "40.9176300",
+      "-74.2588430",
+      "-73.7002330"
+    ]
+  },
+  "d28dbb1a0e26feda": null,
+  "novosibirk, russia": null,
+  "in, us": {
+    "place_id": 314587180,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 161816,
+    "lat": "40.3270127",
+    "lon": "-86.1746933",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.7678357076278995,
+    "addresstype": "state",
+    "name": "Indiana",
+    "display_name": "Indiana, United States",
+    "address": {
+      "state": "Indiana",
+      "ISO3166-2-lvl4": "US-IN",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "37.7716793",
+      "41.7613680",
+      "-88.0972043",
+      "-84.7846090"
+    ]
+  },
+  "gdańsk, pl": {
+    "place_id": 413567957,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2723259,
+    "lat": "54.4288032",
+    "lon": "18.7983270",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 14,
+    "importance": 0.7184733075268562,
+    "addresstype": "administrative",
+    "name": "Gdańsk",
+    "display_name": "Gdańsk, województwo pomorskie, Polska",
+    "address": {
+      "administrative": "Gdańsk",
+      "state": "województwo pomorskie",
+      "ISO3166-2-lvl4": "PL-22",
+      "country": "Polska",
+      "country_code": "pl"
+    },
+    "boundingbox": [
+      "54.2749189",
+      "54.5827326",
+      "18.4294955",
+      "19.0703029"
+    ]
+  },
+  "germany, hamburg, hamburg": {
+    "place_id": 131930338,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 10460644,
+    "lat": "53.5909051",
+    "lon": "9.9753758",
+    "category": "amenity",
+    "type": "university",
+    "place_rank": 30,
+    "importance": 0.630615982546416,
+    "addresstype": "amenity",
+    "name": "Universität Hamburg - Institut für Bewegungswissenschaften",
+    "display_name": "Universität Hamburg - Institut für Bewegungswissenschaften, Stellingen, Eimsbüttel, Hamburg, 22527, Deutschland",
+    "address": {
+      "amenity": "Universität Hamburg - Institut für Bewegungswissenschaften",
+      "suburb": "Stellingen",
+      "city": "Hamburg",
+      "ISO3166-2-lvl4": "DE-HH",
+      "postcode": "22527",
+      "country": "Deutschland",
+      "country_code": "de"
+    },
+    "boundingbox": [
+      "53.5583595",
+      "53.6004824",
+      "9.8574675",
+      "10.0102626"
+    ]
+  },
+  "recife, pe - brazil": {
+    "place_id": 13572598,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 303585,
+    "lat": "-8.0584933",
+    "lon": "-34.8848193",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6471646326048878,
+    "addresstype": "municipality",
+    "name": "Recife",
+    "display_name": "Recife, Região Geográfica Imediata do Recife, Região Metropolitana do Recife, Região Geográfica Intermediária do Recife, Pernambuco, Brasil",
+    "address": {
+      "municipality": "Recife",
+      "county": "Região Metropolitana do Recife",
+      "state_district": "Região Geográfica Intermediária do Recife",
+      "state": "Pernambuco",
+      "ISO3166-2-lvl4": "BR-PE",
+      "country": "Brasil",
+      "country_code": "br"
+    },
+    "boundingbox": [
+      "-8.1551869",
+      "-7.9289670",
+      "-35.0186478",
+      "-34.8515401"
+    ]
+  },
+  "heerhugowaard, the netherlands": {
+    "place_id": 145588277,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 290131,
+    "lat": "52.6631484",
+    "lon": "4.8326672",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.4893208469220638,
+    "addresstype": "town",
+    "name": "Heerhugowaard",
+    "display_name": "Heerhugowaard, Dijk en Waard, Noord-Holland, Nederland",
+    "address": {
+      "town": "Heerhugowaard",
+      "municipality": "Dijk en Waard",
+      "state": "Noord-Holland",
+      "ISO3166-2-lvl4": "NL-NH",
+      "country": "Nederland",
+      "country_code": "nl"
+    },
+    "boundingbox": [
+      "52.6326779",
+      "52.7233454",
+      "4.7852790",
+      "4.8998977"
+    ]
+  },
+  "0x180380000": null,
+  "zelenograd, moscow, russian federation": {
+    "place_id": 183517527,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1988678,
+    "lat": "55.9919710",
+    "lon": "37.2142410",
+    "category": "place",
+    "type": "city",
+    "place_rank": 16,
+    "importance": 0.1867277325093461,
+    "addresstype": "city",
+    "name": "Зеленоград",
+    "display_name": "Зеленоград, Москва, Центральный федеральный округ, Россия",
+    "address": {
+      "city": "Зеленоград",
+      "state": "Москва",
+      "ISO3166-2-lvl4": "RU-MOW",
+      "region": "Центральный федеральный округ",
+      "country": "Россия",
+      "country_code": "ru"
+    },
+    "boundingbox": [
+      "55.9480078",
+      "56.0212238",
+      "37.1316021",
+      "37.2683020"
+    ]
+  },
+  "new haven, ct, usa": {
+    "place_id": 329174720,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 270191,
+    "lat": "41.3082138",
+    "lon": "-72.9250518",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6583104406198309,
+    "addresstype": "town",
+    "name": "New Haven",
+    "display_name": "New Haven, South Central Connecticut Planning Region, Connecticut, United States",
+    "address": {
+      "town": "New Haven",
+      "county": "South Central Connecticut Planning Region",
+      "state": "Connecticut",
+      "ISO3166-2-lvl4": "US-CT",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "41.2464253",
+      "41.3505968",
+      "-72.9980695",
+      "-72.8608112"
+    ]
+  },
+  "brno, cz / pribylina, sk": null,
+  "belgië": {
+    "place_id": 94972388,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 52411,
+    "lat": "50.6402809",
+    "lon": "4.6667145",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 4,
+    "importance": 0.884311887538747,
+    "addresstype": "country",
+    "name": "België / Belgique / Belgien",
+    "display_name": "België / Belgique / Belgien",
+    "address": {
+      "country": "België / Belgique / Belgien",
+      "country_code": "be"
+    },
+    "boundingbox": [
+      "49.4969821",
+      "51.5507810",
+      "2.3889137",
+      "6.4080970"
+    ]
+  },
+  "tierra de conejos": {
+    "place_id": 274237501,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 96850220,
+    "lat": "38.8772782",
+    "lon": "-6.9938737",
+    "category": "place",
+    "type": "islet",
+    "place_rank": 20,
+    "importance": 0.13339987258716715,
+    "addresstype": "islet",
+    "name": "Isla de Los Conejos",
+    "display_name": "Isla de Los Conejos, La Cañada - Las Moreras, Badajoz, Tierra de Badajoz, Badajoz, Extremadura, España",
+    "address": {
+      "islet": "Isla de Los Conejos",
+      "suburb": "La Cañada - Las Moreras",
+      "city": "Badajoz",
+      "county": "Tierra de Badajoz",
+      "province": "Badajoz",
+      "ISO3166-2-lvl6": "ES-BA",
+      "state": "Extremadura",
+      "ISO3166-2-lvl4": "ES-EX",
+      "country": "España",
+      "country_code": "es"
+    },
+    "boundingbox": [
+      "38.8764159",
+      "38.8782089",
+      "-6.9955462",
+      "-6.9923581"
+    ]
+  },
+  "cauliflower": {
+    "place_id": 299300602,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5907459285,
+    "lat": "37.7647073",
+    "lon": "-122.4230933",
+    "category": "amenity",
+    "type": "restaurant",
+    "place_rank": 30,
+    "importance": 8.251392385743523e-05,
+    "addresstype": "amenity",
+    "name": "Cauliflower",
+    "display_name": "Cauliflower, 3147, 16th Street, Mission District, San Francisco, California, 94143, United States",
+    "address": {
+      "amenity": "Cauliflower",
+      "house_number": "3147",
+      "road": "16th Street",
+      "suburb": "Mission District",
+      "city": "San Francisco",
+      "state": "California",
+      "ISO3166-2-lvl4": "US-CA",
+      "postcode": "94143",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "37.7646573",
+      "37.7647573",
+      "-122.4231433",
+      "-122.4230433"
+    ]
+  },
+  "i don't know where i am =)": null,
+  "sp, brasil": {
+    "place_id": 11736296,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 298204,
+    "lat": "-22.0702705",
+    "lon": "-48.4333875",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.7245181148387051,
+    "addresstype": "state",
+    "name": "São Paulo",
+    "display_name": "São Paulo, Região Sudeste, Brasil",
+    "address": {
+      "state": "São Paulo",
+      "ISO3166-2-lvl4": "BR-SP",
+      "region": "Região Sudeste",
+      "country": "Brasil",
+      "country_code": "br"
+    },
+    "boundingbox": [
+      "-25.4895759",
+      "-19.7823272",
+      "-53.1090000",
+      "-44.1613652"
+    ]
+  },
+  "setif, algeria": {
+    "place_id": 47126444,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1617602,
+    "lat": "36.1893494",
+    "lon": "5.4046876",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5438496021606779,
+    "addresstype": "city",
+    "name": "Sétif سطيف",
+    "display_name": "Sétif سطيف, Daïra Sétif, Sétif, 19000, Algérie ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "address": {
+      "city": "Sétif سطيف",
+      "county": "Daïra Sétif",
+      "state": "Sétif",
+      "ISO3166-2-lvl4": "DZ-19",
+      "postcode": "19000",
+      "country": "Algérie ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+      "country_code": "dz"
+    },
+    "boundingbox": [
+      "36.1335573",
+      "36.2486900",
+      "5.3370560",
+      "5.5062850"
+    ]
+  },
+  "y o u g o": null,
+  "champéry, switzerland": {
+    "place_id": 82922908,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1685287,
+    "lat": "46.1756791",
+    "lon": "6.8687665",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.44476072109127485,
+    "addresstype": "village",
+    "name": "Champéry",
+    "display_name": "Champéry, Monthey, Valais/Wallis, 1874, Schweiz/Suisse/Svizzera/Svizra",
+    "address": {
+      "village": "Champéry",
+      "county": "Monthey",
+      "state": "Valais/Wallis",
+      "ISO3166-2-lvl4": "CH-VS",
+      "postcode": "1874",
+      "country": "Schweiz/Suisse/Svizzera/Svizra",
+      "country_code": "ch"
+    },
+    "boundingbox": [
+      "46.1292701",
+      "46.1900733",
+      "6.7902881",
+      "6.9101442"
+    ]
+  },
+  "gdynia, polska": {
+    "place_id": 162236317,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2603248,
+    "lat": "54.5164982",
+    "lon": "18.5402738",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 12,
+    "importance": 0.6375122214059561,
+    "addresstype": "city",
+    "name": "Gdynia",
+    "display_name": "Gdynia, województwo pomorskie, Polska",
+    "address": {
+      "city": "Gdynia",
+      "state": "województwo pomorskie",
+      "ISO3166-2-lvl4": "PL-22",
+      "country": "Polska",
+      "country_code": "pl"
+    },
+    "boundingbox": [
+      "54.4227500",
+      "54.6241605",
+      "18.3579804",
+      "18.9098262"
+    ]
+  },
+  "tennessee": {
+    "place_id": 316664790,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 161838,
+    "lat": "35.7730076",
+    "lon": "-86.2820081",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.7633471192503373,
+    "addresstype": "state",
+    "name": "Tennessee",
+    "display_name": "Tennessee, United States",
+    "address": {
+      "state": "Tennessee",
+      "ISO3166-2-lvl4": "US-TN",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "34.9829380",
+      "36.6781180",
+      "-90.3102980",
+      "-81.6472191"
+    ]
+  },
+  "deutschland, nrw": {
+    "place_id": 104323393,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 62761,
+    "lat": "51.4789205",
+    "lon": "7.5543751",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.7413049007521179,
+    "addresstype": "state",
+    "name": "Nordrhein-Westfalen",
+    "display_name": "Nordrhein-Westfalen, Deutschland",
+    "address": {
+      "state": "Nordrhein-Westfalen",
+      "ISO3166-2-lvl4": "DE-NW",
+      "country": "Deutschland",
+      "country_code": "de"
+    },
+    "boundingbox": [
+      "50.3226897",
+      "52.5314935",
+      "5.8663153",
+      "9.4617417"
+    ]
+  },
+  "laniakea supercluster": null,
+  "l'hospitalet de llobregat, barcelona": {
+    "place_id": 428064330,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 345401,
+    "lat": "41.3598601",
+    "lon": "2.0997927",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5842622790518298,
+    "addresstype": "city",
+    "name": "l'Hospitalet de Llobregat",
+    "display_name": "l'Hospitalet de Llobregat, Barcelonès, Barcelona, Catalunya, España",
+    "address": {
+      "city": "l'Hospitalet de Llobregat",
+      "county": "Barcelonès",
+      "province": "Barcelona",
+      "ISO3166-2-lvl6": "ES-B",
+      "state": "Catalunya",
+      "ISO3166-2-lvl4": "ES-CT",
+      "country": "España",
+      "country_code": "es"
+    },
+    "boundingbox": [
+      "41.3351454",
+      "41.3803364",
+      "2.0864298",
+      "2.1389866"
+    ]
+  },
+  "western usa": {
+    "place_id": 330204378,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3669591,
+    "lat": "43.3380689",
+    "lon": "-75.3896929",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 14,
+    "importance": 0.35984794900388645,
+    "addresstype": "municipality",
+    "name": "Town of Western",
+    "display_name": "Town of Western, Oneida County, New York, United States",
+    "address": {
+      "municipality": "Town of Western",
+      "county": "Oneida County",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "43.2771090",
+      "43.3980450",
+      "-75.4665460",
+      "-75.3133320"
+    ]
+  },
+  "roc (taiwan)": {
+    "place_id": 409788317,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3664656,
+    "lat": "22.6142518",
+    "lon": "120.3722709",
+    "category": "military",
+    "type": "academy",
+    "place_rank": 30,
+    "importance": 0.5068262505825378,
+    "addresstype": "military",
+    "name": "陸軍軍官學校",
+    "display_name": "陸軍軍官學校, 1, 維武路, 黃埔三村, 誠義里, 鳳山區, 灣子頭, 高雄市, 830, 臺灣",
+    "address": {
+      "military": "陸軍軍官學校",
+      "house_number": "1",
+      "road": "維武路",
+      "neighbourhood": "黃埔三村",
+      "suburb": "鳳山區",
+      "village": "灣子頭",
+      "city": "高雄市",
+      "ISO3166-2-lvl4": "TW-KHH",
+      "postcode": "830",
+      "country": "臺灣",
+      "country_code": "tw"
+    },
+    "boundingbox": [
+      "22.6064801",
+      "22.6222210",
+      "120.3654127",
+      "120.3785443"
+    ]
+  },
+  "kitchener on": {
+    "place_id": 341868543,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2062153,
+    "lat": "43.4512910",
+    "lon": "-80.4927815",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5568456118754109,
+    "addresstype": "city",
+    "name": "Kitchener",
+    "display_name": "Kitchener, Region of Waterloo, Southwestern Ontario, Ontario, Canada",
+    "address": {
+      "city": "Kitchener",
+      "county": "Region of Waterloo",
+      "state_district": "Southwestern Ontario",
+      "state": "Ontario",
+      "ISO3166-2-lvl4": "CA-ON",
+      "country": "Canada",
+      "country_code": "ca"
+    },
+    "boundingbox": [
+      "43.3538756",
+      "43.5068282",
+      "-80.5734577",
+      "-80.3784145"
+    ]
+  },
+  "phoenix, united states": {
+    "place_id": 419839294,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 111257,
+    "lat": "33.4484367",
+    "lon": "-112.0741410",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6881276585301686,
+    "addresstype": "city",
+    "name": "Phoenix",
+    "display_name": "Phoenix, Maricopa County, Arizona, United States",
+    "address": {
+      "city": "Phoenix",
+      "county": "Maricopa County",
+      "state": "Arizona",
+      "ISO3166-2-lvl4": "US-AZ",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "33.2904827",
+      "33.9183794",
+      "-112.3240289",
+      "-111.9255304"
+    ]
+  },
+  "san mateo, california": {
+    "place_id": 298628387,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 396498,
+    "lat": "37.4969040",
+    "lon": "-122.3330573",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 12,
+    "importance": 0.5938318609579976,
+    "addresstype": "county",
+    "name": "San Mateo County",
+    "display_name": "San Mateo County, California, United States",
+    "address": {
+      "county": "San Mateo County",
+      "state": "California",
+      "ISO3166-2-lvl4": "US-CA",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "37.0479139",
+      "37.7082697",
+      "-122.5881770",
+      "-122.0817623"
+    ]
+  },
+  "montréal, qc.": {
+    "place_id": 337883586,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1634158,
+    "lat": "45.5031824",
+    "lon": "-73.5698065",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.7683399932257889,
+    "addresstype": "city",
+    "name": "Montréal",
+    "display_name": "Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada",
+    "address": {
+      "city": "Montréal",
+      "county": "Agglomération de Montréal",
+      "state_district": "Montréal (région administrative)",
+      "state": "Québec",
+      "ISO3166-2-lvl4": "CA-QC",
+      "country": "Canada",
+      "country_code": "ca"
+    },
+    "boundingbox": [
+      "45.4100756",
+      "45.7047897",
+      "-73.9741567",
+      "-73.4742952"
+    ]
+  },
+  "long island, ny": {
+    "place_id": 332912759,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 3955977,
+    "lat": "40.8514971",
+    "lon": "-73.0994297",
+    "category": "place",
+    "type": "island",
+    "place_rank": 17,
+    "importance": 0.6651953131216487,
+    "addresstype": "island",
+    "name": "Long Island",
+    "display_name": "Long Island, New York, United States",
+    "address": {
+      "island": "Long Island",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "40.5419011",
+      "41.1611550",
+      "-74.0419691",
+      "-71.8562705"
+    ]
+  },
+  "a coruna, spain": {
+    "place_id": 263365730,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 346810,
+    "lat": "43.3709703",
+    "lon": "-8.3959425",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.6470440546938139,
+    "addresstype": "municipality",
+    "name": "A Coruña",
+    "display_name": "A Coruña, Galicia, España",
+    "address": {
+      "municipality": "A Coruña",
+      "county": "A Coruña",
+      "province": "A Coruña",
+      "ISO3166-2-lvl6": "ES-C",
+      "state": "Galicia",
+      "ISO3166-2-lvl4": "ES-GA",
+      "country": "España",
+      "country_code": "es"
+    },
+    "boundingbox": [
+      "43.3032370",
+      "43.3900162",
+      "-8.4691619",
+      "-8.3743767"
+    ]
+  },
+  "son": {
+    "place_id": 293450051,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1673426,
+    "lat": "29.3333331",
+    "lon": "-110.6666671",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 8,
+    "importance": 0.6637566932947908,
+    "addresstype": "state",
+    "name": "Sonora",
+    "display_name": "Sonora, México",
+    "address": {
+      "state": "Sonora",
+      "ISO3166-2-lvl4": "MX-SON",
+      "country": "México",
+      "country_code": "mx"
+    },
+    "boundingbox": [
+      "26.2970153",
+      "32.4940383",
+      "-115.0530223",
+      "-108.4242708"
+    ]
+  },
+  "oceania (circa 1984)": null,
+  "on the internet via england": null,
+  "verneuil-sur-vienne, france": {
+    "place_id": 78752965,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 114170,
+    "lat": "45.8492352",
+    "lon": "1.1273441",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.5132871060276761,
+    "addresstype": "village",
+    "name": "Verneuil-sur-Vienne",
+    "display_name": "Verneuil-sur-Vienne, Limoges, Haute-Vienne, Nouvelle-Aquitaine, France métropolitaine, 87430, France",
+    "address": {
+      "village": "Verneuil-sur-Vienne",
+      "municipality": "Limoges",
+      "county": "Haute-Vienne",
+      "ISO3166-2-lvl6": "FR-87",
+      "state": "Nouvelle-Aquitaine",
+      "ISO3166-2-lvl4": "FR-NAQ",
+      "region": "France métropolitaine",
+      "postcode": "87430",
+      "country": "France",
+      "country_code": "fr"
+    },
+    "boundingbox": [
+      "45.8164330",
+      "45.8800301",
+      "1.0599065",
+      "1.1832895"
+    ]
+  },
+  "/usr/bin": null,
+  "united kingdom (remote)": {
+    "place_id": 253227530,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 374411076,
+    "lat": "55.8754970",
+    "lon": "-2.9525105",
+    "category": "landuse",
+    "type": "farmyard",
+    "place_rank": 22,
+    "importance": 0.10671270084687569,
+    "addresstype": "farmyard",
+    "name": "Remote",
+    "display_name": "Remote, Pathhead, Midlothian, Alba / Scotland, United Kingdom",
+    "address": {
+      "farmyard": "Remote",
+      "village": "Pathhead",
+      "county": "Midlothian",
+      "ISO3166-2-lvl6": "GB-MLN",
+      "state": "Alba / Scotland",
+      "ISO3166-2-lvl4": "GB-SCT",
+      "country": "United Kingdom",
+      "country_code": "gb"
+    },
+    "boundingbox": [
+      "55.8751227",
+      "55.8760809",
+      "-2.9535020",
+      "-2.9516781"
+    ]
+  },
+  "camaçari, bahia, brazil": {
+    "place_id": 14659916,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 362505,
+    "lat": "-12.6998188",
+    "lon": "-38.3260762",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.548388507204439,
+    "addresstype": "municipality",
+    "name": "Camaçari",
+    "display_name": "Camaçari, Região Geográfica Imediata de Salvador, Região Metropolitana de Salvador, Região Geográfica Intermediária de Salvador, Bahia, Brasil",
+    "address": {
+      "municipality": "Camaçari",
+      "county": "Região Metropolitana de Salvador",
+      "state_district": "Região Geográfica Intermediária de Salvador",
+      "state": "Bahia",
+      "ISO3166-2-lvl4": "BR-BA",
+      "country": "Brasil",
+      "country_code": "br"
+    },
+    "boundingbox": [
+      "-12.8806886",
+      "-12.4520000",
+      "-38.3759637",
+      "-38.0304294"
+    ]
+  },
+  "turkiye": {
+    "place_id": 194272422,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 174737,
+    "lat": "39.2940760",
+    "lon": "35.2316631",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 4,
+    "importance": 0.8788776015992956,
+    "addresstype": "country",
+    "name": "Türkiye",
+    "display_name": "Türkiye",
+    "address": {
+      "country": "Türkiye",
+      "country_code": "tr"
+    },
+    "boundingbox": [
+      "35.8058974",
+      "42.2970000",
+      "25.5656305",
+      "44.8176638"
+    ]
+  },
+  "near a powerpc computer": null,
+  "newtown square, pa usa": {
+    "place_id": 317500036,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 158288710,
+    "lat": "39.9868117",
+    "lon": "-75.4007633",
+    "category": "place",
+    "type": "hamlet",
+    "place_rank": 20,
+    "importance": 0.13338468528267336,
+    "addresstype": "hamlet",
+    "name": "Newtown Square",
+    "display_name": "Newtown Square, Springton Pointe Woods, Newtown Township, Delaware County, Pennsylvania, 19008, United States",
+    "address": {
+      "hamlet": "Newtown Square",
+      "village": "Springton Pointe Woods",
+      "city": "Newtown Township",
+      "county": "Delaware County",
+      "state": "Pennsylvania",
+      "ISO3166-2-lvl4": "US-PA",
+      "postcode": "19008",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "39.9668117",
+      "40.0068117",
+      "-75.4207633",
+      "-75.3807633"
+    ]
+  },
+  "breisgau, deutschland": {
+    "place_id": 115327769,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 9713781369,
+    "lat": "48.0314933",
+    "lon": "7.6885693",
+    "category": "place",
+    "type": "region",
+    "place_rank": 10,
+    "importance": 0.2667072976272221,
+    "addresstype": "region",
+    "name": "Breisgau",
+    "display_name": "Breisgau, Baden-Württemberg, 79291, Deutschland",
+    "address": {
+      "region": "Breisgau",
+      "state": "Baden-Württemberg",
+      "ISO3166-2-lvl4": "DE-BW",
+      "postcode": "79291",
+      "country": "Deutschland",
+      "country_code": "de"
+    },
+    "boundingbox": [
+      "47.0314933",
+      "49.0314933",
+      "6.6885693",
+      "8.6885693"
+    ]
+  },
+  "bedford (uk), internet": null,
+  "greater seattle area, washington": null,
+  "palm coast, fl, usa": {
+    "place_id": 278587459,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 1216812,
+    "lat": "29.5541432",
+    "lon": "-81.2207673",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.46747621576595166,
+    "addresstype": "city",
+    "name": "Palm Coast",
+    "display_name": "Palm Coast, Flagler County, Florida, United States",
+    "address": {
+      "city": "Palm Coast",
+      "county": "Flagler County",
+      "state": "Florida",
+      "ISO3166-2-lvl4": "US-FL",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "29.4141019",
+      "29.6517990",
+      "-81.3716417",
+      "-81.1487797"
+    ]
+  },
+  "mcfarland, wi": {
+    "place_id": 345896846,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 251465,
+    "lat": "43.0123487",
+    "lon": "-89.2897646",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.40125193550449295,
+    "addresstype": "village",
+    "name": "McFarland",
+    "display_name": "McFarland, Dane County, Wisconsin, 53558, United States",
+    "address": {
+      "village": "McFarland",
+      "county": "Dane County",
+      "state": "Wisconsin",
+      "ISO3166-2-lvl4": "US-WI",
+      "postcode": "53558",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "43.0012226",
+      "43.0407260",
+      "-89.3217586",
+      "-89.2470550"
+    ]
+  },
+  "palmyra, pa": {
+    "place_id": 323479693,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 188948,
+    "lat": "40.3088578",
+    "lon": "-76.5932369",
+    "category": "boundary",
+    "type": "administrative",
+    "place_rank": 16,
+    "importance": 0.3704139248106284,
+    "addresstype": "town",
+    "name": "Palmyra",
+    "display_name": "Palmyra, Lebanon County, Pennsylvania, United States",
+    "address": {
+      "town": "Palmyra",
+      "county": "Lebanon County",
+      "state": "Pennsylvania",
+      "ISO3166-2-lvl4": "US-PA",
+      "country": "United States",
+      "country_code": "us"
+    },
+    "boundingbox": [
+      "40.2956127",
+      "40.3227900",
+      "-76.6111260",
+      "-76.5723170"
+    ]
   }
 }

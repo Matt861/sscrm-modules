@@ -1,0 +1,146 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:0c482331-2872-4dcd-b9f1-adab080adcab",
+  "version": "1",
+  "metadata": {
+    "timestamp": "2026-02-22T19:15:52.846236+00:00",
+    "component": {
+      "type": "application",
+      "name": "local-rpm-bundle",
+      "group": "",
+      "version": "1.0",
+      "purl": "pkg:generic/local-rpm-bundle@1.0",
+      "bom-ref": "pkg:generic/local-rpm-bundle@1.0",
+      "description": "SBOM generated from local RPM files on Windows"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "pgaudit_18",
+      "group": "",
+      "version": "18.0-1PGDG.rhel9",
+      "purl": "pkg:rpm/pgaudit_18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "bom-ref": "pkg:rpm/pgaudit_18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "description": "PostgreSQL Audit Extension",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.pgaudit.org"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "postgresql18-contrib",
+      "group": "",
+      "version": "18.0-1PGDG.rhel9",
+      "purl": "pkg:rpm/postgresql18-contrib@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "bom-ref": "pkg:rpm/postgresql18-contrib@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "description": "Contributed source and binaries distributed with PostgreSQL",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.postgresql.org/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "postgresql18-libs",
+      "group": "",
+      "version": "18.0-1PGDG.rhel9",
+      "purl": "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "bom-ref": "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "description": "The shared libraries required for any PostgreSQL clients",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.postgresql.org/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "postgresql18-server",
+      "group": "",
+      "version": "18.0-1PGDG.rhel9",
+      "purl": "pkg:rpm/postgresql18-server@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "bom-ref": "pkg:rpm/postgresql18-server@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "description": "The programs needed to create and run a PostgreSQL server",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.postgresql.org/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "postgresql18",
+      "group": "",
+      "version": "18.0-1PGDG.rhel9",
+      "purl": "pkg:rpm/postgresql18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "bom-ref": "pkg:rpm/postgresql18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "description": "PostgreSQL client programs and libraries",
+      "licenses": [],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.postgresql.org/"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:generic/local-rpm-bundle@1.0",
+      "dependsOn": [
+        "pkg:rpm/pgaudit_18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18-contrib@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18-server@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/pgaudit_18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "dependsOn": [
+        "pkg:rpm/postgresql18-server@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/postgresql18-contrib@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "dependsOn": [
+        "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18-server@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "dependsOn": [
+        "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/postgresql18-server@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "dependsOn": [
+        "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18-server@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+        "pkg:rpm/postgresql18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/postgresql18@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9",
+      "dependsOn": [
+        "pkg:rpm/postgresql18-libs@18.0-1PGDG.rhel9?arch=x86_64&distro=rhel-9"
+      ]
+    }
+  ]
+}

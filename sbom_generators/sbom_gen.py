@@ -2,7 +2,7 @@ import sys
 
 from configuration import Configuration as Config
 from sbom_generators import maven_sbom_gen, pypi_sbom_gen, pypi_sbom_gen2, pypi_sbom_gen3, pypi_sbom_gen4, go_sbom_gen, \
-    npm_sbom_gen, npm_sbom_gen2, pypi_sbom_gen6
+    npm_sbom_gen, npm_sbom_gen2, pypi_sbom_gen6, rpm_sbom_gen, rpm_sbom_gen2, rpm_sbom_gen3, rpm_sbom_gen4
 
 
 def main() -> None:
@@ -18,6 +18,9 @@ def main() -> None:
     elif Config.package_manager.lower() == "go":
         Config.sbom_input_file = Config.sbom_input_file if Config.sbom_input_file else Config.go_sbom_input_file
         go_sbom_gen.main()
+    elif Config.package_manager.lower() == "rpm":
+        Config.sbom_input_file = Config.sbom_input_file if Config.sbom_input_file else Config.go_sbom_input_file
+        rpm_sbom_gen4.main()
     elif Config.package_manager.lower() == "raw":
         Config.sbom_input_file = Config.sbom_input_file if Config.sbom_input_file else Config.raw_sbom_input_file
         print('to do')

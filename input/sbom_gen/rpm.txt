@@ -1,0 +1,5 @@
+postgresql18-server-18.0-1PGDG.rhel9.x86_64.rpm
+postgresql18-18.0-1PGDG.rhel9.x86_64.rpm
+postgresql18-libs-18.0-1PGDG.rhel9.x86_64.rpm
+postgresql18-contrib-18.0-1PGDG.rhel9.x86_64.rpm
+pgaudit_18-18.0-1PGDG.rhel9.x86_64.rpm

@@ -1,0 +1,7 @@
+{
+  "postgresql18-contrib": "https://github.com/postgres/postgres",
+  "postgresql18-libs": "https://github.com/postgres/postgres",
+  "postgresql18-server": "https://github.com/postgres/postgres",
+  "postgresql18": "https://github.com/postgres/postgres",
+  "pgaudit_18": "https://github.com/pgaudit/pgaudit"
+}
